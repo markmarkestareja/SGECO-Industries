@@ -1,0 +1,143 @@
+.calculator {
+  width: 100%;
+  height: 100%;
+
+  padding: 54px var(--global-margin);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.calculator-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.controls {
+  background: var(--dark-color);
+  color: var(--light-color);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(10, 20, 14, 0.06);
+
+  border-radius: 5px;
+}
+
+.controls h2 {
+  margin: 0 0 18px 0;
+  font-size: 16px;
+  color: #cfe9df;
+  letter-spacing: 0.2px;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+.group label.title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #d7efe4;
+}
+
+.options {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  color: #e8f5ef;
+}
+.option input[type="radio"] {
+  accent-color: var(--secondary-color);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Output card */
+.output {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 5px;
+}
+.output h3 {
+  margin: 0 0 8px 0;
+  color: #143a33;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 62, 55, 0.02),
+    rgba(17, 62, 55, 0.01)
+  );
+}
+.metric .label {
+  color: #334e47;
+  font-weight: 600;
+}
+.metric .value {
+  font-size: 26px;
+  color: var(--green-900);
+  font-weight: 700;
+}
+
+.foot {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  color: #5e766e;
+  font-size: 13px;
+}
+
+
+@media (min-width: 980px) {
+  .panel {
+    grid-template-columns: 1fr 360px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .calculator-text {
+    width: 50%;
+  }
+}

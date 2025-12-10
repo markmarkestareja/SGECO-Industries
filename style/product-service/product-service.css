@@ -1,0 +1,33 @@
+/* sidebar */
+
+.product-service ul li{
+    margin-left: 16px;
+}
+
+.product-service ul li.product-service-li-title{
+    margin-left: 0;
+    font-weight: 800 !important;
+}
+
+.product-service ul{
+    gap: 0;
+}
+
+.skylight-component-sidebar .product-service ul li:has(a.active){
+    outline: none;
+
+    background-color: var(--dark-color);
+    color: var(--light-color)!important;
+}
+
+.skylight-component-sidebar .product-service ul li a.active{
+    color: var(--light-color)!important;
+}
+
+.product-service-component-sidebar{
+    align-items: flex-start;
+    width: auto !important;
+}
+
+
+/* ********* */

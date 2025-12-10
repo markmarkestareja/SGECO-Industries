@@ -1,0 +1,30 @@
+.gvs-feature-card p{
+    text-align: left;
+}
+
+.gvs-feature-card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hatchway-option{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    text-align: center;
+}
+
+.hatchway-option ul{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hatchway-option p{
+    font-style: italic;
+}

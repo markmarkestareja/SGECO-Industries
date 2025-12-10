@@ -1,0 +1,45 @@
+.might-also-like{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 54px var(--global-margin);
+
+}
+
+.might-also-like-card{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.might-also-like-card{
+    max-width: 800px !important;
+}
+
+.might-also-like-text{
+    margin-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 744px) {
+    .might-also-like-card{
+        gap: 24px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .might-also-like{
+        height: 100vh;
+    }
+}

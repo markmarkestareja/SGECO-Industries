@@ -1,0 +1,42 @@
+.features{
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 54px var(--global-margin);
+
+    background-color: var(--dark-color);
+
+    color: var(--light-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.features .card-small-1{
+    border: 1px solid var(--light-color) !important;
+}
+
+.features .card-small-1 p{
+    font-weight: 300;
+}
+
+
+
+
+
+
+@media (min-width: 1000px) {
+    .features{
+        flex-direction: row;
+    }
+
+    .features .feature-text{
+        flex: 1;
+    }
+
+    .features .ventilator-benefit-card-container{
+        flex: 1;
+    }
+}

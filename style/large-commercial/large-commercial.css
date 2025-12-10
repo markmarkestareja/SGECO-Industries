@@ -1,0 +1,66 @@
+.large-commercial-hero{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+    padding: 54px var(--global-margin);
+
+    background-color: var(--dark-color);
+
+    background-image: url(../../asset/img/skylight-component/large-bg2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.large-commercial-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(14, 48, 37, 0.9); /* Adjust 0.4 = darkness/opacity */
+    pointer-events: none;
+}
+
+.large-commercial-hero h1{
+    text-align: center;
+    color: var(--light-color);
+
+    position: relative;
+    z-index: 5;
+}
+
+.large-commercial-img{
+    height: 100%;
+    width: 100%;
+
+    /* border: 1px solid red; */
+
+    overflow: hidden;
+
+    position: relative;
+    transition: all 0.1s ease;
+}
+
+.large-commercial-img img{
+
+    /* border: 1px solid red; */
+
+    object-fit: contain !important;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 500px) {
+    .large-commercial-img{
+        height: 500px;
+    }
+}

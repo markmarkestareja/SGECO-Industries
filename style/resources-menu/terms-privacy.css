@@ -1,0 +1,38 @@
+.terms-privacy{
+     padding: 120px var(--global-margin) 54px var(--global-margin);
+
+     background-color: var(--dark-color);
+     color: var(--light-color);
+
+     display: flex;
+     flex-direction: column;
+     gap: 81px;
+}
+
+.terms-privacy-container{
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.terms-privacy-container h3{
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+}
+
+.terms-privacy-card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.terms-privacy-card p, .terms-privacy-card ul{
+    color: var(--light-p-color);
+    font-weight: 350;
+}
+
+@media (min-width: 1300px) {
+    .terms-privacy{
+        padding-top: 150px;
+    }
+}

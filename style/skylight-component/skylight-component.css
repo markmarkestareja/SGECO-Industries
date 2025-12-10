@@ -1,0 +1,342 @@
+.skylight-component {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  overflow: auto;
+}
+
+.skylight-component-sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-self: flex-start;
+  height: 100vh;
+  width: 50%;
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 50px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  border-radius: 0 5px 5px 0;
+
+  background-color: var(--light-color);
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.skylight-component-sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin: 0 20px;
+}
+
+.component-content {
+  flex: 2;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 54px;
+
+  padding: 0 var(--global-margin);
+}
+
+.component-content p {
+  align-self: start !important;
+  /* margin-bottom: 16px; */
+}
+
+.skylight-component-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skylight-component-sidebar ul li {
+  width: 100%;
+
+  margin-left: 0;
+  padding: 10px;
+
+  border-radius: 5px;
+
+  background-color: var(--white-color);
+
+  opacity: 0.8;
+}
+
+.skylight-component-sidebar ul li a {
+  display: block;
+  color: var(--dark-color);
+
+  font-size: 16px;
+
+  width: 100%;
+
+  transition: all 0.6s ease;
+}
+
+.skylight-component-sidebar ul li:not(.product-service-li-title):hover{
+  background-color: rgb(14, 48, 37, 0.1);
+}
+
+.skylight-component-sidebar ul li a.active {
+  font-weight: 600;
+}
+
+.skylight-component-sidebar ul li:has(a.active) {
+  opacity: 1;
+  outline: 1px solid var(--dark-color);
+}
+
+.skylight-component-sidebar h1 {
+  font-size: 32px;
+
+  font-weight: 300;
+
+}
+
+.skylight-component h2 {
+  font-size: 49px;
+  font-weight: 400;
+}
+
+.btn-collapse {
+  width: 30px;
+  height: auto;
+
+  position: absolute;
+  right: -30px;
+  top: 50px;
+  cursor: pointer;
+
+  /* transform: rotate(180deg); */
+}
+
+
+
+.btn-collapse-container{
+  position: absolute;
+  right: -20px;
+
+}
+
+.btn-collapse-arrow{
+  
+  transition: transform 0.4s ease;
+  position: absolute;
+  left: 0;
+  top: 4px;
+
+  height: 18px;
+  width: 18px;
+}
+
+.btn-collapse-crescent{
+  height: auto;
+  width: 20px;
+  position: relative;
+  /* left: 10px; */
+  /* right: -10px; */
+}
+
+.skylight-menu-open {
+  transform: translateX(0);
+}
+
+.skylight-menu-open .btn-collapse {
+  transform: rotate(180deg);
+}
+
+.component-content h2.p-large {
+  text-align: center;
+}
+
+/* Diffuser */
+.diffuser-img {
+  max-width: 400px;
+  height: auto;
+  margin: 0 var(--global-margin);
+
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+.diffuser-img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center center !important;
+}
+
+.skylight-component-img {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  width: 100%;
+}
+
+.skylight-component-img-container {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.skylight-component-img-container p{
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+
+  color: var(--light-color);
+}
+
+/* DARK OVERLAY LAYER */
+.skylight-component-img-container.text-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* overlay darkness */
+  z-index: 5; /* below the text but above the image */
+}
+
+
+.skylight-component-img img {
+  justify-self: center;
+  position: relative;
+  z-index: -10;
+
+  height: 100%;
+  width: 100%;
+}
+
+
+.diffuser-material {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  width: 100%;
+  height: auto;
+}
+
+.diffuser-material h3{
+  text-align: center;
+}
+
+/* Ceiling Frames */
+.ceiling-frame-border {
+  outline: 1px solid var(--dark-color);
+}
+
+/* Rigid98 Tube */
+.component-content a {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .skylight-component-sidebar {
+    max-width: max-content;
+  }
+
+  .skylight-component-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .skylight-component-img-container{
+    width: 100%;
+  }
+}
+
+@media (min-width: 760px) {
+  /* Diffuser */
+
+  .more-skylight-img {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr)!important;
+    gap: 16px;
+  }
+
+  .skylight-component-img-container {
+    flex: 1;
+  }
+
+  .skylight-component-img-container{
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .skylight-component-img{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skylight-component {
+    overflow: visible;
+  }
+
+  .skylight-component-sidebar {
+    flex: 1;
+    transform: translateX(0);
+    max-width: 100%;
+
+    background-color: var(--white-color);
+  }
+
+  .component-content {
+    position: relative;
+  }
+
+  .btn-collapse {
+    display: none;
+  }
+
+  .btn-collapse-container{
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .diffuser-material {
+    gap: 32px;
+  }
+
+  .component-content h2.p-large{
+    font-size: 61px !important;
+    letter-spacing: auto !important;
+  }
+}

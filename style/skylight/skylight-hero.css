@@ -1,0 +1,42 @@
+.skylight-hero-section {
+  width: 100%;
+  height: auto;
+}
+
+.skylight-hero-section .top-hero h1 {
+  position: absolute;
+  bottom: 16px;
+  left: var(--global-margin);
+  right: var(--global-margin);
+
+  font-size: 39px;
+
+  font-style: italic;
+
+  max-width: 550px;
+
+  /* border: 1px solid red; */
+}
+
+.bottom-hero {
+  padding: 54px var(--global-margin);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  text-align: center;
+}
+
+@media (min-width: 744px) {
+  .skylight-hero-section .top-hero h1 {
+    font-size: 61px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bottom-hero p {
+    max-width: 50%;
+  }
+}

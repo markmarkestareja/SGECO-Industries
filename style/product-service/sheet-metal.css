@@ -1,0 +1,25 @@
+.sheet-metal-stock{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sheet-metal-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sheet-metal-container-img{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .sheet-metal-container{
+        flex-direction: row;
+    }
+    .sheet-metal-container ul, .sheet-metal-container-img{
+        flex: 1;
+    }
+}

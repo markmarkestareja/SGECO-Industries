@@ -1,0 +1,185 @@
+.optional-vent{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 54px var(--global-margin);
+
+    color: var(--light-color);
+}
+
+.optional-vent-skylight-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.optional-vent-skylight-text p{
+    font-weight: 300;
+}
+
+.optional-vent-tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    height: auto;
+    width: 100%;
+
+    padding: 54px var(--global-margin);
+}
+
+.vent-tabs-img{
+    height: 100%;
+}
+
+.vented{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.vented-card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 300px;
+    height: 100%;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+.vented-card img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: contain;
+}
+
+.vented-card h3{
+    align-self: center;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.vented-card ul{
+    padding: 8px 16px;
+}
+
+.vent-tips{
+    width: 100%;
+    height: auto;
+
+    padding: 54px var(--global-margin);
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.vent-tips-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.optional-vent-tabs h2, .vent-tips h2{
+    font-weight: 500;
+    text-align: center;
+}
+
+.vent-tips-img{
+    max-width: 250px;
+    height: auto;
+
+    align-self: center;
+}
+
+.optional-vent-tabs p{
+    max-width: 1200px;
+}
+
+@media (min-width: 500px) {
+    .optional-vent-hero-img{
+        max-width: 300px;
+
+        align-self: center;
+    }
+
+    .vented{
+        flex-direction: row;
+        height: 100%;
+
+        gap: 24px;
+
+    }
+
+}
+
+@media (min-width: 800px) {
+    .vent-tips{
+        flex-direction: row-reverse;
+
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+    }
+
+    .vent-tips-text h2{
+        text-align: start;
+    }
+
+    .vent-tips-img, .vent-tips-text{
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .optional-vent-tabs{
+        gap: 81px;
+    }
+    .vented{
+        gap: 54px;
+    }
+    .optional-vent{
+        flex-direction: row-reverse;
+        gap: 24px;
+        height: 100vh;
+    }
+
+    .optional-vent-hero-img{
+        flex: 1;
+        max-width: none;
+        max-height: 600px;
+
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .optional-vent-hero-img img{
+        height: 100%;
+        max-width: 500px;
+
+        object-fit: contain;
+    }
+
+    .optional-vent-skylight-text{
+        flex: 1;
+    }
+}
+
+@media (min-width: 1440px) {
+    .optional-vent-hero-img img{
+        transform: scale(1.5);
+    }
+}

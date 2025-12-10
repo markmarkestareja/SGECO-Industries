@@ -1,0 +1,73 @@
+.whirlwind-plus-writing-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.whirlwind-plus-writing-card{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    /* border: 1px solid red; */
+
+    position: sticky;
+    top: 0;
+
+    background-color: var(--white-color);
+}
+
+.whirlwind-plus-writing-text p{
+    text-align: center;
+    font-size: 25px;
+    /* border: 1px solid red; */
+}
+
+.whirlwind-plus-writing-img{
+
+    max-height: 500px;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    /* border: 1px solid red; */
+}
+
+
+
+.eave-vent-important{
+    height: fit-content;
+}
+
+@media (min-width: 768px) {
+    .whirlwind-plus-writing-card{
+        flex-direction: row;
+    }
+
+    .whirlwind-plus-writing-img, .whirlwind-plus-writing-text{
+        flex: 1;
+    }
+
+    .whirlwind-plus-writing-img{
+        max-height: 800px;
+    }
+
+    .whirlwind-plus-reverse{
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 1000px) {
+    .eave-vent-card-container .card-small-1{
+        min-height: 250px;
+    }
+}

@@ -1,0 +1,160 @@
+.ventilator-section {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 54px 0;
+
+  background-color: var(--light-color);
+}
+
+.section-label {
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+}
+
+.carousel2-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ventilator-text {
+  width: auto;
+  margin: auto var(--global-margin);
+}
+
+.carousel2 {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1rem var(--global-margin);
+
+  width: 100vw;
+
+  scrollbar-width: none;
+}
+
+.carousel2::-webkit-scrollbar {
+  display: none;
+}
+
+.card2 {
+  background: var(--light-color);
+  border-radius: 10px;
+  width: 220px;
+  flex: 0 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card2:hover .card2-img img, .news-update-card:hover .news-update-card-img img{
+  transform: scale(1.1);
+}
+
+.card2-img {
+  background: var(--dark-color);
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.card2-img img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.card2-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card2-content h3 {
+  font-size: 20px;
+  height: 50px;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+  color: var(--dark-color);
+}
+
+.card2-content a, .news-update-foot a, .download a, .eco-blog-text-footer a{
+  color: var(--primary-2-color);
+  font-size: 16px;
+  text-decoration: none;
+
+  align-self: flex-end;
+}
+
+.card2-content a:hover, .news-update-foot a:hover, .download a:hover, .eco-blog-text-footer a:hover {
+  text-decoration: underline;
+}
+
+.nav-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+
+  position: absolute;
+  z-index: 10;
+}
+
+.nav-btn:last-child {
+  right: 8px;
+}
+
+.nav-btn:first-child {
+  left: 8px;
+}
+
+.nav-btn:hover {
+  background: #dcebdc;
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+@media (min-width: 744px) {
+  .card2 {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card2 {
+    width: 350px;
+    height: 480px;
+  }
+
+  .ventilator-section {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .card2-img {
+    height: 350px;
+  }
+
+  .card2-content h3 {
+    width: 80%;
+  }
+}

@@ -1,0 +1,72 @@
+@import url(global.css);
+@import url(main-hero.css);
+@import url(reset.css);
+@import url(component/btn.css);
+@import url(main-prod-serv.css);
+@import url(main-about.css);
+@import url(main-process.css);
+@import url(component/animation.css);
+@import url(main-case-studies.css);
+@import url(main-news-update.css);
+@import url(main-faq.css);
+@import url(main-contact.css);
+@import url(component/header.css);
+
+/* Skylight Style */
+@import url(skylight/skylight-hero.css);
+@import url(skylight/skylight-description.css);
+@import url(skylight/skylight-application.css);
+@import url(skylight/skylight-why-choose.css);
+@import url(component/gallery.css);
+@import url(component/might-also-like.css);
+
+/* Ventilator Style */
+@import url(ventilator/ventilator-product.css);
+@import url(ventilator/ventilator-benefit.css);
+
+/* Custom Manufacturing */
+@import url(customManufacturing/custom-manufacturing-hero.css);
+
+/* About */
+@import url(about/about-hero.css);
+@import url(about/about-mission.css);
+@import url(about/about-history.css);
+
+/* Contact */
+@import url(contact/contact-hero.css);
+@import url(contact/contact-distributor.css);
+
+/* Skylight Component */
+@import url(skylight-component/skylight-component.css);
+
+/* Large Commercial Sky tunnel */
+@import url(large-commercial/large-commercial.css);
+@import url(large-commercial/large-commercial-rigid98-tube.css);
+
+/* Resources */
+@import url(resources/how-skylight-work.css);
+@import url(skylight/faq.css);
+@import url(skylight/why-you-need-skytunnel.css);
+@import url(skylight/optional-ventilation-skylight.css);
+@import url(skylight/calculator.css);
+@import url(skylight/skylight-accessories.css);
+
+/* Product and Service */
+@import url(product-service/product-service.css);
+@import url(product-service/attic.css);
+@import url(product-service/gvw.css);
+@import url(product-service/gvs.css);
+@import url(product-service/whirlwind.css);
+@import url(product-service/whirlwind-plus.css);
+@import url(product-service/ducting-kit.css);
+@import url(product-service/hatchway.css);
+@import url(product-service/thermoforming.css);
+@import url(product-service/sheet-metal.css);
+@import url(product-service/custom-skylight.css);
+
+/* Resources */
+@import url(resources-menu/download.css);
+@import url(resources-menu/img-gallery.css);
+@import url(resources-menu/gallery-video.css);
+@import url(resources-menu/eco-blog.css);
+@import url(resources-menu/terms-privacy.css);

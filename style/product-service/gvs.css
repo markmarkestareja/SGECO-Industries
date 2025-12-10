@@ -1,0 +1,101 @@
+.how-gvs-work{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.how-gvw-work-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.how-gvw-work-card h3{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.how-gvw-work-card{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.how-gvw-work-card ol{
+    margin-left: 16px;
+}
+
+/* How Many Fans Do I Need? */
+
+.fan-need{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fan-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.fan-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.fan-need-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* table style (desktop/tablet) */
+.fan-table th,
+.fan-table td {
+  border: 1px solid #d0d0d0;
+  padding: 10px;
+  text-align: center;
+}
+
+.fan-table thead th {
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* alternating rows */
+.fan-table tbody tr:nth-child(even) {
+  background: #f2fff8;
+}
+
+
+.gvs-title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 600px) {
+    .how-gvw-work-card-container{
+        flex-direction: row;
+    }
+
+    .how-gvw-work-card{
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .fan-need-text{
+        max-width: 70%;
+    }
+}

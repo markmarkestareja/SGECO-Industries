@@ -1,0 +1,41 @@
+.ducting-kit-card{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-small-1 p{
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.ducting-kit-important .card-small-1 h3{
+    font-weight: 700;
+}
+
+.ducting-kit-img{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gvs-feature-card img{
+    height: 39px;
+    max-width: max-content;
+}
+
+.ducting-kit-writing-card{
+    height: auto !important;
+}
+
+@media (min-width: 768px) {
+    .ducting-kit-card{
+        flex-direction: row;
+    }
+
+    .ducting-kit-text, .ducting-kit-img{
+        flex: 1;
+    }
+}

@@ -1,0 +1,66 @@
+.skylight-description{
+    width: 100%;
+    height: auto;
+
+    background-color: var(--light-color);
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 54px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skylight-desc-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 54px var(--global-margin) 16px var(--global-margin);
+}
+
+.skylight-desc-img{
+    width: auto;
+    max-height: 500px;
+
+    margin: 0 var(--global-margin);
+
+    overflow: hidden;
+}
+
+.skylight-desc-img img{
+    object-fit: contain!important;
+}
+
+
+@media (min-width: 768px) {
+    .skylight-description{
+        flex-direction: row-reverse;
+    }
+
+    .skylight-desc-img{
+        flex: 1;
+        margin: 54px 0;
+    }
+
+    .skylight-desc-img img{
+        object-position: center top;
+    }
+
+    .skylight-desc-text{
+        flex: 1;
+    }
+}
+
+@media (min-width: 1300px) {
+    .skylight-description{
+        height: 100vh;
+    }
+
+    .skylight-desc-img{
+        max-height: 100%;
+
+        border-radius: 0 10px 10px 0;
+    }
+
+}

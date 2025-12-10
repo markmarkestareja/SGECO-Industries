@@ -1,0 +1,129 @@
+.download{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 81px;
+
+    padding: 54px var(--global-margin);
+
+    color: var(--light-color);
+    background-color: var(--dark-color);
+
+    /* border: 1px solid red; */
+}
+
+.download h1{
+    text-align: center;
+}
+
+.download-category{
+    max-width: 1000px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+
+    /* border: 1px solid blue; */
+}
+
+.download-sub-heading{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.download-card-container{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.download-card{
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 16px;
+
+    border-radius: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.download-card-img{
+    flex: 1;
+    height: 100%;
+    width: auto;
+}
+
+.download-card-img img{
+    /* object-fit: contain; */
+
+    border-radius: 5px;
+}
+
+.download-card-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid yellow; */
+}
+
+.download-sub-heading{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.download-sub-heading h2{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-align: left;
+    line-height: 1;
+}
+
+span.left{
+    display: none;
+}
+
+.download-line{
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.download-line, .download-sub-heading h2{
+    flex: 1;
+}
+
+.download-card-text a{
+    /* border: 1px solid red; */
+    align-self: flex-start;
+}
+
+@media (min-width: 500px) {
+    span.left{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .download-sub-heading h2{
+        font-size: 39px;
+        text-align: center;
+    }
+
+    .download-card{
+        flex-direction: row;
+    }
+}

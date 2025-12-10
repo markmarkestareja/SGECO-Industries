@@ -1,0 +1,155 @@
+.img-desktop{
+    display: none;
+}
+
+.gvw-text h1{
+    text-align: center;
+}
+
+.how-gvw-work-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.how-gvw-work-text ol{
+    margin-left: 16px;
+}
+
+.how-gvw-work-img{
+    flex: 1;
+    max-width: 400px;
+
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.how-gvw-work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
+/* Why Ventilation Impotant */
+.why-vent-important{
+    padding: 0 !important;
+}
+
+.why-vent-important-card h3{
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0 !important;
+}
+
+.why-vent-important .ventilator-benefit-card-container{
+    flex: 2;
+}
+
+/* Green-Vent Solar Ventilator Features */
+
+.gvs-feature{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gvs-card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gvs-feature-card{
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--light-color);
+    min-height: 150px;
+}
+
+.gvs-feature-card p{
+    font-weight: 300;
+}
+
+.gvs-card-container h3{
+    font-size: 32px;
+}
+
+
+/* Available in 4 Different Diameter */
+
+.available-diameter{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.available-card-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.available-card{
+    max-width: 250px;
+    text-align: center;
+}
+
+.available-text h2{
+    text-align: center;
+}
+
+
+
+@media (min-width: 500px) {
+    .gvs-card-container, .available-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .gvs-card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .available-card-container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1300px) {
+    .img-desktop{
+        display: block;
+    }
+
+    .img-mobile{
+        display: none;
+    }
+
+    .gvw-text h1{
+        text-align: left;
+    }
+
+    .how-gvw-work{
+        flex-direction: row;
+    }
+}

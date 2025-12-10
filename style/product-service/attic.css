@@ -1,0 +1,107 @@
+.attic{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.attic p{
+    margin-bottom: 0;
+}
+
+.attic-card{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 1px solid red; */
+
+}
+
+.attic-img{
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.attic-text{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    /* border: 1px solid red; */
+}
+
+.attic-text h1{
+    font-size: 39px;
+    font-weight: 400;
+}
+
+.component-content h2{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.attic-ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.attic-ul p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.attic-line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0, .1);
+}
+
+.component-content{
+    z-index: 9;
+}
+
+@media (min-width: 500px) {
+    .attic-img{
+        max-width: 300px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .attic-card{
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .attic-text h2{
+        text-align: left !important;
+    }
+
+    .attic-text h1, .attic-text h2{
+        font-size: clamp(49px, 7vw, 61px) !important;
+        line-height: 0.9;
+    }
+
+    
+}
+
+@media (min-width: 1300px) {
+    .attic-img{
+        max-width: 500px;
+    }
+    
+    .component-content h2{
+        font-size: 39px;
+    }
+}
