@@ -51,6 +51,10 @@ if (file_exists(filename: $file)) {
     <script src="script/component/img-gallery.js"></script>
     <script src="script/component/eco-blog.js"></script>
 
+
+    <script src="script/data/testimonial-card-data.js"></script>
+    <script src="script/testimonial-card.js"></script>
+
 </body>
 
 </html>

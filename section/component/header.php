@@ -61,7 +61,7 @@
                         <li><a href="gallery-video">Video Gallery</a></li>
                         <li><a href="eco-blog">Eco Blog</a></li>
                         <li><a href="news-update">News Releases</a></li>
-                        <li><a href="">Testimonials</a></li>
+                        <li><a href="testimonial">Testimonials</a></li>
                         <li><a href="terms-privacy">ToS & Privacy</a></li>
                     </ul>
                 </li>
