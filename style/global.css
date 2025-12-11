@@ -7,7 +7,7 @@
   --white-color: #ffffff;
   --light-color-50: rgb(247, 252, 250, 0.1);
   --dark-color: #0e3025;
-  --dark-color-50: rgb(14, 48, 37, 0.5);
+  --dark-color-70: rgb(14, 48, 37, 0.7);
 
   --global-margin: clamp(30px, 7vw, 130px);
 }

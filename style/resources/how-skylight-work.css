@@ -61,7 +61,7 @@
 /* For padding top first section */
 
 .how-skylight-work,
-.faq-section,
+.faq-section-page,
 .features,
 .calculator,
 .download,
@@ -81,7 +81,7 @@
 
 @media (min-width: 1300px) {
     .how-skylight-work,
-    .faq-section,
+    .faq-section-page,
     .features,
     .calculator,
     .skylight-accessories,

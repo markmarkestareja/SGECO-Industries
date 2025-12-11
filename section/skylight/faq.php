@@ -1,4 +1,4 @@
-<section class="faq-section">
+<section class="faq-section faq-section-page">
     <h2 class="faq-title">Frequently Asked Questions <br> About Sky Tunnel Tubular Skylights</h2>
 
     <div class="faq-container">

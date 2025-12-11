@@ -17,24 +17,3 @@
     </div>
 </section>
 
-<script>
-    const container = document.querySelector(".testimonial-card-container");
-    const prevBtn = document.querySelector(".testimonial-btn.prev-3");
-    const nextBtn = document.querySelector(".testimonial-btn.next-3");
-
-    const scrollAmount = 360; // one card width
-
-    prevBtn.addEventListener("click", () => {
-        container.scrollBy({
-            left: -scrollAmount,
-            behavior: "smooth"
-        });
-    });
-
-    nextBtn.addEventListener("click", () => {
-        container.scrollBy({
-            left: scrollAmount,
-            behavior: "smooth"
-        });
-    });
-</script>
