@@ -44,7 +44,7 @@ form{
     gap: 4px;
 }
 
-form input{
+form input, form select{
     font-size: 16px;
     padding: 16px;
     width: 100%;
@@ -76,10 +76,14 @@ form button{
     border-radius: 5px;
 }
 
+.contact-container-form-map iframe.contact-contributor-map{
+    height: 355px;
+}
+
 @media (min-width: 768px) {
     .contact-container-form-map{
         flex-direction: row;
-        gap: 8px;
+        gap: 4px;
     }
     .contact-container-form-map form{
         flex: 1;

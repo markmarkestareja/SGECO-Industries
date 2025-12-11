@@ -10,12 +10,6 @@ prevBtn2.addEventListener("click", () => {
   carousel2.scrollBy({ left: -300, behavior: "smooth" });
 });
 
-// Swipe functionality for mobile
-// let startX = 0;
-// carousel2.addEventListener("touchstart", (e) => {
-//     startX = e.touches[0].clientX;
-// });
-
 carousel2.addEventListener("touchmove", (e) => {
   const diff = startX - e.touches[0].clientX;
   carousel2.scrollLeft += diff * 0.8;

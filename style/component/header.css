@@ -60,11 +60,8 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  
+
   background: rgba(255, 255, 255, 1);
-  border-radius: 100px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.42);
 }
 
 .nav-list li {
@@ -94,11 +91,11 @@ ul li {
   margin: 0 16px;
 }
 
-ul li.menu-heading{
+ul li.menu-heading {
   margin: 0;
 }
 
-.dropdown-sub ul li{
+.dropdown-sub ul li {
   margin: 0 8px;
 }
 
@@ -156,6 +153,10 @@ ul li.menu-heading {
     flex-direction: row;
     align-items: center;
     /* gap: 12px; */
+
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.42);
   }
 
   .nav-list li {
