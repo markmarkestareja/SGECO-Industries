@@ -1,16 +1,13 @@
-const add_reveals_li = document.querySelectorAll('.timeline li');
+const slides = document.querySelectorAll(".history-card");
 
-const observerAddReveal_li = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries)=>{
     entries.forEach(entry => {
-        if (entry.isIntersecting){
-            entry.target.classList.add('add_reveal_li');
-        } 
-        else {
-            entry.target.classList.remove('add_reveal_li');
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
         }
     });
 }, {
-    threshold:0.3
+    threshold: 0.2
 });
 
-add_reveals_li.forEach(add_reveal_li => observerAddReveal_li.observe(add_reveal_li));
+slides.forEach(slide => observer.observe(slide));
