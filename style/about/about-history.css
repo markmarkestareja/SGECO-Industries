@@ -5,7 +5,149 @@
 
 	color: var(--white-color);
 
-	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+
+.history-bg{
+	width: 100%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
+.history-content{
+	position: relative;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100%;
+	gap: 20px;
+
+	padding: 54px var(--global-margin);
+
+	background-color: rgba(48, 48, 48, 0.1) !important;
+	backdrop-filter: blur(5px);
+}
+
+.history-title{
+	flex: 1;
+	height: 100vh;
+
+	top: 100px;
+	
+}
+
+.history-timeline{
+	flex: 1;
+ 
+	height: auto;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	gap: 54px;
+}
+
+.history-card{
+	height: max-content;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+
+	border: 1px solid rgba(255, 255, 255, 0.2);
+
+	border-radius: 21px;
+
+}
+
+.history-card-img{
+	height: auto;
+	max-width: 350px;
+	overflow: hidden;
+
+	border-radius: 5px;
+}
+
+.history-card-text h2{
+	font-weight: 700 !important;
+}
+
+.history-card-text{
+	padding: 16px;
+}
+
+.history-card-text p{
+	font-weight: 500 !important;
+}
+
+@media (min-width: 400px) {
+	.history-card-img{
+		margin-top: 16px;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+	.history-content{
+		flex-direction: row;
+		background-color: transparent!important;
+		backdrop-filter: blur(0px);	
+	}
+
+	.history-title{
+		position: sticky;
+	}
+
+	.history-timeline{
+		gap: 100px;
+	}
+
+	.history-card{
+		background-color: rgba(48, 48, 48, 0.1) !important;
+
+		text-align: center;
+	}
+
+	.history-card-img{
+		margin-left: 16px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.about-history{
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	color: var(--white-color);
 }
 
 .history-bg{
@@ -44,25 +186,36 @@
  
 	height: auto;
 	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	gap: 150px;
 }
 
 .history-card{
-	height: 80vh;
+	height: max-content;
 	position: relative;
 
-	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
 }
 
 .history-card-img{
-	max-height: 250px;
+	height: auto;
 	max-width: 350px;
 	overflow: hidden;
 
 	border-radius: 5px;
+	margin-top: 45px;
 }
 
 .history-card-text{
-	position: absolute;
-	top: 0;
-	left: 200px;
+	
 }
+
+.history-card-text p{
+	font-weight: 300 !important;
+}
+ */

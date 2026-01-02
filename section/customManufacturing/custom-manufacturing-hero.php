@@ -7,7 +7,7 @@
         <h1>Custom Manufacturing</h1>
     </div>
 
-    <div class="bottom-hero">
+    <div class="bottom-hero add-reveal">
         <h2 class="h2-large">Your Ideas, Our Expertise—Crafted into Reality.</h2>
         <p>For more than 37 years, SG Eco Industries has been a trusted partner in custom manufacturing—delivering
             high-quality access hatchways, thermoformed products, precision sheet metal fabrication, and bespoke

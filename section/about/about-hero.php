@@ -1,5 +1,5 @@
 <section class="about-hero">
-    <div class="about-text">
+    <div class="about-text add-reveal">
         <h1>About SG Eco Industries Inc.</h1>
         <p class="p-large">Sustainable Lighting for a Healthier Living</p>
         <p>All of our products are manufactured here in the Philippines following strict ISO certification guidelines.

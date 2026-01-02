@@ -1,7 +1,7 @@
 <section class="ventilator-section">
     <div class="ventilator-text">
-        <h2>Custom Manufacturing Services</h2>
-        <p class="p-large">Engineered to your vision, built to last.</p>
+        <h2 class="add-reveal">Custom Manufacturing Services</h2>
+        <p class="p-large add-reveal">Engineered to your vision, built to last.</p>
     </div>
 
     <div class="carousel2-container">

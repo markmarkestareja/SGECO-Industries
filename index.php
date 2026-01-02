@@ -24,7 +24,7 @@ if (file_exists(filename: $file)) {
 
 <body>
     <div class="full-img" id="full-img-box">
-        <img src="Memories 0.jpg" onclick="openFullImg(this.src)" alt="" id="full-img">
+        <img src="" onclick="openFullImg(this.src)" alt="" id="full-img">
         <span onclick="closeFullImg()">✖</span>
     </div>
     <?php require 'section/component/header.php' ?>
@@ -55,6 +55,8 @@ if (file_exists(filename: $file)) {
     <script src="script/data/testimonial-card-data.js"></script>
     <script src="script/testimonial-card.js"></script>
 
+    <script type="module" src="script/js-history-timeline.js"></script>
+    <script type="module" src="script/js-might-also-like.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
         <p class="p-large">You might also like</p>
     </div>
 
-    <div class="prod-card-container might-also-like-card">
+    <div class="prod-card-container might-also-like-card js-might-also-like">
         <product-card 
             title="Skylight" 
             img="asset/img/main/main-prod-category-card/Sky Tunnel.webp" 

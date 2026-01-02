@@ -5,7 +5,7 @@
             any situation.</p>
     </div>
 
-    <div class="skylight-component">
+    <div class="skylight-component skylight-component-no-padding">
         <div class="skylight-component-sidebar">
             <img class="btn-collapse" src="asset/img/skylight-component/btn-collapse.svg" alt="">
             <div class="skylight-component-sidebar-inner">

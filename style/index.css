@@ -15,7 +15,7 @@
 /* Skylight Style */
 @import url(skylight/skylight-hero.css);
 @import url(skylight/skylight-description.css);
-@import url(skylight/skylight-application.css);
+/* @import url(skylight/skylight-application.css); */
 @import url(skylight/skylight-why-choose.css);
 @import url(component/gallery.css);
 @import url(component/might-also-like.css);
@@ -45,7 +45,7 @@
 
 /* Resources */
 @import url(resources/how-skylight-work.css);
-@import url(skylight/faq.css);
+/* @import url(skylight/faq.css); */
 @import url(skylight/why-you-need-skytunnel.css);
 @import url(skylight/optional-ventilation-skylight.css);
 @import url(skylight/calculator.css);

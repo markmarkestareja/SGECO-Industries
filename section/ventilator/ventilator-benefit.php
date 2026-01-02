@@ -1,14 +1,14 @@
 <section class="ventilator-benefit">
     <div class="ventilator-benefit-text">
-        <h2>Benefit</h2>
+        <h2 class="add-reveal">Benefit</h2>
 
-        <p class="p-large">Why is Ventilation Important</p>
+        <p class="p-large add-reveal">Why is Ventilation Important</p>
 
-        <p>Proper ventilation is essential for maintaining a healthy and comfortable indoor environment and can have
+        <p class="add-reveal">Proper ventilation is essential for maintaining a healthy and comfortable indoor environment and can have
             numerous benefits for both occupants and building owner.</p>
     </div>
 
-    <div class="ventilator-benefit-card-container">
+    <div class="ventilator-benefit-card-container add-reveal">
         <card-small-1
             svg="asset/svg/ventilator/1.svg"
             title="Improved Air Quality"

@@ -7,7 +7,7 @@
         <h1>Solar & Wind Powered Ventilators</h1>
     </div>
 
-    <div class="bottom-hero">
+    <div class="bottom-hero add-reveal">
         <h2 class="h2-large">Powerless. Effortless. Limitless Ventilation.</h2>
         <p>Green-vent Solar and Green-vent Wind require no electricity, offering efficient, water-resistant ventilation
             for residential, commercial, and industrial spaces.</p>

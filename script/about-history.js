@@ -11,3 +11,4 @@ const observer = new IntersectionObserver((entries)=>{
 });
 
 slides.forEach(slide => observer.observe(slide));
+

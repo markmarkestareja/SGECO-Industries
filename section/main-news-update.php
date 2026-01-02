@@ -1,8 +1,8 @@
 <section class="main-news-updates">
-    <h2>News & Updates</h2>
-    <p class="p-large">Ideas Meet Actions</p>
+    <h2 class="add-reveal">News & Updates</h2>
+    <p class="p-large add-reveal">Ideas Meet Actions</p>
 
-    <div class="news-update-card-container">
+    <div class="news-update-card-container add-reveal">
         
         <news-update-card 
             title="2019 WORLDBEX"

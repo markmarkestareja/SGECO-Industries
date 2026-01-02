@@ -1,10 +1,10 @@
 <section class="about-mission about-mission-reverse">
-    <div class="about-img">
+    <div class="about-img add-reveal">
         <img src="asset/img/about/vision.webp" alt="">
     </div>
 
     <div class="about-text-2">
-        <h2 class="p-large">Vision</h2>
-        <p>Manufacturing for generations to come.</p>
+        <h2 class="p-large add-reveal">Vision</h2>
+        <p class="add-reveal">Manufacturing for generations to come.</p>
     </div>
 </section>

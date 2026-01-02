@@ -79,6 +79,10 @@
     padding-top: 120px !important;
 }
 
+.skylight-component-no-padding{
+    padding-top: 0 !important;
+}
+
 @media (min-width: 1300px) {
     .how-skylight-work,
     .faq-section-page,
@@ -98,5 +102,9 @@
     .main-news-updates,
     .contact-hero{
         padding-top: 150px !important;
+    }
+
+    .skylight-component-no-padding{
+        padding-top: 0 !important;
     }
 }

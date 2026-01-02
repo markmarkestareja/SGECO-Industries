@@ -1,7 +1,7 @@
 <section class="ventilator-section">
     <div class="ventilator-text">
-        <h2>Ventilator Products</h2>
-        <p class="p-large">Breathe Better with the Power of Nature.</p>
+        <h2 class="add-reveal">Ventilator Products</h2>
+        <p class="p-large add-reveal">Breathe Better with the Power of Nature.</p>
     </div>
 
     <div class="carousel2-container">
