@@ -31,6 +31,8 @@ if (file_exists(filename: $file)) {
 
     <?php include $content; ?>
 
+    <?php require 'section/footer.php' ?>
+
     <script src="script/scroll-speed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
     <script src="script/scroll-smooth.js"></script>

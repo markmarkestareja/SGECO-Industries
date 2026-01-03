@@ -1,3 +1,5 @@
+<section class="process-wrapper">
+
 <div class="process-container">
 
     <div class="m-bg-img-process">
@@ -38,3 +40,4 @@
         </div>
     </div>
 </div>
+</section>

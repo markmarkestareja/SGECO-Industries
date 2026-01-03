@@ -47,7 +47,8 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card2:hover .card2-img img, .news-update-card:hover .news-update-card-img img{
+.card2:hover .card2-img img, 
+.news-update-card:hover .news-update-card-img img{
   transform: scale(1.1);
 }
 
@@ -83,16 +84,47 @@
   color: var(--dark-color);
 }
 
-.card2-content a, .news-update-foot a, .download a, .eco-blog-text-footer a{
+.card2-content a, 
+.news-update-foot a, 
+.download a, 
+.eco-blog-text-footer a{
   color: var(--primary-2-color);
   font-size: 16px;
   text-decoration: none;
 
   align-self: flex-end;
+
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.card2-content a:hover, .news-update-foot a:hover, .download a:hover, .eco-blog-text-footer a:hover {
-  text-decoration: underline;
+.card2-content a::after, 
+.news-update-foot a::after, 
+.download a::after, 
+.eco-blog-text-footer a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.card2-content a:hover, 
+.news-update-foot a:hover, 
+.download a:hover, 
+.eco-blog-text-footer a:hover {
+  color: var(--primary-color);
+}
+
+.card2-content a:hover::after, 
+.news-update-foot a:hover::after, 
+.download a:hover::after, 
+.eco-blog-text-footer a:hover::after{
+  width: 100%;
 }
 
 .nav-btn {
