@@ -312,7 +312,7 @@
   .skylight-component-sidebar {
     flex: 1;
     transform: translateX(0);
-    max-width: 100%;
+    /* max-width: 100%; */
 
     background-color: var(--white-color);
   }

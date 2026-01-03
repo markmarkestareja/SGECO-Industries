@@ -2,6 +2,7 @@
 
 .product-service ul li{
     margin-left: 16px;
+    width: 100%;
 }
 
 .product-service ul li.product-service-li-title{
