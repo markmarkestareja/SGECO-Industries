@@ -1,6 +1,5 @@
 .process-container {
   height: 400vh;
-  margin-bottom: 100vh;
   position: relative;
   isolation: isolate;
 }

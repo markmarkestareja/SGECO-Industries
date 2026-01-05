@@ -9,7 +9,7 @@
             img="asset/img/main/main-news-update/Worldbex.webp"
             publishedDate="2019-06-04"
             link="news-update-full?news=1">
-        </news-update-card>
+        </news-update-card> 
 
         <news-update-card 
             title="Worldbex 2019"
