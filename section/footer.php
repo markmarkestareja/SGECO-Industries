@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer-container">
+    <div class="footer-container add-reveal">
         <div class="footer-logo">
             <img src="asset/img/logo/SG Eco Logo.webp" alt="">
         </div>
@@ -18,8 +18,10 @@
             <div class="discover-company">
                 <h4>COMPANY</h4>
                 <ul>
+                    <li><a href="?home">Home</a></li>
                     <li><a href="?page=about">About Us</a></li>
                     <li><a href="?page=contact">Contact Us</a></li>
+                    <li><a href="?page=contact-distributor">Distributor Inquiry</a></li>
                 </ul>
             </div>
             <div class="discover-media">

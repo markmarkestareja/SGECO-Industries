@@ -55,6 +55,7 @@ footer ul li a, footer address, footer ul li{
     display: inline-block;
     color: var(--light-p-color);
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 /* underline animation */
@@ -67,12 +68,13 @@ footer ul li a, footer address, footer ul li{
     width: 0;
     height: 1px;
     background-color: var(--light-color);
-    transition: width 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-prod-serv ul li a:hover,
 .footer-discover ul li a:hover {
     color: var(--light-color);
+    padding-left: 8px;
 }
 
 .footer-prod-serv ul li a:hover::after,
@@ -90,8 +92,9 @@ footer h4{
     font-size: 14px;
 }
 
-.footer-prod-serv h3{
-    margin-bottom: 16px;
+footer h3{
+    /* margin-bottom: 8px; */
+    font-size: 15px;
 }
 
 .contact-socials{
@@ -153,7 +156,7 @@ footer h4{
     }
 
     .footer-container h3{
-        min-height: 50px;
+        min-height: 25px;
     }
 
     .contact-info{

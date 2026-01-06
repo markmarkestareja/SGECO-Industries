@@ -5,7 +5,7 @@
 
     <div class="about-text-2">
         <h2 class="p-large add-reveal">Environmental and Quality Policy</h2>
-        <p class="add-reveal">SG Eco Industries is committed to operating in an environmentally friendly manner. This is through
+        <p class="add-reveal p-dark-70">SG Eco Industries is committed to operating in an environmentally friendly manner. This is through
             conformance to our environmental management system. SG Eco Industries shall exceed all applicable
             regulatory, legal and other requirements. We are committed to continuous environmental improvement as well
             as minimizing waste products, pollution and anything else that has an adverse impact on the environment. SG

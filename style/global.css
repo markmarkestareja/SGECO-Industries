@@ -42,6 +42,15 @@ p {
   font-weight: 300;
 }
 
+.p-light-70{
+  color: rgb(255, 255, 255, .7);
+  font-weight: 200;
+}
+
+.p-dark-70{
+  color: var(--dark-color-70);
+}
+
 .p-large, .faq-title, .h2-large {
   font-size: 39px;
   letter-spacing: -3px;

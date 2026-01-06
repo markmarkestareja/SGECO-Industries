@@ -5,6 +5,6 @@
 
     <div class="about-text-2">
         <h2 class="p-large add-reveal">Vision</h2>
-        <p class="add-reveal">Manufacturing for generations to come.</p>
+        <p class="add-reveal p-light-70">Manufacturing for generations to come.</p>
     </div>
 </section>

@@ -1,12 +1,12 @@
 <section class="contact-hero">
     <div class="contact-text">
-        <h1>Contact</h1>
-        <p class="p-large">We Would Like To Hear From You</p>
-        <p>If you have any question about our products or services, feel free to fill out the form below. Please allow
+        <h1 class="add-reveal">Contact</h1>
+        <p class="p-large add-reveal">We Would Like To Hear From You</p>
+        <p class="add-reveal">If you have any question about our products or services, feel free to fill out the form below. Please allow
             up to 48 hours for us to respond to your inquiry.</p>
     </div>
 
-    <div class="contact-container-form-map">
+    <div class="contact-container-form-map add-reveal">
         <form action="#">
             <input type="text" placeholder="Full Name" required />
             <input type="email" placeholder="Email" required />
