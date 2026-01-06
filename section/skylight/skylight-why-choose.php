@@ -1,4 +1,4 @@
-<section class="skylight-why-choose">
+<section class="skylight-why-choose gradient-bg">
     <div class="why-choose-text">
         <h2 class="p-large add-reveal">Why Choose Sky Tunnel?</h2>
         <p class="add-reveal">Sky Tunnel is fully certified to Australian Standard AS4285 as well as the British Board of Agrément. The Sky

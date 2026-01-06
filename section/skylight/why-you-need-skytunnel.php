@@ -1,4 +1,4 @@
-<section class="features">
+<section class="features gradient-bg">
     <div class="feature-text">
         <h1 class="p-large">10 Reasons Why You Need Sky Tunnel</h1>
     </div>

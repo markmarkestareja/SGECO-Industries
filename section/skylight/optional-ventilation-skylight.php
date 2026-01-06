@@ -1,4 +1,4 @@
-<section class="optional-vent dark-bg">
+<section class="optional-vent gradient-bg">
     <div class="optional-vent-hero-img">
         <img class="center-bottom" src="asset/img/skylight/Vented Sky Tunnel Image 1.png" alt="">
     </div>

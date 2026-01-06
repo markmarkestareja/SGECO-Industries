@@ -1,4 +1,4 @@
-<section class="about-mission about-mission-reverse">
+<section class="about-mission about-mission-reverse gradient-bg">
     <div class="about-img add-reveal">
         <img src="asset/img/about/vision.webp" alt="">
     </div>

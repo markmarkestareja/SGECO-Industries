@@ -35,7 +35,7 @@
 
 .vid-hero {
   height: auto;
-  width: 450px;
+  max-width: 450px;
 
   padding: 0 var(--global-margin);
 
@@ -133,4 +133,11 @@
     .img-banner{
       min-height: 50vh;
     }
+}
+
+@media (min-width: 1600px) {
+  .vid-hero{
+    max-width: none;
+    width: 550px;
+  }
 }

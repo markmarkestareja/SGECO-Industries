@@ -51,7 +51,7 @@
   align-items: center;
   gap: 54px;
 
-  padding: 0 var(--global-margin);
+  padding: 0 var(--global-margin) 54px var(--global-margin);
 }
 
 .component-content p {

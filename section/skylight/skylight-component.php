@@ -1,9 +1,9 @@
 <section class="prod-serv">
     <div class="prod-serv-text-container">
-        <h2 class="p-large add-reveal">Skylight Components and Accessories</h2>
+        <h2 class="p-large add-reveal" style="color: var(--dark-color)!important;">Skylight Components and Accessories</h2>
     </div>
 
-    <div class="prod-card-container">
+    <div class="prod-card-container" style="color: var(--dark-color)!important;">
         <product-card 
             title="Roof" 
             img="asset/img/skylight/card roof.webp" 

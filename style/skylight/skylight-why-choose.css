@@ -1,3 +1,8 @@
+.skylight-why-choose{
+    padding: 54px 0;
+    color: var(--light-color);
+}
+
 .why-choose-text{
     margin: 54px var(--global-margin) 0 var(--global-margin);
 
@@ -25,6 +30,8 @@
     border-radius: 3px;
 
     box-shadow: -1px 2px 4px rgba(0, 0, 0, .2);
+
+    background: var(--light-color);
 }
 
 @media (min-width: 744px) {

@@ -1,4 +1,4 @@
-<section class="prod-serv">
+<section class="prod-serv gradient-bg">
     <div class="prod-serv-text-container">
         <h2 class="add-reveal">Our Products and Services</h2>
         <p class="p-large add-reveal">What We Have <span>For You</span></p>
