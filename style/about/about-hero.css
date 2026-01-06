@@ -1,9 +1,11 @@
 .about-hero {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: auto;
 
   color: var(--light-color);
+
+  padding-top: 100px;
 }
 
 .about-text {
@@ -51,6 +53,13 @@
   height: 100vh;
 
   object-fit: cover;
+}
+
+@media (min-width: 500px) {
+  .about-hero {
+    height: 100vh;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 1000px) {
