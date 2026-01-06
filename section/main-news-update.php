@@ -1,6 +1,6 @@
 <section class="main-news-updates">
     <h2 class="add-reveal">News & Updates</h2>
-    <p class="p-large add-reveal">Ideas Meet Actions</p>
+    <p class="p-large add-reveal">Discover What’s New</p>
 
     <div class="news-update-card-container add-reveal">
         

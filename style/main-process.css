@@ -57,6 +57,13 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
+.process-card-content h3{
+  /* margin-bottom: 16px; */
+  min-height: 40px;
+
+  /* border: 1px solid red; */
+}
+
 @media (min-width: 744px) {
   .m-process-card {
     flex-direction: row;
