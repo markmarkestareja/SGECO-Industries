@@ -2,7 +2,7 @@
     <div class="prod-serv-text-container">
         <h2 class="add-reveal">Our Products and Services</h2>
         <p class="p-large add-reveal">What We Have <span>For You</span></p>
-        <p class="add-reveal">SG Eco Industries continuously providing high quality at the most economical price possible.</p>
+        <p class="add-reveal p-light-70">SG Eco Industries continuously providing high quality at the most economical price possible.</p>
     </div>
 
     <div class="prod-card-container">

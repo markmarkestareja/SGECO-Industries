@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/whirlwind-plus/Whirlwind Plus 1.png" alt="">
+        <img src="asset/img/product-service/whirlwind-plus/Whirlwind Plus 1.webp" alt="">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Whirlwind Plus</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/gvw/4 vents 3.png" alt="">
+            <img src="asset/img/gvw/4 vents 3.webp" alt="">
         </div>
 
         <p>The Whirlwind Roof Ventilator effectively exhausts any hot stale air during the summer season and moisture
@@ -47,7 +47,7 @@
             <p>Combining Solar Power with Wind increases the Whirlwinds exhaust flow rate by up to 100%.</p>
         </div>
         <div class="whirlwind-plus-writing-img">
-            <img src="asset/img/product-service/whirlwind-plus/combining.jpg" alt="">
+            <img src="asset/img/product-service/whirlwind-plus/combining.webp" alt="">
         </div>
     </div>
 
@@ -56,7 +56,7 @@
             <p>Wind and Solar-driven by day when you need it most - Wind driven at night when the heat load on the roof is gone and not so much exhaust required.</p>
         </div>
         <div class="whirlwind-plus-writing-img">
-            <img src="asset/img/product-service/whirlwind-plus/wind.jpg" alt="">
+            <img src="asset/img/product-service/whirlwind-plus/wind.webp" alt="">
         </div>
     </div>
 
@@ -65,7 +65,7 @@
             <p>Less numbers of units required than just wind powered alone.</p>
         </div>
         <div class="whirlwind-plus-writing-img">
-            <img src="asset/img/product-service/whirlwind-plus/less.jpg" alt="">
+            <img src="asset/img/product-service/whirlwind-plus/less.webp" alt="">
         </div>
     </div>
 </div>

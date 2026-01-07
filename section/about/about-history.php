@@ -1,7 +1,7 @@
 <section class="about-history" id="aboutHistory">
 
     <div class="history-bg">
-        <img src="asset/img/about/history-bg.jpg" alt="">
+        <img src="asset/img/about/history-bg.webp" alt="">
     </div>
 
     <div class="history-content">

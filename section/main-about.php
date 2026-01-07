@@ -10,7 +10,7 @@
         <div class="who-we-are-text">
             <h2 class="add-reveal">About Us</h2>
             <p class="p-large add-reveal">Who <span>We</span> Are</p>
-            <p class="add-reveal">SG Eco Industries is a trusted provider of sustainable building solutions in the Philippines, dedicated
+            <p class="add-reveal p-dark-70">SG Eco Industries is a trusted provider of sustainable building solutions in the Philippines, dedicated
                 to
                 improving comfort, efficiency, and environmental responsibility. With years of experience in daylighting
                 and
@@ -26,7 +26,7 @@
         </div>
         <div class="who-we-are-text">
             <p class="p-large add-reveal">What <span>We</span> Do</p>
-            <p class="p-bot-margin add-reveal">At SG Eco Industries, we specialize in providing sustainable building solutions that
+            <p class="p-bot-margin add-reveal p-dark-70">At SG Eco Industries, we specialize in providing sustainable building solutions that
                 harness natural resources for healthier, more energy-efficient spaces. From skylights and ventilation
                 systems to custom daylighting products, we deliver innovative, eco-friendly solutions that improve
                 comfort, reduce energy costs, and support a greener future.</p>

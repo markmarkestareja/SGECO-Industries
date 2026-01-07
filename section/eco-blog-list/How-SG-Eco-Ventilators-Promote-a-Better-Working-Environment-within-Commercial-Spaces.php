@@ -5,7 +5,7 @@
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/resources-menu/eco-blog/website.jpg"
+            <img src="asset/img/resources-menu/eco-blog/website.webp"
                 alt="SG ECO Industries Premieres Newly Designed Website">
         </div>
 
@@ -18,14 +18,14 @@
             <p>A report titled, Indoor Climate and Productivity” written by Olli Seppanen, a Professor at the Helsinki University of Technology in Finland, shows an increasing evidence that indoor environmental conditions can substantially influence your employee’s health and performance.</p>
 
             <div class="news-update-img">
-                <img src="asset/img/resources-menu/eco-blog/ventilation-rate.jpg"
+                <img src="asset/img/resources-menu/eco-blog/ventilation-rate.webp"
                     alt="ventilation-rate">
 
             </div>                
             <p>Conclusion:  The figure only shows that the increase in ventilation of the internal area of the building decreases the sick leave or absences of employees due to health issues.</p>
             <p>The graph also shows that there is a real need for companies to build and create a more conducive working environment to improve the productivity of its employees.</p>
             <div class="news-update-img">
-                <img src="asset/img/resources-menu/eco-blog/gvw.jpg"
+                <img src="asset/img/resources-menu/eco-blog/gvw.webp"
                     alt="SG ECO Industries Premieres Newly Designed Website">
 
             </div> 
@@ -39,7 +39,7 @@
             <p>The Green-vent Solar utilizes a high performance 38V motor that generates very little noise.  Coupled with the fact that it is installed on the roof, in most installations you will never hear it operating.</p>
 
             <div class="news-update-img">
-                <img src="asset/img/resources-menu/eco-blog/gvs.jpg"
+                <img src="asset/img/resources-menu/eco-blog/gvs.webp"
                     alt="SG ECO Industries Premieres Newly Designed Website">
 
             </div>

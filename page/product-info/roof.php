@@ -2,7 +2,7 @@
 
 
     <attic-card
-        atticImg="asset/img/roof/custom orb.png"
+        atticImg="asset/img/roof/custom orb.webp"
         atticTitle = "Custom Orb (CGI)"
         atticParagraph = ""
         atticLength = "<div class='attic-ul'>
@@ -34,7 +34,7 @@
 
 
     <attic-card
-        atticImg="asset/img/roof/dek.png"
+        atticImg="asset/img/roof/dek.webp"
         atticTitle = "Dek"
         atticParagraph = ""
         atticLength = "<div class='attic-ul'>
@@ -66,7 +66,7 @@
 
 
     <attic-card
-        atticImg="asset/img/roof/hob.png"
+        atticImg="asset/img/roof/hob.webp"
         atticTitle = "Hob (Curb) Mount"
         atticParagraph = ""
         atticLength = "<div class='attic-ul'>
@@ -98,7 +98,7 @@
 
 
     <attic-card
-        atticImg="asset/img/roof/flat.png"
+        atticImg="asset/img/roof/flat.webp"
         atticTitle = "Flat (Shingle)"
         atticParagraph = ""
         atticLength = "<div class='attic-ul'>
@@ -130,7 +130,7 @@
 
 
     <attic-card
-        atticImg="asset/img/roof/slate.png"
+        atticImg="asset/img/roof/slate.webp"
         atticTitle = "Slate"
         atticParagraph = ""
         atticLength = "<div class='attic-ul'>
@@ -162,7 +162,7 @@
 
 
     <attic-card
-        atticImg="asset/img/roof/tile.png"
+        atticImg="asset/img/roof/tile.webp"
         atticTitle = "Tile"
         atticParagraph = ""
         atticLength = "<div class='attic-ul'>

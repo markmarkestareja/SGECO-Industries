@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.png" alt="">
+        <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.webp" alt="">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Roof Access Hatchways</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.png" alt="">
+            <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.webp" alt="">
         </div>
 
         <p>Access Hatchways provide the safest and most convenient entry on to your roof. These hatchways can be locked
@@ -39,7 +39,7 @@
     </div>
 
     <div class="ducting-kit-img">
-        <img src="asset/img/product-service/hatchway/Hatch - Elmer.jpg" alt="">
+        <img src="asset/img/product-service/hatchway/Hatch - Elmer.webp" alt="">
     </div>
 </div>
 
@@ -97,7 +97,7 @@
             <p>Made to suit any roof type</p>
         </div>
         <div class="whirlwind-plus-writing-img">
-            <img src="asset/img/product-service/hatchway/hatchway suit.jpg" alt="">
+            <img src="asset/img/product-service/hatchway/hatchway suit.webp" alt="">
         </div>
     </div>
 </div>
@@ -116,17 +116,17 @@
 
     <div class="available-card-container">
         <div class="available-card">
-            <img src="asset/img/product-service/hatchway/steel lid.png" alt="">
+            <img src="asset/img/product-service/hatchway/steel lid.webp" alt="">
             <p>150mm</p>
         </div>
         
         <div class="available-card">
-            <img src="asset/img/product-service/hatchway/insulated lid.png" alt="">
+            <img src="asset/img/product-service/hatchway/insulated lid.webp" alt="">
             <p>300mm</p>
         </div>
         
         <div class="available-card">
-            <img src="asset/img/product-service/hatchway/dome lid.png" alt="">
+            <img src="asset/img/product-service/hatchway/dome lid.webp" alt="">
             <p>600mm</p>
         </div>
     </div>

@@ -5,7 +5,7 @@
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/resources-menu/eco-blog/man working.jpg" alt="a man working">
+            <img src="asset/img/resources-menu/eco-blog/man working.webp" alt="a man working">
         </div>
 
         <div class="news-update-detail">

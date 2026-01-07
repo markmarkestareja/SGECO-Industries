@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/custom-skylight/custom-skylight.jpg" alt="">
+        <img src="asset/img/product-service/custom-skylight/custom-skylight.webp" alt="custom-skylight">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Custom Brand Skylight</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/product-service/hatchway/dome lid.png" alt="">
+            <img src="asset/img/product-service/hatchway/dome lid.webp" alt="dome lid">
         </div>
 
         <p>Whether you need a complete Daylighting System, or a specific component for an existing product, SG Eco can
@@ -33,7 +33,7 @@
             <p>Over 22 years experience in manufacturing Custom Brand Skylight Products.</p>
         </div>
         <div class="whirlwind-plus-writing-img">
-            <img src="asset/img/product-service/custom-skylight/custom-skylight-writings.jpg" alt="">
+            <img src="asset/img/product-service/custom-skylight/custom-skylight-writings.webp" alt="custom-skylight-writings">
         </div>
     </div>
 </div>
@@ -50,19 +50,19 @@
 
     <div class="custom-skylight-client-card">
         <div class="custom-skylight-logo">
-            <img src="asset/img/product-service/custom-skylight/Lightwell Logo.png" alt="">
+            <img src="asset/img/product-service/custom-skylight/Lightwell Logo.webp" alt="Lightwell Logo">
         </div>
         <div class="custom-skylight-logo">
-            <img src="asset/img/product-service/custom-skylight/Direct Skylights.png" alt="">
+            <img src="asset/img/product-service/custom-skylight/Direct Skylights.webp" alt="Direct Skylights">
         </div>
         <div class="custom-skylight-logo">
-            <img src="asset/img/product-service/custom-skylight/sunlight.png" alt="">
+            <img src="asset/img/product-service/custom-skylight/sunlight.webp" alt="sunlight">
         </div>
         <div class="custom-skylight-logo">
-            <img src="asset/img/product-service/custom-skylight/Sola Colour.png" alt="">
+            <img src="asset/img/product-service/custom-skylight/Sola Colour.webp" alt="Sola Colour">
         </div>
         <div class="custom-skylight-logo">
-            <img src="asset/img/product-service/custom-skylight/eco-skylight.png" alt="">
+            <img src="asset/img/product-service/custom-skylight/eco-skylight.webp" alt="eco-skylight">
         </div>
     </div>
 </div>

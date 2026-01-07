@@ -118,7 +118,7 @@ background: linear-gradient(90deg, rgba(14, 48, 37, 1) 41%, rgba(0, 80, 54, 1) 6
   .p-large, .faq-title, .h2-large{
     font-size: clamp(49px, 7vw, 76px) !important;
     font-weight: 400;
-    letter-spacing: -6px !important;
+    letter-spacing: -3px !important;
   }
 
   .p-med{

@@ -1,11 +1,11 @@
 <div class="news-update-content-full">
     <div class="news-update-head">
         <p>Published on July 6, 2014</p>
-        <h1 class="p-large">Natural Light in Offices Boosts Health</h1>
+        <h1 class="p-large">The Benefits of Installing Skylights in Your Property</h1>
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/resources-menu/eco-blog/man working.jpg" alt="a man working">
+            <img src="asset/img/resources-menu/eco-blog/man working.webp" alt="a man working">
         </div>
 
         <div class="news-update-detail">

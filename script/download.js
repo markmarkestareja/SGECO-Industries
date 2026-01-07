@@ -13,7 +13,7 @@ function renderHtmlDownload(datum, folder){
 
     return `<div class="download-card">
         <div class="download-card-img">
-            <img src="asset/img/resources-menu/download/${cleanDatum}.jpg" alt="">
+            <img src="asset/img/resources-menu/download/${cleanDatum}.webp" alt="${cleanDatum}">
         </div>
 
         <div class="download-card-text">

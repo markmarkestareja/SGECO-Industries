@@ -5,7 +5,7 @@
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/resources-menu/eco-blog/Worldbex 2015 - 04 1.jpg"
+            <img src="asset/img/resources-menu/eco-blog/Worldbex 2015 - 04 1.webp"
                 alt="WORLDBEX 2019">
         </div>
 

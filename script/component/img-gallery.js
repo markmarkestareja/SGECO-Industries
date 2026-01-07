@@ -42,68 +42,68 @@ const galleryFolders = {
 
 const galleryData = {
     residential: [
-        "Bathroom 2.jpg",
-        "Bathroom 3.jpg",
-        "C-Orb2 (sml).jpg",
-        "Couple on sofa copy.jpg",
-        "Dining sml.jpg",
-        "Hallway.jpg",
-        "Les Walk In Robe.jpg",
-        "Suntrenz - 05.jpg",
-        "Suntrenz - 06.jpg",
-        "Suntrenz - After.jpg",
-        "Tile - 01.jpg",
-        "VL Open Kitchen.jpg"
+        "Bathroom 2.webp",
+        "Bathroom 3.webp",
+        "C-Orb2 (sml).webp",
+        "Couple on sofa copy.webp",
+        "Dining sml.webp",
+        "Hallway.webp",
+        "Les Walk In Robe.webp",
+        "Suntrenz - 05.webp",
+        "Suntrenz - 06.webp",
+        "Suntrenz - After.webp",
+        "Tile - 01.webp",
+        "VL Open Kitchen.webp"
     ],
 
     industrial: [
-        "After - Pulu Amsic (Sml).jpg",
-        "APF - 03.jpg",
-        "APF - 05.jpg",
-        "Art Centre (Sml).jpg",
-        "Avanti - 02.jpg",
-        "CO-01.jpg",
-        "CO-03.jpg",
-        "Factory 1.jpg",
-        "Jotun (sml).jpg",
-        "Jumbo Jenra - 03.jpg",
-        "Lucena Bus Terminal.jpg",
-        "Office Toilets.jpg",
-        "SG Eco Factory 2.jpg",
-        "SG Eco Factory 3.jpg"
+        "After - Pulu Amsic (Sml).webp",
+        "APF - 03.webp",
+        "APF - 05.webp",
+        "Art Centre (Sml).webp",
+        "Avanti - 02.webp",
+        "CO-01.webp",
+        "CO-03.webp",
+        "Factory 1.webp",
+        "Jotun (sml).webp",
+        "Jumbo Jenra - 03.webp",
+        "Lucena Bus Terminal.webp",
+        "Office Toilets.webp",
+        "SG Eco Factory 2.webp",
+        "SG Eco Factory 3.webp"
     ],
 
     gvs: [
-        "GVS - Panel Adjust.jpg",
-        "GVS - Panel Swivel.jpg",
-        "In the Roof 4.jpg",
-        "GVS x 3.jpg",
-        "GVS - 01.jpg"
+        "GVS - Panel Adjust.webp",
+        "GVS - Panel Swivel.webp",
+        "In the Roof 4.webp",
+        "GVS x 3.webp",
+        "GVS - 01.webp"
     ],
 
     gvw: [
-        "GVW - 09.jpg",
-        "GVW - Hamilton 2.jpg",
-        "GVW - Hamilton 1.jpg",
-        "GVW - 07.jpg",
-        "GV - SG Eco.jpg",
-        "GVW - 04.jpg",
-        "IMG_9891.jpg",
-        "IMG_9890.jpg",
-        "GVW - 06.jpg",
-        "AGA - Peoples Air Cargo.jpg",
-        "SG ECO - 02.jpg",
-        "SG ECO - 01.jpg"
+        "GVW - 09.webp",
+        "GVW - Hamilton 2.webp",
+        "GVW - Hamilton 1.webp",
+        "GVW - 07.webp",
+        "GV - SG Eco.webp",
+        "GVW - 04.webp",
+        "IMG_9891.webp",
+        "IMG_9890.webp",
+        "GVW - 06.webp",
+        "AGA - Peoples Air Cargo.webp",
+        "SG ECO - 02.webp",
+        "SG ECO - 01.webp"
     ],
 
     hatchway: [
-        "Hatch - Climbing 2.jpg",
-        "Hatch - Climbing out.jpg",
-        "Hatch & Ladder.jpg",
-        "81996270_662524937850068_2353140378783186944_n.jpg",
-        "83027098_3295719483776868_7159180453402902528_n.jpg",
-        "IMG-b51698b48f216cb39cf8684b1d99c931-V.jpg",
-        "IMG-d09d36844db663ba514e0d30090b5808-V.jpg"
+        "Hatch - Climbing 2.webp",
+        "Hatch - Climbing out.webp",
+        "Hatch & Ladder.webp",
+        "81996270_662524937850068_2353140378783186944_n.webp",
+        "83027098_3295719483776868_7159180453402902528_n.webp",
+        "IMG-b51698b48f216cb39cf8684b1d99c931-V.webp",
+        "IMG-d09d36844db663ba514e0d30090b5808-V.webp"
     ]
 };
 

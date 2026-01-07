@@ -5,7 +5,7 @@
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/resources-menu/eco-blog/website.jpg"
+            <img src="asset/img/resources-menu/eco-blog/website.webp"
                 alt="SG ECO Industries Premieres Newly Designed Website">
         </div>
 

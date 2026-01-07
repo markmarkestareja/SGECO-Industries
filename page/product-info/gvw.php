@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/gvw/4 vents 3.png" alt="">
+        <img src="asset/img/gvw/4 vents 3.webp" alt="">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Green-Vent Wind Driven Ventilator</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/gvw/4 vents 3.png" alt="">
+            <img src="asset/img/gvw/4 vents 3.webp" alt="">
         </div>
 
         <p>The Green-vent Wind Driven Ventilator is cost efficient ventilation system utilizing the “Wind”, one of
@@ -53,7 +53,7 @@
     </div>
 
     <div class="how-gvw-work-img">
-        <img src="asset/img/gvw/turbine.png" alt="">
+        <img src="asset/img/gvw/turbine.webp" alt="">
     </div>
 </div>
 
@@ -172,22 +172,22 @@
 
     <div class="available-card-container">
         <div class="available-card">
-            <img src="asset/img/gvw/150mm.png" alt="">
+            <img src="asset/img/gvw/150mm.webp" alt="">
             <p>150mm</p>
         </div>
         
         <div class="available-card">
-            <img src="asset/img/gvw/300mm.png" alt="">
+            <img src="asset/img/gvw/300mm.webp" alt="">
             <p>300mm</p>
         </div>
         
         <div class="available-card">
-            <img src="asset/img/gvw/600mm.png" alt="">
+            <img src="asset/img/gvw/600mm.webp" alt="">
             <p>600mm</p>
         </div>
         
         <div class="available-card">
-            <img src="asset/img/gvw/900mm.png" alt="">
+            <img src="asset/img/gvw/900mm.webp" alt="">
             <p>900mm</p>
         </div>
     </div>

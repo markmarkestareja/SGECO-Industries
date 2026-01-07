@@ -5,7 +5,7 @@
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/resources-menu/eco-blog/gvw.jpg"
+            <img src="asset/img/resources-menu/eco-blog/gvw.webp"
                 alt="SG ECO Industries Premieres Newly Designed Website">
         </div>
 
@@ -16,7 +16,7 @@
             <h2>Commercial Ventilators</h2>
             <h3>Green-vent Wind Driven Ventilator</h3>
             <div class="news-update-img">
-                <img src="asset/img/resources-menu/eco-blog/gvw.jpg"
+                <img src="asset/img/resources-menu/eco-blog/gvw.webp"
                     alt="SG ECO Industries Premieres Newly Designed Website">
             </div>
             <p>This ventilator is made up of lightweight aluminum that allows continuous airflow at a moderate-low speed. It uses vertical vane technology that is 3 times better than the exhaust capacity of a round shaped ventilator.</p>

@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/gvw/GVS - Panel Swivel.png" alt="">
+        <img src="asset/img/gvw/GVS - Panel Swivel.webp" alt="">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Green-Vent Solar Ventilator</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/gvw/GVS - Panel Swivel.png" alt="">
+            <img src="asset/img/gvw/GVS - Panel Swivel.webp" alt="">
         </div>
 
         <p>The Green-Vent Solar Attic Extraction Fan is an attic ventilation system that can be installed into
@@ -42,7 +42,7 @@
         <div class="how-gvw-work-card">
             <h3>During Summer</h3>
             <div class="how-gvw-work-card-img">
-                <img src="asset/img/gvs/GVS - Summer.jpg" alt="">
+                <img src="asset/img/gvs/GVS - Summer.webp" alt="">
             </div>
             <ol>
                 <li>Heat transfers through your roof and into your attic space, increasing the temperature.</li>
@@ -56,7 +56,7 @@
         <div class="how-gvw-work-card">
             <h3>During Winter</h3>
             <div class="how-gvw-work-card-img">
-                <img src="asset/img/gvs/GVS - Winter.jpg" alt="">
+                <img src="asset/img/gvs/GVS - Winter.webp" alt="">
             </div>
             <ol>
                 <li>Heat trapped inside your attic space can melt the snow accumulated on the roof of your home. As the
@@ -262,14 +262,14 @@
 
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/gvs/green-vent-ecs.png" alt="">
+        <img src="asset/img/gvs/green-vent-ecs.webp" alt="">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Environment Control System (Optional)</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/gvs/green-vent-ecs.png" alt="">
+            <img src="asset/img/gvs/green-vent-ecs.webp" alt="">
         </div>
 
         <p>The ECS is an automated system for running the fan when the environmental conditions demand it. If the

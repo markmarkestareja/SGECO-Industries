@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/hatchway/dome lid.png" alt="">
+        <img src="asset/img/product-service/hatchway/dome lid.webp" alt="">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Thermoforming</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/product-service/hatchway/dome lid.png" alt="">
+            <img src="asset/img/product-service/hatchway/dome lid.webp" alt="">
         </div>
 
         <p>SG Eco Industries offers Thermoforming services to customers wishing to outsource this work. With a
@@ -36,6 +36,6 @@
     </div>
 
     <div class="how-gvw-work-img thermo-img">
-        <img src="asset/img/product-service/thermoforming/thermoforming img.jpg" alt="">
+        <img src="asset/img/product-service/thermoforming/thermoforming img.webp" alt="">
     </div>
 </div>

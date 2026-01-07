@@ -5,7 +5,7 @@
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/resources-menu/eco-blog/CO-02.jpg"
+            <img src="asset/img/resources-menu/eco-blog/CO-02.webp"
                 alt="Sky Tunnel - Energy Efficient Skylight Indoor Lighting">
         </div>
 

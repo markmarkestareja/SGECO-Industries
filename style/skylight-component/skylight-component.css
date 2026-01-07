@@ -56,7 +56,7 @@
 
 .component-content p {
   align-self: start !important;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
 .skylight-component-sidebar ul {

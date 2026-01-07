@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/eave-vent/under eave vent angle view.png" alt="">
+        <img src="asset/img/product-service/eave-vent/under eave vent angle view.webp" alt="under eave vent angle view">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Under Eave Vent</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/product-service/eave-vent/under eave vent angle view.png" alt="">
+            <img src="asset/img/product-service/eave-vent/under eave vent angle view.webp" alt="under eave vent angle view">
         </div>
 
         <p>You can dramatically improve the efficiency and performance of your Roof Ventilation Products with the

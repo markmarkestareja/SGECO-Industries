@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/ducting-kit/ducting kit.png" alt="">
+        <img src="asset/img/product-service/ducting-kit/ducting kit.webp" alt="ducting kit">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Ventilator Ducting Kit</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/gvw/4 vents 3.png" alt="">
+            <img src="asset/img/gvw/4 vents 3.webp" alt="ducting kit">
         </div>
 
         <p>Ventilate internal spaces such as bathrooms, using the Ventilation Ducting Kit.</p>

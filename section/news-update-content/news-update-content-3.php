@@ -5,7 +5,7 @@
     </div>
     <div class="news-update-img-text">
         <div class="news-update-img">
-            <img src="asset/img/main/main-news-update/Worldbex-2019.jpg"
+            <img src="asset/img/main/main-news-update/WB2023.webp"
                 alt="SG Eco Industries Joins Asia’s Biggest Construction Show WORLDBEX 2019">
         </div>
 

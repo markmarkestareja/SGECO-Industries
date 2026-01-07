@@ -13,7 +13,7 @@
 
         <news-update-card 
             title="Worldbex 2019"
-            img="asset/img/main/main-news-update/Worldbex-2019.jpg"
+            img="asset/img/main/main-news-update/Worldbex-2019.webp"
             publishedDate="2017-01-30"
             link="news-update-full?news=2">
         </news-update-card>

@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/sheet-metal/sheet metal.jpg" alt="">
+        <img src="asset/img/product-service/sheet-metal/sheet metal.webp" alt="">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Sheet Metal Fabrication</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/product-service/sheet-metal/sheet metal.jpg" alt="">
+            <img src="asset/img/product-service/sheet-metal/sheet metal.webp" alt="">
         </div>
 
         <p>One of the main functions carried out in the SG Eco factory is sheet metal fabrication. Whether it be as
@@ -45,7 +45,7 @@
         </ul>
 
         <div class="sheet-metal-container-img">
-            <img src="asset/img/product-service/sheet-metal/sheet metal stock.jpg" alt="">
+            <img src="asset/img/product-service/sheet-metal/sheet metal stock.webp" alt="">
         </div>
     </div>
 </div>
