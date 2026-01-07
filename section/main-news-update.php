@@ -32,5 +32,7 @@
             link="news-update-full?news=4">
         </news-update-card>
 
+        
+
     </div>
 </section>

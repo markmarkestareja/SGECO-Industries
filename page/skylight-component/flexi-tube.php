@@ -1,5 +1,5 @@
 <div class="diffuser-img">
-    <img src="asset/img/skylight-component/flexi-tube.png" alt="">
+    <img src="asset/img/skylight-component/flexi-tube.webp" alt="flexi-tube">
 </div>
 <h2 class="p-large">Flexible Reflective Tubing for Skylights</h2>
 
@@ -16,7 +16,7 @@
 
 
 <div class="diffuser-img">
-    <img src="asset/img/skylight-component/Square Flexi-tube.png" alt="">
+    <img src="asset/img/skylight-component/Square Flexi-tube.webp" alt="Square Flexi-tube">
 </div>
 
 <div class="skylight-component-p">
@@ -31,7 +31,7 @@
 </div>
 
 <div class="diffuser-img">
-    <img src="asset/img/skylight-component/Flexi Layers.webp" alt="">
+    <img src="asset/img/skylight-component/Flexi Layers.webp" alt="Flexi Layers">
 </div>
 
 <div class="skylight-component-p">

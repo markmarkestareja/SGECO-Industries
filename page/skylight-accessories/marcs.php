@@ -1,5 +1,5 @@
 <div class="diffuser-img">
-    <img src="asset/img/skylight/marcs.jpg" alt="">
+    <img src="asset/img/skylight/marcs.webp" alt="marcs">
 </div>
 <h3>Multiple Accessory Remote Control System (MARCS)</h3>
 <div class="skylight-component-p">

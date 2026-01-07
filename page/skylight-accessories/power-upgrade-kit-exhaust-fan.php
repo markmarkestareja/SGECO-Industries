@@ -1,5 +1,5 @@
 <div class="diffuser-img">
-    <img src="asset/img/skylight/power upgrade kit.jpg" alt="">
+    <img src="asset/img/skylight/power upgrade kit.webp" alt="">
 </div>
 <h3>Skylight Powered Exhaust & Ventilation Fan</h3>
 <div class="skylight-component-p">
@@ -20,15 +20,15 @@
 
     <div class="skylight-component-img more-skylight-img">
         <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight/vari.jpg" alt="">
+            <img src="asset/img/skylight/vari.webp" alt="vari">
             <p >Electric LED Light</p>
         </div>
         <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight/exhaust fan.jpg" alt="">
+            <img src="asset/img/skylight/exhaust fan.webp" alt="exhaust fan">
             <p>Power Upgrade Kit- Exhaust Fan</p>
         </div>
         <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight/conversion box.jpg" alt="">
+            <img src="asset/img/skylight/conversion box.webp" alt="conversion box">
             <p>Conversion Box</p>
         </div>
     </div>

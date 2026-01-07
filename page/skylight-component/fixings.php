@@ -1,5 +1,5 @@
 <div class="diffuser-img">
-    <img src="asset/img/skylight-component/Fixings 2.png" alt="">
+    <img src="asset/img/skylight-component/Fixings 2.webp" alt="">
 </div>
 <h2 class="p-large">Fixings Components for Skylights & Ventilators</h2>
 <div class="skylight-component-p">
