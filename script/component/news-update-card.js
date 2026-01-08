@@ -8,7 +8,7 @@ class newsUpdateCard extends HTMLElement {
     this.innerHTML = `
                 <div class="news-update-card">
                     <div class="news-update-card-img">
-                        <img src="${img}" alt="${title}">
+                        <img src="${img}" alt="${title}" loading="lazy">
                     </div>
                     <div class="news-update-content">
                         <h3>${title}</h3>

@@ -1,6 +1,6 @@
 <section class="about-mission about-mission-reverse gradient-bg">
     <div class="about-img add-reveal">
-        <img src="asset/img/about/vision.webp" alt="">
+        <img src="asset/img/about/vision.webp" alt="Lady at work" loading="lazy">
     </div>
 
     <div class="about-text-2">

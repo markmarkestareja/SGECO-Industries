@@ -7,7 +7,7 @@ class ProductCard extends HTMLElement {
     this.innerHTML = `
         <div class="prod-category-card">
             <div class="prod-category-img">
-                <img src="${img}" alt="${title}">
+                <img src="${img}" alt="${title}" loading="lazy">
             </div>
 
             <div class="prod-category-text">

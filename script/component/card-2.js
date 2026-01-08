@@ -7,7 +7,7 @@ class Card1 extends HTMLElement {
     this.innerHTML = `
             <div class="card2">
                 <div class="card2-img">
-                    <img src="${img}" alt="${title}">
+                    <img src="${img}" alt="${title}" loading="lazy">
                 </div>
                 <div class="card2-content">
                     <h3>${title}</h3>

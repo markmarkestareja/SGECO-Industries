@@ -54,9 +54,9 @@
                 <address>Lot 114 - Industrial Estate 5, Clark Freeport Zone, C-2023 Pampanga, Philippines</address>
                 <h4>FOLLOW US</h4>
                 <ul class="socials">
-                    <li><a href="https://www.facebook.com/sgeco/"><img src="asset/svg/social/fb.svg" alt=""></a></li>
-                    <li><a href="https://x.com/sgeco?lang=en"><img src="asset/svg/social/x.svg" alt=""></a></li>
-                    <li><a href="https://ph.linkedin.com/in/sgecoindustriesinc"><img src="asset/svg/social/in.svg" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/sgeco/"><img src="asset/svg/social/fb.svg" alt="Facebook Logo"></a></li>
+                    <li><a href="https://x.com/sgeco?lang=en"><img src="asset/svg/social/x.svg" alt="X Logo"></a></li>
+                    <li><a href="https://ph.linkedin.com/in/sgecoindustriesinc"><img src="asset/svg/social/in.svg" alt="LinkedIn Logo"></a></li>
                 </ul>
             </div>
         </div>

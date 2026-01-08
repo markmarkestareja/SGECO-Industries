@@ -1,6 +1,6 @@
 <section class="about-mission light-bg">
     <div class="about-img add-reveal">
-        <img src="asset/img/contact/cta-contributor.webp" alt="">
+        <img src="asset/img/contact/cta-contributor.webp" alt="GVS" loading="lazy">
     </div>
 
     <div class="about-text-2">

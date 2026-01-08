@@ -11,6 +11,6 @@
         </button>
     </div>
     <div class="img">
-        <img src="asset/img/main/main-contact/cta img.webp" alt="">
+        <img src="asset/img/main/main-contact/cta img.webp" alt="Man on the roof with Hatchway" loading="lazy">
     </div>
 </section>

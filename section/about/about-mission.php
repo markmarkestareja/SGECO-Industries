@@ -1,6 +1,6 @@
 <section class="about-mission light-bg">
     <div class="about-img add-reveal">
-        <img src="asset/img/about/mission.webp" alt="">
+        <img src="asset/img/about/mission.webp" alt="Company Group Photo" loading="lazy">
     </div>
 
     <div class="about-text-2">

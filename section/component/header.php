@@ -2,7 +2,7 @@
     <div class="navbar">
         <div class="brand">
             <a href="home" class="logo">
-                <img src="asset/img/logo/SG Eco Logo.webp" alt="">
+                <img src="asset/img/logo/SG Eco Logo.webp" alt="SG Eco Logo">
             </a>
         </div>
 

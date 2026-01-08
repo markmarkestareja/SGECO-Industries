@@ -16,12 +16,8 @@
         <p>Eco-friendly Skylight, Ventilators, and Custom Builds</p>
 
         <div class="btn">
-            <button class="btn-1">
-                <a href="home#caseStudies">Check Our Case Studies</a>
-            </button>
-            <button class="btn-2">
-                <a href="contact">Get In Touch</a>
-            </button>
+            <a class="btn-1" href="home#caseStudies">Check Our Case Studies</a>
+            <a class="btn-2" href="contact">Get In Touch</a>
         </div>
 
         <img src="asset/img/hero-certs.webp" alt="" />
