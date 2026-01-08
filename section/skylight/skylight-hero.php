@@ -1,6 +1,6 @@
 <section class="skylight-hero-section">
     <div class="top-hero">
-        <div class="img-banner">
+        <div class="img-banner banner-skylight">
             <span class="banner-white-overlay"></span>
             <img src="asset/img/skylight/bg-hero.webp" alt="" />
         </div>

@@ -1,8 +1,8 @@
 <section class="ventilator-benefit">
     <div class="ventilator-benefit-text">
-        <h2 class="add-reveal">Benefit</h2>
+        <h2 class="add-reveal">Good Ventilation Benefits</h2>
 
-        <p class="p-large add-reveal">Why is Ventilation Important</p>
+        <p class="p-large add-reveal">Why is <span>Ventilation</span> Important</p>
 
         <p class="add-reveal">Proper ventilation is essential for maintaining a healthy and comfortable indoor environment and can have
             numerous benefits for both occupants and building owner.</p>
@@ -30,15 +30,15 @@
         >
         </card-small-1>
 
-        <card-small- 
-            svg="asset/svg/ventilator/5.svg"
+        <card-small-1
+            svg="asset/svg/ventilator/4.svg"
             title="Enhanced Energy Efficiency"
             desc="Reduces reliance on air conditioning and cooling systems, lowering energy costs."
         >
-        </card-small->
+        </card-small-1>
 
         <card-small-1
-            svg="asset/svg/ventilator/6.svg"
+            svg="asset/svg/ventilator/5.svg"
             title="Improve Productivity & Wellbeing"
             desc="Fresh air circulation supports concentration, reduces fatigue, and improves overall occupant health."
         >

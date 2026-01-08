@@ -21,6 +21,9 @@
 .ventilator-text {
   width: auto;
   margin: auto var(--global-margin);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .carousel2 {
@@ -29,6 +32,8 @@
   scroll-behavior: smooth;
   gap: 1rem;
   padding: 1rem var(--global-margin);
+
+  margin-top: 36px;
 
   width: 100vw;
 
@@ -53,7 +58,9 @@
 }
 
 .card2-img {
-  background: var(--dark-color);
+  background: #0E3025;
+  background: linear-gradient(90deg, rgba(14, 48, 37, 1) 41%, rgba(0, 80, 54, 1) 64%, rgba(0, 108, 72, 1) 74%, rgba(10, 63, 46, 1) 86%, rgba(14, 48, 37, 1) 100%);
+
   height: 200px;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -188,5 +195,12 @@
 
   .card2-content h3 {
     width: 80%;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .vent-product-btn{
+    display: none !important;
   }
 }

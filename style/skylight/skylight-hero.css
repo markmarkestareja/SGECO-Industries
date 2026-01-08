@@ -29,6 +29,16 @@
   text-align: center;
 }
 
+.banner-skylight img{
+  width: 100%;
+  object-fit: cover;
+
+  transform: translateY(0);
+  will-change: transform;
+  height: 130%;
+  /* transform: translateY(0) scale(1.05); */
+}
+
 @media (min-width: 744px) {
   .skylight-hero-section .top-hero h1 {
     font-size: 61px;

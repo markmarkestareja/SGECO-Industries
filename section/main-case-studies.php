@@ -6,7 +6,7 @@
 
   <div class="carousel2-container">
     <button class="nav-btn prev-2">&#10094;</button>
-    <div class="carousel2 add-reveal">
+    <div class="carousel2 add-reveal js-carousel2">
       <!-- case-study-carousel.js -->
     </div>
     <button class="nav-btn next-2">&#10095;</button>

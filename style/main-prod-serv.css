@@ -4,12 +4,13 @@
 
   padding: 0 var(--global-margin);
 
-  /* background-color: var(--dark-color); */
+  background-color: var(--light-color);
   padding: 54px var(--global-margin);
 
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: center;
+  gap: 36px;
 }
 
 .prod-serv > * {

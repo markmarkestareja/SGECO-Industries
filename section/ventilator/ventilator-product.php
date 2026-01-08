@@ -1,11 +1,11 @@
 <section class="ventilator-section">
     <div class="ventilator-text">
         <h2 class="add-reveal">Ventilator Products</h2>
-        <p class="p-large add-reveal">Breathe Better with the Power of Nature.</p>
+        <p class="p-large add-reveal">Breathe Better with the <span>Power</span> of <span>Nature</span>.</p>
     </div>
 
     <div class="carousel2-container">
-        <button class="nav-btn prev-2">&#10094;</button>
+        <button class="nav-btn prev-2 vent-product-btn">&#10094;</button>
         <div class="carousel2">
 
             <card-2 
@@ -32,6 +32,6 @@
               link="product-service?prod=whirlwind">
             </card-2>
         </div>
-        <button class="nav-btn next-2">&#10095;</button>
+        <button class="nav-btn next-2 vent-product-btn">&#10095;</button>
     </div>
 </section> 

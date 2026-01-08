@@ -7,6 +7,12 @@
     background-color: var(--white-color);
 }
 
+.main-news-updates-title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .news-update-card-container{
     width: 100%;
     height: auto;

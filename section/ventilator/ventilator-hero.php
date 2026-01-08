@@ -1,6 +1,6 @@
 <section class="skylight-hero-section">
     <div class="top-hero">
-        <div class="img-banner">
+        <div class="img-banner banner-skylight">
             <span class="banner-white-overlay"></span>
             <img src="asset/img/ventilator/GVW - Hamilton 3.2.webp" alt="" />
         </div>

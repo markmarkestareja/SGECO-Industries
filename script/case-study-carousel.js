@@ -1,4 +1,4 @@
-const caseStudyContainer = document.querySelector('.carousel2');
+const caseStudyContainer = document.querySelector('.js-carousel2');
 
 let caseStudyHtml = "";
 

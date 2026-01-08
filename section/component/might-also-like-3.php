@@ -1,6 +1,6 @@
 <section class="might-also-like">
     <div class="might-also-like-text">
-        <h2>Our Other Product</h2>
+        <h2>More Products From SG Eco</h2>
         <p class="p-large">You might also like</p>
     </div>
 

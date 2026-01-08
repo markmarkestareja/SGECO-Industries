@@ -61,6 +61,8 @@ if (file_exists(filename: $file)) {
     <script type="module" src="script/js-might-also-like.js"></script>
     <script src="script/case-study-carousel.js"></script>
     <script type="module" src="script/download.js"></script>
+
+    <script src="script/js-hero-banner-parallax.js"></script>
 </body>
 
 </html>
