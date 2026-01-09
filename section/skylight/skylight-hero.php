@@ -4,7 +4,7 @@
             <span class="banner-white-overlay"></span>
             <img src="asset/img/skylight/bg-hero.webp" alt="" />
         </div>
-        <h1>Sky Tunnel Tubular Skylight</h1>
+        <h1 class="banner-h1">Sky Tunnel Tubular Skylight</h1>
     </div>
 
     <div class="bottom-hero">

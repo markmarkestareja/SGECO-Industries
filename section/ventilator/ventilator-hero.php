@@ -4,7 +4,7 @@
             <span class="banner-white-overlay"></span>
             <img src="asset/img/ventilator/GVW - Hamilton 3.2.webp" alt="Hamilton 3.2" />
         </div>
-        <h1>Solar & Wind Powered Ventilators</h1>
+        <h1 class="banner-h1">Solar & Wind Powered Ventilators</h1>
     </div>
 
     <div class="bottom-hero add-reveal">

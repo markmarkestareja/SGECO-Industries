@@ -4,7 +4,7 @@
             <span class="banner-white-overlay"></span>
             <img src="asset/img/customManufacturing/SG Eco Vacuum 1.webp" alt="SG Eco Vacuum 1" />
         </div>
-        <h1>Custom Manufacturing</h1>
+        <h1 class="banner-h1">Custom Manufacturing</h1>
     </div>
 
     <div class="bottom-hero add-reveal">
