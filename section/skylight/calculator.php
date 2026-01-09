@@ -72,3 +72,6 @@
         </div>
     </div>
 </section>
+
+
+<script src="script/calculator.js" defer></script>

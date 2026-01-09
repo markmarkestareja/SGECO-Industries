@@ -46,16 +46,15 @@ if (file_exists(filename: $file)) {
     <script src="script/component/prod-category-card.js"></script>
     <script src="script/about-history.js"></script>
     <script src="script/faq.js"></script>
-    <script src="script/calculator.js"></script>
-    <script src="script/skylight-component-sidebar.js"></script>
+    <script src="script/skylight-component-sidebar.js" defer></script>
     <script src="script/attic-card.js"></script>
     <script src="script/gvs-table.js"></script>
-    <script src="script/component/img-gallery.js"></script>
-    <script src="script/component/eco-blog.js"></script>
+    <script src="script/component/img-gallery.js" defer></script>
+    <script src="script/component/eco-blog.js" defer></script>
 
 
     <script src="script/data/testimonial-card-data.js"></script>
-    <script src="script/testimonial-card.js"></script>
+    <script src="script/testimonial-card.js" defer></script>
 
     <script type="module" src="script/js-history-timeline.js"></script>
     <script src="script/case-study-carousel.js"></script>

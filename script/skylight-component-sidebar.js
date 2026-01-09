@@ -53,7 +53,8 @@ const skylightComponentSidebar = document.querySelector(
   ".skylight-component-sidebar"
 );
 
-btnCollapse.addEventListener("click", () => {
-  skylightComponentSidebar.classList.toggle("skylight-menu-open");
-});
- 
+if (btnCollapse && skylightComponentSidebar) {
+  btnCollapse.addEventListener("click", () => {
+    skylightComponentSidebar.classList.toggle("skylight-menu-open");
+  });
+}
