@@ -30,6 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
 }
 
 @media (min-width: 744px) {
