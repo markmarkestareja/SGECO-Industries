@@ -38,11 +38,14 @@ button a{
 
   padding: 8px 20px;
   color: var(--primary-color);
+
+  overflow: hidden;
 }
 
 .btn-2:hover {
   background-color: transparent;
   border-radius: 50px;
+  color: var(--light-color);
 }
 
 .btn-2:hover a{

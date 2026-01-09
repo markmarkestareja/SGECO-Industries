@@ -22,6 +22,4 @@
             link="product-service?prod=accessories">
         </product-card>
     </div> 
-
-    <script type="module" src="script/component/prod-category-card.js"></script>
 </section>

@@ -111,6 +111,9 @@ const galleryData = {
 
 // Create Image Card
 function createGalleryImgCard(src, containerSelector) {
+    const container = document.querySelector(containerSelector);
+    if(!container) return;
+
     const galleryImgCard = document.createElement("div");
     galleryImgCard.classList.add("gallery-img-card");
 
@@ -123,8 +126,6 @@ function createGalleryImgCard(src, containerSelector) {
     document.querySelector(containerSelector).appendChild(galleryImgCard);
 }
 
-
-
 // Load Gallery by Category
 function loadGallery(category, containerSelector) {
     const folder = galleryFolders[category];
@@ -136,8 +137,6 @@ function loadGallery(category, containerSelector) {
         );
     });
 }
-
-
 
 // Load Image gallery
 loadGallery("residential", "#residential-gallery");

@@ -95,7 +95,7 @@
 .news-update-foot a, 
 .download a, 
 .eco-blog-text-footer a{
-  color: var(--primary-2-color);
+  color: var(--primary-color);
   font-size: 16px;
   text-decoration: none;
 

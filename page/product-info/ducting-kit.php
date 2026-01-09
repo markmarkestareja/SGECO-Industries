@@ -36,7 +36,7 @@
             <p>Removes hot and stale air from bathrooms, toilets, kitchens, laundry, etc.</p>
         </div>
         <div class="whirlwind-plus-writing-img">
-            <img src="asset/img/product-service/ducting-kit/ducting kit 2.jpg" alt="">
+            <img src="asset/img/product-service/ducting-kit/ducting kit 2.webp" alt="ducting kit 2">
         </div>
     </div>
 </div>

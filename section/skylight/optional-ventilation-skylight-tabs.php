@@ -2,7 +2,7 @@
     <h2 class="p-med">Sky Tunnel Ventilation Tabs</h2>
 
     <div class="vent-tabs-img">
-        <img src="asset/img/skylight/vent tabs.png" alt="">
+        <img src="asset/img/skylight/vent tabs.webp" alt="">
     </div>
 
     <p>Remove the two "Blank/Blank Tabs" installed in the high side of the Breather Frame. Move the "Blank/Vent &
@@ -11,7 +11,7 @@
 
     <div class="vented">
         <div class="vented-card">
-            <img src="asset/img/skylight/non vented.png" alt="">
+            <img src="asset/img/skylight/non vented.webp" alt="">
             <h3>NON-VENTED SKY TUNNEL</h3>
             <ul>
                 <li>Blank/Blank Tabs both used at the top</li>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="vented-card">
-            <img src="asset/img/skylight/vented.png" alt="">
+            <img src="asset/img/skylight/vented.webp" alt="">
             <h3>VENTED SKY TUNNEL</h3>
             <ul>
                 <li>Vent/Blank and Blank/Vent Tabs used at the top</li>
@@ -38,6 +38,6 @@
         <p>If the Sky Tunnel is vented, place the additional magnets (supplied in screw kit) between the Ceiling Frame and the Diffuser Holder.</p>
     </div>
     <div class="vent-tips-img">
-        <img src="asset/img/skylight/installation tip.png" alt="">
+        <img src="asset/img/skylight/installation tip.webp" alt="">
     </div>
 </section>

@@ -9,18 +9,19 @@
     </div>
 
     <div class="contact-container-form-map add-reveal">
-        <form id="contactForm">
-            <input type="text" name="fullname" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="contact_number" placeholder="Contact Number" required>
-            <input type="text" name="city" placeholder="City" required>
-            <input type="text" name="country" placeholder="Country" required>
-            <textarea name="message" placeholder="Message" required></textarea>
+        <form id="contactForm" autocomplete="on">
+            <input type="text" name="fullname" placeholder="Full Name" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+            <input type="tel" name="contact_number" placeholder="Contact Number" autocomplete="tel" required>
+            <input type="text" name="city" placeholder="City" autocomplete="address-level2" required>
+            <input type="text" name="country" placeholder="Country" autocomplete="country" required>
+            <textarea name="message" placeholder="Message" autocomplete="off" required></textarea>
 
             <button type="submit" class="btn-1">Send Message</button>
 
             <p class="form-response"></p>
         </form>
+
 
 
         <iframe

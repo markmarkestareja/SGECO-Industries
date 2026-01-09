@@ -1,46 +1,47 @@
-import {brochureData, guideData, otherData} from './data/download-data.js';
+import { brochureData, guideData, otherData } from './data/download-data.js';
 
-const brochureContainer = document.querySelector('.js-brochure');
-const guideContainer = document.querySelector('.js-guide');
-const otherContainer = document.querySelector('.js-other');
-
-let brochureHtml = '';
-let guideHtml = '';
-let otherHtml = '';
-
-function renderHtmlDownload(datum, folder){
+/**
+ * Render a single download card
+ */
+function renderHtmlDownload(datum, folder) {
     const cleanDatum = datum.replace(/:/g, '');
 
-    return `<div class="download-card">
-        <div class="download-card-img">
-            <img src="asset/img/resources-menu/download/${cleanDatum}.webp" alt="${cleanDatum}">
-        </div>
+    return `
+        <div class="download-card">
+            <div class="download-card-img">
+                <img 
+                    src="asset/img/resources-menu/download/${cleanDatum}.webp" 
+                    alt="${cleanDatum}"
+                    loading="lazy"
+                >
+            </div>
 
-        <div class="download-card-text">
-            <h3>${datum}</h3>
-            <a href="asset/pdf/download/${folder}/${cleanDatum}.pdf">Read the PDF →</a>
+            <div class="download-card-text">
+                <h3>${datum}</h3>
+                <a href="asset/pdf/download/${folder}/${cleanDatum}.pdf">
+                    Read the PDF →
+                </a>
+            </div>
         </div>
-    </div>`;
+    `;
 }
 
-brochureData.forEach(brochureDatum => {
-    brochureHtml += `
-        ${renderHtmlDownload(brochureDatum, 'brochure')}
-    `;
-});
+/**
+ * Safely render a list of downloads into a container
+ */
+function renderDownloadSection(containerSelector, data, folder) {
+    const container = document.querySelector(containerSelector);
+    if (!container || !Array.isArray(data)) return;
 
-guideData.forEach(guideDatum => {
-    guideHtml += `
-        ${renderHtmlDownload(guideDatum, 'instruction')}
-    `;
-});
+    container.innerHTML = data
+        .map(item => renderHtmlDownload(item, folder))
+        .join('');
+}
 
-otherData.forEach(otherDatum => {
-    otherHtml += `
-        ${renderHtmlDownload(otherDatum, 'other')}
-    `;
-});
-
-brochureContainer.innerHTML = brochureHtml;
-guideContainer.innerHTML = guideHtml;
-otherContainer.innerHTML = otherHtml;
+/**
+ * INIT
+ * These calls will silently do nothing if the container doesn't exist
+ */
+renderDownloadSection('.js-brochure', brochureData, 'brochure');
+renderDownloadSection('.js-guide', guideData, 'instruction');
+renderDownloadSection('.js-other', otherData, 'other');

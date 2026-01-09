@@ -7,7 +7,7 @@
         <h1>Whirlwind Roof Ventilator Exhaust</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/gvw/4 vents 3.png" alt="">
+            <img src="asset/img/gvw/4 vents 3.webp" alt="4 vents 3">
         </div>
 
         <p>The Whirlwind Roof Ventilator effectively exhausts any hot stale air during the summer season and moisture

@@ -24,6 +24,4 @@
             link="custom-manufacturing">
         </product-card>
     </div>
-
-    <script type="module" src="script/component/prod-category-card.js"></script>
 </section>

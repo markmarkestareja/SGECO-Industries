@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const table = document.querySelector(".fan-table");
+  if (!table) return;
+
   const headers = Array.from(table.querySelectorAll("thead th")).map(
     (th) => th.textContent
   );

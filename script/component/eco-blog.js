@@ -61,6 +61,9 @@ const ecoBlog = [
 
 
 function createEcoBlogCard(img, title, desc, date, link){
+    const container = document.querySelector(".eco-blog-card-container")
+    if (!container) return;
+
     const ecoBlogCard = document.createElement("div");
     ecoBlogCard.classList.add("eco-blog-card");
 

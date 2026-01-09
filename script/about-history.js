@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll(".history-card");
 
-const observer = new IntersectionObserver((entries)=>{
+const observerAbout = new IntersectionObserver((entries)=>{
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add("show");
@@ -10,6 +10,6 @@ const observer = new IntersectionObserver((entries)=>{
     threshold: 0.2
 });
 
-slides.forEach(slide => observer.observe(slide));
+slides.forEach(slide => observerAbout.observe(slide));
 
 
