@@ -12,9 +12,7 @@ class ProductCard extends HTMLElement {
 
             <div class="prod-category-text">
                 <h3>${title}</h3>
-                <button class="btn-3">
-                    <a href="${link}">Discover More →</a>
-                </button>
+                <a class="btn-3" href="${link}">Discover More →</a>
             </div>
         </div>
         `;

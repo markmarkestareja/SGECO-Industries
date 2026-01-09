@@ -74,9 +74,8 @@ button a{
   background-color: transparent;
 }
 
-.btn-3 a{
+.btn-3{
   color: var(--primary-2-color);
-  font-size: 16px;
   text-decoration: none;
 
   align-self: flex-end;
@@ -90,7 +89,7 @@ button a{
   background-color: transparent;
 }
 
-.btn-3 a::after{
+.btn-3::after{
   content: "";
   position: absolute;
   left: 0;
@@ -101,11 +100,11 @@ button a{
   transition: width 0.3s ease;
 }
 
-.btn-3 a:hover{
+.btn-3:hover{
   color: var(--primary-color);
 }
 
-.btn-3 a:hover::after{
+.btn-3:hover::after{
   width: 100%;
 }
 
