@@ -1,9 +1,24 @@
 <?php
+
+// Prevent browser caching
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0"); // HTTP/1.1
+header("Pragma: no-cache"); // HTTP/1.0
+header("Expires: 0"); // Expired immediately
 // ===== Error reporting & JSON header =====
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 header('Content-Type: application/json');
+
+// ===== Only accept POST requests =====
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Method Not Allowed'
+    ]);
+    exit;
+}
 
 // ===== Load PHPMailer =====
 use PHPMailer\PHPMailer\PHPMailer;
@@ -15,8 +30,9 @@ require __DIR__ . '/../../PHPMailer/src/SMTP.php';
 
 // ===== Helper function =====
 function clean($value) {
-    return htmlspecialchars(trim($value), ENT_QUOTES, 'UTF-8');
+    return trim($value);
 }
+
 
 // ===== Validation =====
 $required = ['fullname', 'email', 'contact_number', 'city', 'country', 'message'];
@@ -59,7 +75,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';         // or your SMTP host
     $mail->SMTPAuth   = true;
     $mail->Username   = 'mark.estareja.me@gmail.com';   // your Gmail
-    $mail->Password   = 'lkwyxuhnyvbsvkqp';     // Gmail App Password
+    $mail->Password   = '';     // Gmail App Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 

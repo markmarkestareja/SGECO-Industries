@@ -69,6 +69,7 @@
 .bot-hero h1 {
   font-size: 49px;
   text-align: center;
+  font-weight: 700;
 }
 
 .bot-hero p {
@@ -100,8 +101,8 @@
 
   .bot-hero h1 {
     text-align: left;
-    font-size: clamp(49px, 7vw, 95px) !important;
-    letter-spacing: -6px
+    font-size: clamp(49px, 7vw, 100px) !important;
+    letter-spacing: -4px;
   }
 
   .bot-hero p {

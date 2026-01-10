@@ -1,13 +1,38 @@
 <?php
 $page = $_GET['page'] ?? 'home';
+
+$page = preg_replace('/[^a-zA-Z0-9\-]/', '', $page);
+
 $file = __DIR__ . "/page/$page.php";
 
-if (file_exists(filename: $file)) {
+if (file_exists($file)) {
     $content = $file;
+    $is404 = false;
 } else {
     $content = __DIR__ . "/page/404.php";
+    $is404 = true;
+    http_response_code(404); // SEO-friendly
 }
 
+function getMetaDescription($page, $is404) {
+    if ($is404) {
+        return "This page could not be found on SGEco Industries. Please return to the homepage.";
+    }
+
+    $descriptions = [
+        'home' => 'Welcome to SGEco Industries, your trusted partner in eco-friendly solutions and sustainable innovations.',
+        'about' => 'Learn about SGEco Industries, our mission, vision, and commitment to sustainability and eco-friendly practices.',
+        'products' => 'Explore SGEco Industries\' wide range of eco-friendly products designed for a sustainable future.',
+        'services' => 'Discover the services offered by SGEco Industries to help you achieve your sustainability goals.',
+        'contact' => 'Get in touch with SGEco Industries for inquiries, support, and more information about our offerings.',
+    ];
+
+    $fallback = 'SGEco Industries is dedicated to providing eco-friendly solutions and sustainable innovations for a better future.';
+
+    return htmlspecialchars($descriptions[$page] ?? $fallback);
+}
+
+$metaDescription = getMetaDescription($page, $is404)
 ?>
 
 
@@ -15,11 +40,56 @@ if (file_exists(filename: $file)) {
 <html lang="en">
 
 <head>
+    <?php require_once 'includes/asset.php'; ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= ucfirst($page) ?> - SGEco Industries</title>
 
-    <link rel="stylesheet" href="style/index.css">
+    <title>
+    <?= $is404
+        ? 'Page Not Found - SGEco Industries'
+        : htmlspecialchars(ucfirst($page)) . ' - SGEco Industries'
+    ?>
+    </title>
+
+    <meta name="description" content="<?= $metaDescription ?>">
+
+    <?php if ($is404): ?>
+        <meta name="robots" content="noindex, follow">
+    <?php else: ?>
+        <link rel="canonical" href="https://www.eco.ph<?= $page === 'home' ? '/' : '/' . $page ?>">
+    <?php endif; ?>
+
+    <link rel="stylesheet" href="<?= asset('style/index.css') ?>">
+
+
+    <meta property="og:title" content="<?= htmlspecialchars(ucfirst($page)) ?> - SGEco Industries">
+    <meta property="og:description" content="<?= $metaDescription ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eco.ph<?= $page === 'home' ? '/' : '/' . $page ?>">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:image" content="https://www.eco.ph/asset/img/logo/SG Eco Logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SG Eco Industries Logo">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= htmlspecialchars(ucfirst($page)) ?> - SGEco Industries">
+    <meta name="twitter:description" content="<?= $metaDescription ?>">
+    <meta name="twitter:image" content="https://www.eco.ph/asset/img/logo/SG Eco Logo.webp">
+
+    <meta property="og:site_name" content="SGEco Industries">
+
+    <meta http-equiv="content-language" content="en">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/asset/img/logo/SG Eco Logo.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/img/logo/SG Eco Logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/asset/img/logo/SG Eco Logo.png">
+    <link rel="apple-touch-icon" href="/asset/img/logo/SG Eco Logo.png">
+
+    
 </head>
 
 <body>
@@ -33,36 +103,34 @@ if (file_exists(filename: $file)) {
 
     <?php require 'section/footer.php' ?>
 
-    <script src="script/scroll-speed.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
-    <script src="script/scroll-smooth.js"></script>
-    <script src="script/change-background.js"></script>
-    <script src="script/reveal-animation.js"></script>
-    <script src="script/component/header.js"></script>
-    <script src="script/component/ventilator-product.js"></script>
-    <script src="script/component/card-2.js"></script>
-    <script src="script/component/news-update-card.js"></script>
-    <script src="script/component/card-small-1.js"></script>
-    <script src="script/component/prod-category-card.js"></script>
-    <script src="script/about-history.js"></script>
-    <script src="script/faq.js"></script>
-    <script src="script/skylight-component-sidebar.js" defer></script>
-    <script src="script/attic-card.js"></script>
-    <script src="script/gvs-table.js"></script>
-    <script src="script/component/img-gallery.js" defer></script>
-    <script src="script/component/eco-blog.js" defer></script>
+    <script src="<?= asset('script/scroll-speed.js') ?>" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js" defer></script>
+    <script src="<?= asset('script/scroll-smooth.js') ?>" defer></script>
+    <script src="<?= asset('script/change-background.js') ?>" defer></script>
+    <script src="<?= asset('script/reveal-animation.js') ?>" defer></script>
+    <script src="<?= asset('script/component/header.js') ?>" defer></script>
+    <script src="<?= asset('script/component/ventilator-product.js') ?>" defer></script>
+    <script src="<?= asset('script/component/card-2.js') ?>" defer></script>
+    <script src="<?= asset('script/component/news-update-card.js') ?>" defer></script>
+    <script src="<?= asset('script/component/card-small-1.js') ?>" defer></script>
+    <script src="<?= asset('script/component/prod-category-card.js') ?>" defer></script>
+    <script src="<?= asset('script/about-history.js') ?>" defer></script>
+    <script src="<?= asset('script/faq.js') ?>" defer></script>
+    <script src="<?= asset('script/skylight-component-sidebar.js') ?>" defer></script>
+    <script src="<?= asset('script/attic-card.js') ?>" defer></script>
+    <script src="<?= asset('script/gvs-table.js') ?>" defer></script>
+    <script src="<?= asset('script/component/img-gallery.js') ?>" defer></script>
+    <script src="<?= asset('script/component/eco-blog.js') ?>" defer></script>
 
+    <script src="<?= asset('script/data/testimonial-card-data.js') ?>" defer></script>
+    <script src="<?= asset('script/testimonial-card.js') ?>" defer></script>
 
-    <script src="script/data/testimonial-card-data.js"></script>
-    <script src="script/testimonial-card.js" defer></script>
+    <script type="module" src="<?= asset('script/js-history-timeline.js') ?>" defer></script>
+    <script src="<?= asset('script/case-study-carousel.js') ?>" defer></script>
+    <script type="module" src="<?= asset('script/download.js') ?>" defer></script>
+    <script src="<?= asset('script/js-hero-banner-parallax.js') ?>" defer></script>
 
-    <script type="module" src="script/js-history-timeline.js"></script>
-    <script src="script/case-study-carousel.js"></script>
-    <script type="module" src="script/download.js"></script>
-
-    <script src="script/js-hero-banner-parallax.js"></script>
-
-    <script src="script/ajax-contact.js"></script>
+    <script src="<?= asset('script/ajax-contact.js') ?>" defer></script>
 </body>
 
 </html>
