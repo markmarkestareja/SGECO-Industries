@@ -5,7 +5,7 @@
         </div>
         <div class="vid-hero slow">
             <video autoplay muted loop id="myVideo">
-                <source src="asset/vid/hero-background.mp4" type="video/mp4" />
+                <source src="asset/vid/hero-background.webm" type="video/webm" />
 
                 <track 
                     kind="captions"
