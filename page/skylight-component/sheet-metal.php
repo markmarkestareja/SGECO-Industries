@@ -1,5 +1,5 @@
 <div class="diffuser-img">
-    <img src="asset/img/skylight-component/sheet metal.jpg" alt="">
+    <img src="asset/img/skylight-component/sheet metal.webp" alt="">
 </div>
 <h2 class="p-large">Sheet Metal Fabrication for Tubular Skylights</h2>
 

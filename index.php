@@ -32,7 +32,13 @@ function getMetaDescription($page, $is404) {
     return htmlspecialchars($descriptions[$page] ?? $fallback);
 }
 
-$metaDescription = getMetaDescription($page, $is404)
+$metaDescription = getMetaDescription($page, $is404);
+
+// Disable Lenis
+$currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+$disableLenis = str_contains($currentPath, 'product-service');
+
 ?>
 
 
@@ -92,7 +98,7 @@ $metaDescription = getMetaDescription($page, $is404)
     
 </head>
 
-<body>
+<body <?= $disableLenis ? 'data-disable-lenis="true"' : '' ?>>
     <div class="full-img" id="full-img-box">
         <img src="" onclick="openFullImg(this.src)" alt="" id="full-img">
         <span onclick="closeFullImg()">✖</span>
@@ -111,12 +117,15 @@ $metaDescription = getMetaDescription($page, $is404)
     <script src="<?= asset('script/component/header.js') ?>" defer></script>
     <script src="<?= asset('script/component/ventilator-product.js') ?>" defer></script>
     <script src="<?= asset('script/component/card-2.js') ?>" defer></script>
+    
     <script src="<?= asset('script/component/news-update-card.js') ?>" defer></script>
     <script src="<?= asset('script/component/card-small-1.js') ?>" defer></script>
     <script src="<?= asset('script/component/prod-category-card.js') ?>" defer></script>
     <script src="<?= asset('script/about-history.js') ?>" defer></script>
     <script src="<?= asset('script/faq.js') ?>" defer></script>
+    
     <script src="<?= asset('script/skylight-component-sidebar.js') ?>" defer></script>
+    
     <script src="<?= asset('script/attic-card.js') ?>" defer></script>
     <script src="<?= asset('script/gvs-table.js') ?>" defer></script>
     <script src="<?= asset('script/component/img-gallery.js') ?>" defer></script>

@@ -13,7 +13,7 @@ $prod = $_GET['prod'] ?? '';
         <div class="skylight-component-sidebar-inner product-service">
             <ul>
                 <li class="product-service-li-title">SKYLIGHT</li>
-                <li><a href="page/product-info/attic.php"
+                <li><a href="page/product-info/attic.php#attic"
                         class="<?= $prod === 'attic' ? 'active' : '' ?>">Attic</a></li>
                 <li><a href="page/product-info/roof.php"
                         class="<?= $prod === 'roof' ? 'active' : '' ?>">Roof</a></li>

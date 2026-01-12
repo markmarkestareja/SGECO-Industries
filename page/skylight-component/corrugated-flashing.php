@@ -1,5 +1,5 @@
 <div class="diffuser-img">
-    <img src="asset/img/skylight-component/roof flashing.jpg" alt="">
+    <img src="asset/img/skylight-component/roof flashing.webp" alt="">
 </div>
 <h2 class="p-large">Corrugated Roof Flashing</h2>
 <div class="skylight-component-p">

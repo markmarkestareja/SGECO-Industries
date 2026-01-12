@@ -1,4 +1,4 @@
-<div class="attic">
+<div class="attic" id="attic">
 
     <attic-card
         atticImg="asset/img/attic/45.webp"
