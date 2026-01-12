@@ -2,30 +2,6 @@
   color: var(--primary-color);
 }
 
-button {
-  padding: 8px 20px;
-
-  border-radius: 50px;
-
-  border: 0;
-
-  width: max-content;
-
-  overflow: hidden;
-
-  /* box-shadow:
-    inset 2px 2px 2px rgba(255, 255, 255, 0.18),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.7); */
-
-}
-
-button a{
-  font-size: 24px;
-}
-
-/* .btn-1{
-  background-color: var(--primary-color);
-} */
 
 .btn-2 {
   background-color: transparent;
@@ -137,7 +113,7 @@ button a{
 }
 
 .btn-1 {
-  display: inline-block;
+  display: inline-block !important;
   transition: 0.5s;
   background-size: 200% auto;
 
@@ -149,6 +125,10 @@ button a{
   padding: 8px 20px;
 
   border-radius: 30px;
+}
+
+.btn-1.start{
+  align-self: flex-start;
 }
 
 .btn-1:hover {
