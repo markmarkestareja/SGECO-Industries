@@ -12,7 +12,7 @@ if (historyTimeline) {
                     ${historyCard.img ? `<img src="asset/img/about/history/${historyCard.img}" alt="History Image">` : ''}
                 </div>
                 <div class="history-card-text">
-                    <h2 class="p-large">${historyCard.year}</h2>
+                    <h2 class="p-med">${historyCard.year}</h2>
                     <p>${historyCard.description}</p>
                 </div>
             </div>

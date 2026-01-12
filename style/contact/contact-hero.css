@@ -30,6 +30,10 @@
     font-weight: 300;
 }
 
+.contact-text p.p-large{
+  font-weight: 700;
+}
+
 .contact-container-form-map{
     width: 100%;
 
@@ -51,6 +55,10 @@ form input, form select{
 
     border-radius: 5px;
     border: none;
+}
+
+form select option{
+  color: #555;
 }
 
 form textarea{

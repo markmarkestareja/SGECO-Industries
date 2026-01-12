@@ -10,11 +10,26 @@
 
         <nav class="nav" id="nav">
             <ul class="nav-list">
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About Us</a></li>
+                <li><a href="home" class="<?= $page === 'home' ? 'active' : '';?>">Home</a></li>
+                <li><a href="about" class="<?= $page ==='about' ? 'active' : ''; ?>">About Us</a></li>
 
                 <li class="dropdown">
-                    <a href="#">Products & Services ▾</a>
+                    <a href="#" class="<?= $page === 'products' || 
+                        $page === 'skylight' || $page === 'ventilator' || 
+                        $page === 'custom-manufacturing' ||
+                        $page === 'how-skylight-work' ||
+                        $page === 'faq' ||
+                        $page === 'why-you-need-skytunnel' ||
+                        $page === 'optional-ventilation-skylight' ||
+                        $page === 'rigid98-reflection-calculator' || 
+                        $page === 'skytunnel-accessories' ||
+                        $page === 'skylight-component' ||
+                        $page === 'large-commercial-sky-tunnel' ||
+                        $page === 'product-service' ||
+                        $page === 'custom-services' ||
+                        $page === 'accessories'
+                        ? 'active' 
+                        : '';?>">Products & Services ▾</a>
                     <ul class="dropdown-menu">
                         <!-- Skylight -->
                         <li class="menu-heading"><a href="skylight">SKYLIGHT</a></li>
@@ -53,20 +68,32 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#">Resources ▾</a>
+                    <a href="#" class="<?= 
+                        $page === 'case-studies' ||
+                        $page === 'download' ||
+                        $page === 'gallery-img' ||
+                        $page === 'gallery-video' ||
+                        $page === 'eco-blog' ||
+                        $page === 'news-update' ||
+                        $page === 'testimonial' ||
+                        $page === 'terms-privacy'
+                        ? 'active'
+                        : '';?>">Resources ▾</a>
                     <ul class="dropdown-menu">
-                        <li><a href="case-studies">Case Studies</a></li>
-                        <li><a href="download">Downloads</a></li>
-                        <li><a href="gallery-img">Photo Gallery</a></li>
-                        <li><a href="gallery-video">Video Gallery</a></li>
-                        <li><a href="eco-blog">Eco Blog</a></li>
-                        <li><a href="news-update">News Releases</a></li>
-                        <li><a href="testimonial">Testimonials</a></li>
-                        <li><a href="terms-privacy">ToS & Privacy</a></li>
+                        <li><a href="case-studies" class="<?= $page === 'case-studies' ? 'active' : '' ?>">Case Studies</a></li>
+                        <li><a href="download" class="<?= $page === 'download' ? 'active' : '' ?>">Downloads</a></li>
+                        <li><a href="gallery-img" class="<?= $page === 'gallery-img' ? 'active' : '' ?>">Photo Gallery</a></li>
+                        <li><a href="gallery-video" class="<?= $page === 'gallery-video' ? 'active' : '' ?>">Video Gallery</a></li>
+                        <li><a href="eco-blog" class="<?= $page === 'eco-blog' ? 'active' : '' ?>">Eco Blog</a></li>
+                        <li><a href="news-update" class="<?= $page === 'news-update' ? 'active' : '' ?>">News Releases</a></li>
+                        <li><a href="testimonial" class="<?= $page === 'testimonial' ? 'active' : '' ?>">Testimonials</a></li>
+                        <li><a href="terms-privacy" class="<?= $page === 'terms-privacy' ? 'active' : '' ?>">ToS & Privacy</a></li>
                     </ul>
                 </li>
-                <li><a href="contact">Contact Us</a></li>
+                <li><a href="contact" class="<?= $page === 'contact' ? 'active' : ''; ?>">Contact Us</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
+

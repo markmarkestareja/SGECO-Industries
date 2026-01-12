@@ -1,6 +1,6 @@
 <section class="about-hero">
     <div class="vid-bg">
-        <video autoplay muted loop src="asset/vid/hero-background.mp4" type="video/mp4"></video>
+        <video autoplay muted loop src="asset/vid/hero-background.webm" type="video/webm"></video>
     </div>
     <div class="about-text add-reveal">
         <h1>About SG Eco Industries Inc.</h1>

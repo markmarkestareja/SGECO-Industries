@@ -65,6 +65,7 @@ $contact = clean($_POST['contact_number']);
 $city = clean($_POST['city']);
 $country = clean($_POST['country']);
 $message = clean($_POST['message']);
+$businessType = clean($_POST['businessTypeName']);
 
 // ===== PHPMailer setup =====
 $mail = new PHPMailer(true);
@@ -85,15 +86,19 @@ try {
     $mail->addReplyTo($email, $fullname);
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Contact Form Inquiry';
+
+    $mail->Subject = $businessType 
+        ? 'New Distributor Contact Form Inquiry'
+        : 'New Contact Form Inquiry';
 
     $mail->Body = "
-        <h2>New Contact Inquiry</h2>
+        <h2>" . ($businessType ? 'New Distributor Contact Form Inquiry' : 'New Contact Form Inquiry') . "</h2>
         <p><strong>Name:</strong> {$fullname}</p>
         <p><strong>Email:</strong> {$email}</p>
         <p><strong>Contact:</strong> {$contact}</p>
         <p><strong>City:</strong> {$city}</p>
         <p><strong>Country:</strong> {$country}</p>
+        " . ($businessType ? "<p><strong>Business Type: </strong> {$businessType}</p>" : "") . "
         <p><strong>Message:</strong><br>{$message}</p>
     ";
 

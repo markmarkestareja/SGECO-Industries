@@ -69,7 +69,7 @@ $metaDescription = getMetaDescription($page, $is404)
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta property="og:image" content="https://www.eco.ph/asset/img/logo/SG Eco Logo.webp">
+    <meta property="og:image" content="asset/img/logo/SG Eco Logo.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="SG Eco Industries Logo">
@@ -77,17 +77,17 @@ $metaDescription = getMetaDescription($page, $is404)
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= htmlspecialchars(ucfirst($page)) ?> - SGEco Industries">
     <meta name="twitter:description" content="<?= $metaDescription ?>">
-    <meta name="twitter:image" content="https://www.eco.ph/asset/img/logo/SG Eco Logo.webp">
+    <meta name="twitter:image" content="./asset/img/logo/SG Eco Logo.webp">
 
     <meta property="og:site_name" content="SGEco Industries">
 
     <meta http-equiv="content-language" content="en">
 
     <!-- Favicon -->
-    <link rel="icon" href="/asset/img/logo/SG Eco Logo.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/asset/img/logo/SG Eco Logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/asset/img/logo/SG Eco Logo.png">
-    <link rel="apple-touch-icon" href="/asset/img/logo/SG Eco Logo.png">
+    <link rel="icon" href="/SGECO-Industries/asset/img/logo/SG Eco Logo.ico" sizes="any">
+    <link rel="icon" type="image/webp" sizes="32x32" href="/SGECO-Industries/asset/img/logo/SG Eco Logo.webp">
+    <link rel="icon" type="image/webp" sizes="16x16" href="/SGECO-Industries/asset/img/logo/SG Eco Logo.webp">
+    <link rel="apple-touch-icon" href="/SGECO-Industries/asset/img/logo/SG Eco Logo.webp">
 
     
 </head>

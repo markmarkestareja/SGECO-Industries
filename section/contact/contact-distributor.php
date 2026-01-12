@@ -1,5 +1,5 @@
 <section class="contact-cta-distributor">
-    <img src="asset/img/contact/cta-contributor.webp" alt="">
+    <img src="asset/img/contact/cta-contributor.webp" alt="cta-contributor">
     <span class="cta-overlay"></span>
     <div class="cta-contributor">
         <p class="p-large add-reveal">Become Our <span>Distributor</span></p>

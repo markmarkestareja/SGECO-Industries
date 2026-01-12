@@ -1,6 +1,6 @@
 <section class="contact-hero">
     <div class="contact-text">
-        <h1>Contact</h1>
+        <h1>Distributor's Contact</h1>
         <p class="p-large">We Would Like To Hear From You</p>
         <p>We are still accepting applications for distributorships in some international markets. We do not accept all
             applications but if you are a green products industry leader in your region, Please allow up to 48 hours to
@@ -8,24 +8,28 @@
     </div>
 
     <div class="contact-container-form-map">
-        <form action="#">
-            <input type="text" placeholder="Full Name" required />
-            <input type="email" placeholder="Email" required />
-            <input type="tel" placeholder="Contact Number" required />
-            <input type="text" placeholder="City" required />
-            <input type="text" placeholder="Country" required />
+        <form id="contactForm" autocomplete="on">
+            <input type="text" name="fullname" placeholder="Full Name" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+            <input type="tel" name="contact_number" placeholder="Contact Number" autocomplete="tel" required>
+            <input type="text" name="city" placeholder="City" autocomplete="address-level2" required>
+            <input type="text" name="country" placeholder="Country" autocomplete="country" required>
+
             <select id="businessType" name="businessTypeName">
                 <option value disabled selected>Business Type</option>
-                <option value="tradeREseller">Trade/Reseller</option>
-                <option value="builderDeveloper">Builder/Developer</option>
-                <option value="architectDesigner">Architect/Designer</option>
-                <option value="manufacturer">Manufacturer</option>
-                <option value="handyMan">Handy Man</option>
-                <option value="consumer">Consumer</option>
+                <option value="Trade Reseller">Trade/Reseller</option>
+                <option value="Builder Developer">Builder/Developer</option>
+                <option value="Architect Designer">Architect/Designer</option>
+                <option value="Manufacturer">Manufacturer</option>
+                <option value="Handy Man">Handy Man</option>
+                <option value="Consumer">Consumer</option>
             </select>
-            <textarea name="message" placeholder="Message"></textarea>
 
-            <button class="btn-1">Send Message</button>
+            <textarea name="message" placeholder="Message" autocomplete="off" required></textarea>
+
+            <button type="submit" class="btn-1">Send Message</button>
+
+            <p class="form-response"></p>
         </form>
 
         <iframe
@@ -38,3 +42,5 @@
 
 
 </section>
+
+

@@ -147,6 +147,7 @@ ul li.menu-heading {
   font-weight: 800;
 }
 
+
 /* DESKTOP STYLES */
 @media (min-width: 1300px) {
   .menu-toggle {
@@ -217,12 +218,14 @@ ul li.menu-heading {
   .dropdown-menu a,
   .dropdown-inner a {
     padding: 8px 15px;
+    transition: all 0.25s ease;
+
   }
 
-  .dropdown-menu li:hover:not(.menu-heading),
+  /* .dropdown-menu li:hover:not(.menu-heading),
   .dropdown-inner li:hover {
     background: #f3f3f3;
-  }
+  } */
 
   .dropdown-inner {
     margin-left: 0;
@@ -234,5 +237,54 @@ ul li.menu-heading {
 
   .dropdown-menu li.menu-heading a {
     padding: 0px;
+  }
+
+  .nav-list a.active {
+    color: var(--primary-color);
+    font-weight: 700;
+    position: relative;
+  }
+
+  /* subtle underline pill */
+  .nav-list a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 70%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: translateX(9px);
+    border-radius: 2px;
+  }
+
+  .nav-list > li > a,
+  .dropdown-menu > li > a {
+    position: relative;
+    transition: color 0.25s ease;
+  }
+
+  .nav-list > li > a:hover:not(.active),
+  .dropdown-menu > li > a:hover {
+    color: var(--primary-color);
+  }
+
+  .nav-list > li > a::after,
+  .dropdown-menu > li > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.25s ease;
+    transform: translateX(9px);
+    border-radius: 2px;
+  }
+
+  .nav-list > li > a:hover::after ,
+  .dropdown-menu > li > a:hover::after {
+    width: 70%;
   }
 }
