@@ -31,9 +31,7 @@
                 systems to custom daylighting products, we deliver innovative, eco-friendly solutions that improve
                 comfort, reduce energy costs, and support a greener future.</p>
 
-            <button class="btn-1 add-reveal">
-                <a href="about">Get To Know Us More</a>
-            </button>
+            <a class="btn-1 start" href="about">Get To Know Us More</a>
         </div>
     </div>
 </section>

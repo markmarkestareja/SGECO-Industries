@@ -35,3 +35,28 @@ if (container && prevBtn3 && nextBtn3) {
         container.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
 }
+
+
+
+// ==================== main-process.php (moving background as scrolled) =======================
+const section = document.querySelector('.process-container');
+const bg = document.querySelector('.m-bg-img-process');
+
+window.addEventListener('scroll', () => {
+  const sectionRect = section.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  // Total scrollable distance of the section
+  const totalScroll = section.offsetHeight - windowHeight;
+
+  // How far we've scrolled inside the section
+  let progress = (-sectionRect.top) / totalScroll;
+
+  // Clamp between 0 and 1
+  progress = Math.min(Math.max(progress, 0), 1);
+
+  // Minimal zoom (1 → 1.06)
+  const scale = 1 + progress * 0.1;
+
+  bg.style.setProperty('--bg-scale', scale);
+});

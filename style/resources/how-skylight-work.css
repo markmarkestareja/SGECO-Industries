@@ -70,11 +70,9 @@
     padding: 120px var(--global-margin) 54px var(--global-margin) !important;
 }
 
-.main-case-study,
 .skylight-accessories,
 .skylight-component,
 .large-commercial-hero h1,
-.main-news-updates,
 .contact-hero{
     padding-top: 120px !important;
 }
@@ -96,10 +94,8 @@
         padding-top: 150px !important;
     }
 
-    .main-case-study,
     .skylight-accessories,
     .large-commercial-hero h1,
-    .main-news-updates,
     .contact-hero{
         padding-top: 150px !important;
     }
