@@ -55,7 +55,7 @@
   position: absolute;
   top: 70px;
   left: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav.active {
@@ -236,7 +236,7 @@ ul li.menu-heading {
   }
 
   .dropdown-menu li.menu-heading a {
-    padding: 0px;
+    padding: 0 0 8px 0;
   }
 
   .nav-list a.active {

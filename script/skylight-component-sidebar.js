@@ -1,6 +1,9 @@
 const links = document.querySelectorAll(".skylight-component-sidebar a");
 const main = document.getElementById("component-content");
 
+/* ===============================
+   Load Component via AJAX
+================================ */
 function loadComponent(url, link) {
   links.forEach((a) => a.classList.remove("active"));
   link.classList.add("active");
@@ -9,7 +12,6 @@ function loadComponent(url, link) {
   main.classList.forEach((c) => {
     if (c.startsWith("active-")) main.classList.remove(c);
   });
-
   main.classList.add(`active-${name}`);
 
   fetch(url)
@@ -24,6 +26,8 @@ function loadComponent(url, link) {
         top: 0,
         behavior: "smooth"
       });
+
+      initRevealAnimations(); // ✅ re-init after AJAX load
     })
     .catch((err) => {
       main.innerHTML = "<p>Error loading content.</p>";
@@ -31,6 +35,9 @@ function loadComponent(url, link) {
     });
 }
 
+/* ===============================
+   Sidebar Navigation Click
+================================ */
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -38,13 +45,9 @@ links.forEach((link) => {
   });
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  const defaultLink = document.querySelector(
-    ".skylight-component-sidebar a.active"
-  );
-  if (defaultLink) loadComponent(defaultLink.getAttribute("href"), defaultLink);
-});
-
+/* ===============================
+   Sidebar Collapse
+================================ */
 const btnCollapse = document.querySelector(".btn-collapse");
 const skylightComponentSidebar = document.querySelector(
   ".skylight-component-sidebar"
@@ -55,3 +58,42 @@ if (btnCollapse && skylightComponentSidebar) {
     skylightComponentSidebar.classList.toggle("skylight-menu-open");
   });
 }
+
+/* ===============================
+   Reveal Animation (IntersectionObserver)
+================================ */
+function initRevealAnimations() {
+  const revealElements = document.querySelectorAll(".reveal");
+
+  if (!revealElements.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px"
+    }
+  );
+
+  revealElements.forEach((el) => observer.observe(el));
+}
+
+/* ===============================
+   Initial Page Load
+================================ */
+window.addEventListener("DOMContentLoaded", () => {
+  const defaultLink = document.querySelector(
+    ".skylight-component-sidebar a.active"
+  );
+
+  if (defaultLink) {
+    loadComponent(defaultLink.getAttribute("href"), defaultLink);
+  }
+});

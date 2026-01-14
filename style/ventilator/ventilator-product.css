@@ -26,6 +26,10 @@
   gap: 16px;
 }
 
+.ventilator-text p{
+  width: 80%;
+}
+
 .carousel2 {
   display: flex;
   overflow: auto;

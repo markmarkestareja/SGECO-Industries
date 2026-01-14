@@ -1,8 +1,8 @@
-<div class="diffuser-img">
-    <img src="asset/img/skylight-component/Fixings 2.webp" alt="">
+<div class="diffuser-img reveal2 reveal2-scale">
+    <img src="asset/img/skylight-component/Fixings 2.webp" alt="Fixings 2">
 </div>
-<h2 class="p-large">Fixings Components for Skylights & Ventilators</h2>
-<div class="skylight-component-p">
+<h2 class="p-large reveal2">Fixings Components for Skylights & Ventilators</h2>
+<div class="skylight-component-p reveal2 reveal2-fade">
     <p>SG Eco Industries stock a wide range of fixings that suit their range of skylights & ventilators, and these are
         also available to purchase as separate items. They can either be pre-packed in a customized “mixed bag” to form
         a fixings kit, or supplied in bulk, normally in boxes of 1000. Manufactured to suit its function, each fixing is

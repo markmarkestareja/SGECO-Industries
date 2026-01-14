@@ -3,28 +3,34 @@
     <div class="gallery-text">
         <h2>Gallery</h2>
         <p class="p-large">Our Custom Manufacturing Services in Action</p>
-    </div>
+    </div> 
 
     <!-- Custom Carousel -->
     <div class="carousel animate">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="asset/img/gallery/ventilator/1.webp" alt="Hotel Amenities">
+                <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.webp" alt="Insulated Lid - Open 2">
             </div>
             <div class="carousel-item active">
-                <img src="asset/img/gallery/ventilator/2.webp" alt="Hotel Amenities">
+                <img src="asset/img/product-service/hatchway/Hatch - Elmer.webp" alt="Hatch - Elmer">
             </div>
             <div class="carousel-item active">
-                <img src="asset/img/gallery/ventilator/3.webp" alt="Hotel Amenities">
+                <img src="asset/img/product-service/thermoforming/thermoforming img.webp" alt="thermoforming img">
             </div>
             <div class="carousel-item active">
-                <img src="asset/img/gallery/ventilator/4.webp" alt="Hotel Amenities">
+                <img src="asset/img/product-service/sheet-metal/sheet metal.webp" alt="sheet metal">
             </div>
             <div class="carousel-item active">
-                <img src="asset/img/gallery/ventilator/5.webp" alt="Hotel Amenities">
+                <img src="asset/img/skylight-component/IMG_5157.webp" alt="Pressing the sheetmetal to suit various products">
             </div>
             <div class="carousel-item active">
-                <img src="asset/img/gallery/ventilator/6.webp" alt="Hotel Amenities">
+                <img src="asset/img/skylight-component/Direct Zinc.webp" alt="Direct Zinc">
+            </div>
+            <div class="carousel-item active">
+                <img src="asset/img/product-service/custom-skylight/custom-skylight.webp" alt="custom-skylight">
+            </div>
+            <div class="carousel-item active">
+                <img src="asset/img/product-service/sheet-metal/sheet metal stock.webp" alt="sheet metal stock">
             </div>
         </div>
 

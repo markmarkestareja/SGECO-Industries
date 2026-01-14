@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/sheet-metal/sheet metal.webp" alt="">
+        <img src="asset/img/product-service/sheet-metal/sheet metal.webp" alt="sheet metal">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Sheet Metal Fabrication</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/product-service/sheet-metal/sheet metal.webp" alt="">
+            <img src="asset/img/product-service/sheet-metal/sheet metal.webp" alt="sheet metal">
         </div>
 
         <p>One of the main functions carried out in the SG Eco factory is sheet metal fabrication. Whether it be as
@@ -45,7 +45,7 @@
         </ul>
 
         <div class="sheet-metal-container-img">
-            <img src="asset/img/product-service/sheet-metal/sheet metal stock.webp" alt="">
+            <img src="asset/img/product-service/sheet-metal/sheet metal stock.webp" alt="sheet metal stock">
         </div>
     </div>
 </div>
@@ -61,19 +61,19 @@
 
     <div class="skylight-component-img more-skylight-img sheet-metal-other">
         <div class="skylight-component-img-container text-overlay sheet-metal-card">
-            <img src="asset/img/skylight-component/IMG_5118.webp" alt="">
+            <img src="asset/img/skylight-component/IMG_5118.webp" alt="Rolling sheets or strips to a particular diameter">
             <p >Rolling sheets or strips to a particular diameter</p>
         </div>
         <div class="skylight-component-img-container text-overlay sheet-metal-card">
-            <img src="asset/img/skylight-component/IMG_5157.webp" alt="">
+            <img src="asset/img/skylight-component/IMG_5157.webp" alt="Pressing the sheetmetal to suit various products">
             <p>Pressing the sheetmetal to suit various products</p>
         </div>
         <div class="skylight-component-img-container text-overlay sheet-metal-card">
-            <img src="asset/img/skylight-component/full assembly.webp" alt="">
+            <img src="asset/img/skylight-component/full assembly.webp" alt="Full assembly of sheetmetal products">
             <p>Full assembly of sheetmetal products</p>
         </div>
         <div class="skylight-component-img-container text-overlay sheet-metal-card">
-            <img src="asset/img/skylight-component/Direct Zinc.webp" alt="">
+            <img src="asset/img/skylight-component/Direct Zinc.webp" alt="Direct Zinc">
             <p>Fabrication and assembly using many processes</p>
         </div>
     </div>

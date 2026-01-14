@@ -71,7 +71,7 @@ button {
 }
 
 .btn-3{
-  color: var(--primary-2-color);
+  color: var(--primary-color);
   text-decoration: none;
 
   align-self: flex-end;

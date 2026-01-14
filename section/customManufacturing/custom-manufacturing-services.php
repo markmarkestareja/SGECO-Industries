@@ -1,37 +1,32 @@
 <section class="ventilator-section">
-    <div class="ventilator-text">
-        <h2 class="add-reveal">Custom Manufacturing Services</h2>
-        <p class="p-large add-reveal">Engineered to your vision, built to last.</p>
+  <div class="ventilator-text">
+    <h2 class="add-reveal">Custom Manufacturing Services</h2>
+    <p class="p-large add-reveal">Engineered to your vision, built to last.</p>
+    <p>We deliver end-to-end custom manufacturing solutions designed to meet your exact specifications.
+      From concept and prototyping to precision fabrication and finishing, our expertise ensures
+      durable, high-performance products tailored to your project requirements.</p>
+  </div>
+
+  <div class="carousel2-container">
+    <button class="nav-btn prev-2 vent-product-btn">&#10094;</button>
+    <div class="carousel2">
+
+      <card-2 img="asset/img/customManufacturing/services img/1.webp" title="Access Hatchways"
+        link="product-service?prod=hatchway">
+      </card-2>
+
+      <card-2 img="asset/img/customManufacturing/services img/2.webp" title="Thermoforming"
+        link="product-service?prod=thermoforming">
+      </card-2>
+
+      <card-2 img="asset/img/customManufacturing/services img/3.webp" title="Sheet Metal Fabrication"
+        link="product-service?prod=sheet-metal">
+      </card-2>
+
+      <card-2 img="asset/img/customManufacturing/services img/4.webp" title="Custom Brand Skylight"
+        link="product-service?prod=custom-skylight">
+      </card-2>
     </div>
-
-    <div class="carousel2-container">
-        <button class="nav-btn prev-2">&#10094;</button>
-        <div class="carousel2">
-
-            <card-2 
-              img="asset/img/customManufacturing/services img/1.webp" 
-              title="Access Hatchways" 
-              link="product-service?prod=hatchway">
-            </card-2>
-
-            <card-2 
-              img="asset/img/customManufacturing/services img/2.webp" 
-              title="Thermoforming" 
-              link="product-service?prod=thermoforming">
-            </card-2>
-
-            <card-2 
-              img="asset/img/customManufacturing/services img/3.webp" 
-              title="Sheet Metal Fabrication" 
-              link="product-service?prod=sheet-metal">
-            </card-2>
-
-            <card-2 
-              img="asset/img/customManufacturing/services img/4.webp" 
-              title="Custom Brand Skylight" 
-              link="product-service?prod=custom-skylight">
-            </card-2>
-        </div>
-        <button class="nav-btn next-2">&#10095;</button>
-    </div>
+    <button class="nav-btn next-2 vent-product-btn">&#10095;</button>
+  </div>
 </section>

@@ -18,3 +18,38 @@
     opacity: 1;
   }
 }
+
+/* ===== Reveal Animation Base ===== */
+.reveal2 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.reveal2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants */
+.reveal2-fade {
+  transform: none;
+}
+
+.reveal2-left {
+  transform: translateX(-40px);
+}
+
+.reveal2-right {
+  transform: translateX(40px);
+}
+
+.reveal2-scale {
+  transform: scale(0.95);
+}
+
+/* Optional stagger effect */
+.reveal2-delay-1 { transition-delay: 0.1s; }
+.reveal2-delay-2 { transition-delay: 0.2s; }
+.reveal2-delay-3 { transition-delay: 0.3s; }

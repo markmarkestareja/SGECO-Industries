@@ -1,9 +1,9 @@
-<div class="diffuser-img">
-    <img src="asset/img/skylight-component/sheet metal.webp" alt="">
+<div class="diffuser-img reveal2 reveal2-scale">
+    <img src="asset/img/skylight-component/sheet metal.webp" alt="Sheet Metal">
 </div>
-<h2 class="p-large">Sheet Metal Fabrication for Tubular Skylights</h2>
+<h2 class="p-large reveal2">Sheet Metal Fabrication for Tubular Skylights</h2>
 
-<div class="skylight-component-p">
+<div class="skylight-component-p reveal2 reveal2-fade">
     <p>One of the main functions carried out in the SG Eco factory is sheet metal fabrication. Whether it be as simple
         as cutting down sheets, or something more complex, SG Eco can handle it. With a number of guillotines, press
         brakes, inclinable presses, rollers, spot welders, elbow machine, hydraulic presses and a CNC router, we have
@@ -30,24 +30,24 @@
     <h3>We can source other materials for custom fabrication purposes if required.</h3>
 
     <div class="skylight-component-img more-skylight-img">
-        <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight-component/IMG_5118.webp" alt="">
+        <div class="skylight-component-img-container text-overlay reveal2 reveal2-delay-1">
+            <img src="asset/img/skylight-component/IMG_5118.webp" alt="IMG_5118">
             <p >Rolling sheets or strips to a particular diameter</p>
         </div>
-        <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight-component/IMG_5157.webp" alt="">
+        <div class="skylight-component-img-container text-overlay reveal2 reveal2-delay-2">
+            <img src="asset/img/skylight-component/IMG_5157.webp" alt="IMG_5157">
             <p>Pressing the sheetmetal to suit various products</p>
         </div>
-        <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight-component/full assembly.webp" alt="">
+        <div class="skylight-component-img-container text-overlay reveal2 reveal2-delay-3">
+            <img src="asset/img/skylight-component/full assembly.webp" alt="Full assembly">
             <p>Full assembly of sheetmetal products</p>
         </div>
-        <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight-component/Direct Zinc.webp" alt="">
+        <div class="skylight-component-img-container text-overlay reveal2">
+            <img src="asset/img/skylight-component/Direct Zinc.webp" alt="Direct Zinc">
             <p>Fabrication and assembly using many processes</p>
         </div>
-        <div class="skylight-component-img-container text-overlay">
-            <img src="asset/img/skylight-component/sheet metal.webp" alt="">
+        <div class="skylight-component-img-container text-overlay reveal2">
+            <img src="asset/img/skylight-component/sheet metal.webp" alt="Sheet Metal">
             <p>Our process ability can be as simple as cutting coils into sheets and then slitting into strips.</p>
         </div>
     </div>

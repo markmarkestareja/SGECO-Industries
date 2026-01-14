@@ -1,8 +1,8 @@
-<div class="diffuser-img">
-    <img src="asset/img/skylight-component/Warehouse Diffuser.webp" alt="">
+<div class="diffuser-img reveal2 reveal2-scale">
+    <img src="asset/img/skylight-component/Warehouse Diffuser.webp" alt="Warehouse Diffuser">
 </div>
-<h2 class="p-large">Diffusers</h2>
-<div class="skylight-component-p">
+<h2 class="p-large reveal2">Diffusers</h2>
+<div class="skylight-component-p reveal2 reveal2-fade">
     <p>SG Eco Industries Inc is a distributor of 4 types of PMMA (Acrylic) diffuser material.</p>
     <p>All four types are suitable for use as light diffusers in skylights, and we have been using the same grade
         material for over 10 years.</p>

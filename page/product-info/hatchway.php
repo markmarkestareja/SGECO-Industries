@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.webp" alt="">
+        <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.webp" alt="Insulated Lid - Open 2">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Roof Access Hatchways</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.webp" alt="">
+            <img src="asset/img/product-service/hatchway/Insulated Lid - Open 2.webp" alt="Insulated Lid - Open 2">
         </div>
 
         <p>Access Hatchways provide the safest and most convenient entry on to your roof. These hatchways can be locked
@@ -39,7 +39,7 @@
     </div>
 
     <div class="ducting-kit-img">
-        <img src="asset/img/product-service/hatchway/Hatch - Elmer.webp" alt="">
+        <img src="asset/img/product-service/hatchway/Hatch - Elmer.webp" alt="Hatch - Elmer">
     </div>
 </div>
 
@@ -58,27 +58,27 @@
     </div>
     <div class="gvs-card-container">
         <div class="gvs-feature-card">
-            <img src="asset/svg/hatchway/1.svg" alt="">
+            <img src="asset/svg/hatchway/1.svg" alt="Manufactured from 1mm Sheet Metal">
             <p>Manufactured from 1mm Sheet Metal</p>
         </div>
 
         <div class="gvs-feature-card">
-            <img src="asset/svg/hatchway/2.svg" alt="">
+            <img src="asset/svg/hatchway/2.svg" alt="Solid continuous hinge running width of hatchway">
             <p>Solid continuous hinge running width of hatchway</p>
         </div>
 
         <div class="gvs-feature-card">
-            <img src="asset/svg/hatchway/3.svg" alt="">
+            <img src="asset/svg/hatchway/3.svg" alt="Gas Stays to hold lid open">
             <p>Gas Stays to hold lid open</p>
         </div>
 
         <div class="gvs-feature-card">
-            <img src="asset/svg/hatchway/4.svg" alt="">
+            <img src="asset/svg/hatchway/4.svg" alt="Gapseal Foam to seal lid, preventing movement during heavy winds">
             <p>Gapseal Foam to seal lid, preventing movement during heavy winds</p>
         </div>
 
         <div class="gvs-feature-card">
-            <img src="asset/svg/hatchway/5.svg" alt="">
+            <img src="asset/svg/hatchway/5.svg" alt="PadLockable latch">
             <p>PadLockable latch</p>
         </div>
     </div>
@@ -97,7 +97,7 @@
             <p>Made to suit any roof type</p>
         </div>
         <div class="whirlwind-plus-writing-img">
-            <img src="asset/img/product-service/hatchway/hatchway suit.webp" alt="">
+            <img src="asset/img/product-service/hatchway/hatchway suit.webp" alt="hatchway suit">
         </div>
     </div>
 </div>
@@ -116,17 +116,17 @@
 
     <div class="available-card-container">
         <div class="available-card">
-            <img src="asset/img/product-service/hatchway/steel lid.webp" alt="">
+            <img src="asset/img/product-service/hatchway/steel lid.webp" alt="Steel Lid">
             <p>150mm</p>
         </div>
         
         <div class="available-card">
-            <img src="asset/img/product-service/hatchway/insulated lid.webp" alt="">
+            <img src="asset/img/product-service/hatchway/insulated lid.webp" alt="Insulated Lid">
             <p>300mm</p>
         </div>
         
         <div class="available-card">
-            <img src="asset/img/product-service/hatchway/dome lid.webp" alt="">
+            <img src="asset/img/product-service/hatchway/dome lid.webp" alt="Dome Lid">
             <p>600mm</p>
         </div>
     </div>

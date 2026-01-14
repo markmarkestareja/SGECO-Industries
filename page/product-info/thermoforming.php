@@ -36,6 +36,6 @@
     </div>
 
     <div class="how-gvw-work-img thermo-img">
-        <img src="asset/img/product-service/thermoforming/thermoforming img.webp" alt="">
+        <img src="asset/img/product-service/thermoforming/thermoforming img.webp" alt="thermoforming img">
     </div>
 </div>
