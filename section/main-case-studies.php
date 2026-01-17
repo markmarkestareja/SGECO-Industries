@@ -11,4 +11,4 @@
     </div>
     <button class="nav-btn next-2">&#10095;</button>
   </div>
-</section>
+</section> 

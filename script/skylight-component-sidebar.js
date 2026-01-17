@@ -63,7 +63,7 @@ if (btnCollapse && skylightComponentSidebar) {
    Reveal Animation (IntersectionObserver)
 ================================ */
 function initRevealAnimations() {
-  const revealElements = document.querySelectorAll(".reveal");
+  const revealElements = document.querySelectorAll(".reveal2");
 
   if (!revealElements.length) return;
 

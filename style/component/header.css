@@ -239,38 +239,31 @@ ul li.menu-heading {
     padding: 0 0 8px 0;
   }
 
-  .nav-list a.active {
+  .nav-list a.active,
+  .dropdown-menu a.active{
     color: var(--primary-color);
     font-weight: 700;
     position: relative;
   }
 
-  /* subtle underline pill */
-  .nav-list a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-    width: 70%;
-    height: 2px;
-    background-color: var(--primary-color);
-    transform: translateX(9px);
-    border-radius: 2px;
-  }
+
 
   .nav-list > li > a,
-  .dropdown-menu > li > a {
+  .dropdown-menu > li > a,
+  .dropdown-inner > li > a {
     position: relative;
     transition: color 0.25s ease;
   }
 
   .nav-list > li > a:hover:not(.active),
-  .dropdown-menu > li > a:hover {
+  .dropdown-menu > li > a:hover:not(.active),
+  .dropdown-inner > li > a:hover:not(.active) {
     color: var(--primary-color);
   }
 
   .nav-list > li > a::after,
-  .dropdown-menu > li > a::after {
+  .dropdown-menu > li > a::after,
+  .dropdown-inner > li > a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -283,8 +276,9 @@ ul li.menu-heading {
     border-radius: 2px;
   }
 
-  .nav-list > li > a:hover::after ,
-  .dropdown-menu > li > a:hover::after {
+  .nav-list > li > a:hover::after,
+  .dropdown-menu > li > a:hover::after,
+  .dropdown-inner > li > a:hover::after {
     width: 70%;
   }
 }

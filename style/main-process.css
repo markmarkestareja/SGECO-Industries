@@ -75,14 +75,15 @@
 }
 
 .process-card-content h3 {
-  /* margin-bottom: 16px; */
-  /* min-height: 40px; */
   font-weight: 800;
   font-size: 18px;
 
-  /* border: 1px solid red; */
 }
 
+
+.main-process-card p {
+  color: var(--dark-color-70);
+}
 @media (min-width: 744px) {
   .m-process-card {
     flex-direction: row;
