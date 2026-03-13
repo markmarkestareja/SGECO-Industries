@@ -43,9 +43,6 @@
                         <a href="tel:+63454991037">Phone: +63 (45) 499 1037</a>
                     </li>
                     <li>
-                        <a href="tel:+63454991443">Fax: +63 (45) 499 1443</a>
-                    </li>
-                    <li>
                         <a href="mailto:sales@eco.ph">Email: sales@eco.ph</a>
                     </li>
                 </ul>

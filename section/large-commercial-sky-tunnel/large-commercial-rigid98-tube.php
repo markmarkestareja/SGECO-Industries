@@ -20,7 +20,7 @@
             </ol>
             <br>
             <h3>Available in the following diameters: </h3>
-            <p>750mm, 800mm, 900mm, 1000mm</p>
+            <p>750mm and 1000mm</p>
         </div>
     </div>
 </section>

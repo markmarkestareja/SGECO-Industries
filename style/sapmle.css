@@ -196,7 +196,7 @@ h2 {
 }
 h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1;
 }
 p {
@@ -2791,7 +2791,6 @@ form button {
   font-size: 32px;
   letter-spacing: -1px;
   text-align: center;
-  font-weight: 300;
 }
 .component-content h4 {
   font-size: 24px;
@@ -2804,7 +2803,6 @@ form button {
 @media (min-width: 1000px) {
   .component-content h3 {
     font-size: 25px;
-    font-weight: 400;
   }
   .skylight-accessories-text {
     margin-bottom: 54px;

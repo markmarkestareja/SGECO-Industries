@@ -36,8 +36,6 @@
     letter-spacing: -1px;
 
     text-align: center;
-
-    font-weight: 300;
 }
 
 .component-content h4{
@@ -54,7 +52,6 @@
 @media (min-width: 1000px) {
     .component-content h3{
         font-size: 25px;
-        font-weight: 400;
     }
 
     .skylight-accessories-text{
