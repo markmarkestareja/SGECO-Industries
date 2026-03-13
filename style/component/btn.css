@@ -71,7 +71,7 @@ button {
 }
 
 .btn-3{
-  color: var(--primary-color);
+  color: var(--primary-2-color);
   text-decoration: none;
 
   align-self: flex-end;
@@ -92,12 +92,12 @@ button {
   bottom: -3px;
   width: 0;
   height: 1px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-2-color);
   transition: width 0.3s ease;
 }
 
 .btn-3:hover{
-  color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .btn-3:hover::after{

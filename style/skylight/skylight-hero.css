@@ -28,6 +28,9 @@
 
   text-align: center;
 }
+.bottom-hero.reveal{
+  display: flex;
+}
 
 .banner-skylight img{
   width: 100%;
@@ -48,5 +51,7 @@
 @media (min-width: 1440px) {
   .bottom-hero p {
     max-width: 50%;
+    align-self: center;
+    justify-self: center;
   }
 }

@@ -3,8 +3,6 @@
   min-height: 100vh;
   margin: 0;
   padding: 54px 0;
-
-  background-color: var(--light-color);
 }
 
 .section-label {
@@ -49,7 +47,6 @@
 }
 
 .card2 {
-  background: var(--light-color);
   border-radius: 10px;
   width: 220px;
   flex: 0 0 auto;
