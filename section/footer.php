@@ -27,9 +27,9 @@
             <div class="discover-media">
                 <h4>MEDIA</h4>
                 <ul>
-                    <li><a href="?page=news-updates">Blogs</a></li>
-                    <li><a href="?page=eco-blog">Case Studies</a></li>
-                    <li><a href="?page=eco-blog">News & Updates</a></li>
+                    <li><a href="?page=eco-blog">Blogs</a></li>
+                    <li><a href="?page=case-studies">Case Studies</a></li>
+                    <li><a href="?page=news-update">News & Updates</a></li>
                 </ul>
             </div>
         </div>

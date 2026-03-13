@@ -30,6 +30,23 @@
             <a class="btn-2" href="contact">Get In Touch</a>
         </div>
 
-        <img src="asset/img/hero-certs.webp" alt="" />
+        <!-- <img src="asset/img/hero-certs.webp" alt="" /> -->
+        <div class="logos">
+            <a href="">
+                <img src="asset/img/1.webp" alt="1">
+            </a>
+            <a href="https://doe.gov.ph/">
+                <img src="asset/img/doe.webp" alt="doe">
+            </a>
+            <a href="https://www.siai.com.au/">
+                <img src="asset/img/sia.webp" alt="sia">
+            </a>
+            <a href="https://zerocarbonresorts.eu/">
+                <img src="asset/img/zcr.webp" alt="zcr">
+            </a>
+            <a href="https://www.standards.org.au/">
+                <img src="asset/img/6.webp" alt="6">
+            </a>
+        </div>
     </div>
 </section>  
