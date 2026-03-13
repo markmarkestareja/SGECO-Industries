@@ -318,7 +318,7 @@ button {
   position: relative;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
   border-radius: 50px;
-  padding: 8px 20px;
+  padding: 12px 24px;
   color: var(--primary-color);
   overflow: hidden;
 }
@@ -419,7 +419,7 @@ button {
   box-shadow:
     inset 2px 2px 2px rgb(255 255 255 / 0.18),
     inset -1px -1px 2px rgb(0 0 0 / 0.7);
-  padding: 8px 20px;
+  padding: 12px 24px;
   border-radius: 30px;
 }
 .btn-1.start {
@@ -1703,7 +1703,8 @@ form button {
 .card2-content a,
 .news-update-foot a,
 .download a,
-.eco-blog-text-footer a {
+.eco-blog-text-footer a,
+.prod-category-card a {
   color: var(--primary-color);
   font-size: 16px;
   text-decoration: none;
@@ -1715,7 +1716,8 @@ form button {
 .card2-content a::after,
 .news-update-foot a::after,
 .download a::after,
-.eco-blog-text-footer a::after {
+.eco-blog-text-footer a::after,
+.prod-category-card a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1728,13 +1730,15 @@ form button {
 .card2-content a:hover,
 .news-update-foot a:hover,
 .download a:hover,
-.eco-blog-text-footer a:hover {
+.eco-blog-text-footer a:hover,
+.prod-category-card a:hover  {
   color: var(--primary-color);
 }
 .card2-content a:hover::after,
 .news-update-foot a:hover::after,
 .download a:hover::after,
-.eco-blog-text-footer a:hover::after {
+.eco-blog-text-footer a:hover::after,
+.prod-category-card a:hover::after {
   width: 100%;
 }
 .nav-btn {

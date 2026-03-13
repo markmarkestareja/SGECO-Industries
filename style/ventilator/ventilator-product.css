@@ -95,7 +95,8 @@
 .card2-content a, 
 .news-update-foot a, 
 .download a, 
-.eco-blog-text-footer a{
+.eco-blog-text-footer a,
+.prod-category-card a{
   color: var(--primary-color);
   font-size: 16px;
   text-decoration: none;
@@ -110,7 +111,8 @@
 .card2-content a::after, 
 .news-update-foot a::after, 
 .download a::after, 
-.eco-blog-text-footer a::after{
+.eco-blog-text-footer a::after,
+.prod-category-card a::after{
   content: "";
   position: absolute;
   left: 0;
@@ -124,14 +126,16 @@
 .card2-content a:hover, 
 .news-update-foot a:hover, 
 .download a:hover, 
-.eco-blog-text-footer a:hover {
+.eco-blog-text-footer a:hover,
+.prod-category-card a:hover {
   color: var(--primary-color);
 }
 
 .card2-content a:hover::after, 
 .news-update-foot a:hover::after, 
 .download a:hover::after, 
-.eco-blog-text-footer a:hover::after{
+.eco-blog-text-footer a:hover::after,
+.prod-category-card a:hover::after{
   width: 100%;
 }
 

@@ -29,7 +29,7 @@ button {
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
   border-radius: 50px;
 
-  padding: 8px 20px;
+  padding: 12px 24px;
   color: var(--primary-color);
 
   overflow: hidden;
@@ -139,7 +139,7 @@ button {
   box-shadow:
     inset 2px 2px 2px rgba(255, 255, 255, 0.18),
     inset -1px -1px 2px rgba(0, 0, 0, 0.7);
-  padding: 8px 20px;
+  padding: 12px 24px;
 
   border-radius: 30px;
 }
