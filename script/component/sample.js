@@ -64,7 +64,7 @@ class ProductCard extends HTMLElement {
     const e = this.getAttribute("title") || "This is an untitled card",
       t = this.getAttribute("img") || "",
       o = this.getAttribute("link") || "#";
-    this.innerHTML = `\n        <div class="prod-category-card">\n            <div class="prod-category-img">\n                <img src="${t}" alt="${e}" loading="lazy">\n            </div>\n\n            <div class="prod-category-text">\n                <h3>${e}</h3>\n                <a href="${o}">Discover More →</a>\n            </div>\n        </div>\n        `;
+    this.innerHTML = `\n        <div class="prod-category-card">\n            <div class="prod-category-img">\n                <img src="${t}" alt="${e}" loading="lazy">\n            </div>\n\n            <div class="prod-category-text">\n                <h3>${e}</h3>\n                <a class="btn-3" href="${o}">Discover More →</a>\n            </div>\n        </div>\n        `;
   }
 }
 customElements.define("product-card", ProductCard);

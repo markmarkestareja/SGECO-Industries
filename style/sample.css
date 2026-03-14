@@ -1725,18 +1725,24 @@ form button {
   margin-bottom: 0.8rem;
   color: var(--dark-color);
 }
-.card2-content a,
-.news-update-foot a,
-.download a,
+.card2-content a, 
+.news-update-foot a, 
+.download a, 
 .eco-blog-text-footer a,
-.prod-category-card a {
+.prod-category-card a{
   color: var(--primary-color);
   font-size: 16px;
   text-decoration: none;
+
   align-self: flex-end;
+
   position: relative;
   display: inline-block;
   text-decoration: none;
+}
+.eco-blog-text-footer a,
+.prod-category-card a.btn-3{
+  color: var(--primary-2-color)!important;
 }
 .card2-content a::after,
 .news-update-foot a::after,

@@ -108,6 +108,12 @@
   text-decoration: none;
 }
 
+
+.eco-blog-text-footer a,
+.prod-category-card a.btn-3{
+  color: var(--primary-2-color)!important;
+}
+
 .card2-content a::after, 
 .news-update-foot a::after, 
 .download a::after, 
