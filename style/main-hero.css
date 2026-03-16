@@ -153,6 +153,10 @@
     .img-banner{
       min-height: 50vh;
     }
+
+    .bot-hero{
+      margin-top: 30px;
+    }
 }
 
 @media (min-width: 1600px) {
