@@ -4020,12 +4020,15 @@ footer h3 {
     
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
     padding-bottom: 54px;
+    text-align: center;
 }
 
 .dist-hero h1{
-    text-align: left;
+    text-align: center;
     font-size: clamp(49px, 7vw, 100px) !important;
     letter-spacing: -4px;
 }
@@ -4034,6 +4037,8 @@ footer h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .local-distributor{

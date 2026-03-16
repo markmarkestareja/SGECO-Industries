@@ -4,7 +4,7 @@
     <div class="cta-contributor">
         <div class="cta-contributor-title">
             <p class="p-large add-reveal">Our Distributor</p>
-            <p>We are still accepting applications for distributorships in some international markets. We do not accept all applications but if you are a green products industry leader in your region, Please allow up to 48 hours to respond to your inquiry.</p>
+            <p class="add-reveal">We are still accepting applications for distributorships in some international markets. We do not accept all applications but if you are a green products industry leader in your region, Please allow up to 48 hours to respond to your inquiry.</p>
         </div>
         <div class="contact-dist-btn">
             <button class="btn-1 add-reveal">

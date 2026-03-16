@@ -1,23 +1,23 @@
 <section class="contact-distributor-list">
-    <div class="dist-hero">
+    <div class="dist-hero add-reveal">
         <h1>Worldwide Tubular Skylight and Solar Roof Ventilation Distributors</h1>
         <div class="dist-hero-para">
             <p>If there is no dealer in your region please contact SG Eco Industries.</p>
             <p>SG Eco Industries is an international distributor of Tubular Skylights and Wind driven Ventilators with 22 years experience.</p>
             <p>We are still accepting applications for distributorships in some international markets. We do not accept all applications but if you are a green products industry leader in your region, Please allow up to 48 hours to respond to your inquiry. </p>
-            <button class="btn-1 add-reveal">
+            <button class="btn-1">
                 <a href="contact-distributor">Become Our Distributor</a>
             </button>
         </div>
     </div>
     <div class="local-distributor">
-        <div class="dist-title">
+        <div class="dist-title add-reveal">
             <span></span>
             <h2>Local Distributors</h2>
             <span></span>
         </div>
         <div class="dist-card-container">
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>NCR (Metro Manila) Dealer</h3>
                 <img src="asset/img/flags/ncr.webp" alt="ncr">
                 <h4>Absolute Gain Applications</h4>
@@ -28,7 +28,7 @@
                     <li>Email: inquiry@aga.ph / jing.tumapat@aga.ph / ronald.tumapat@aga.ph</li>
                 </ul>
             </div>
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Central Luzon - Dealer</h3>
                 <img src="asset/img/flags/region 3.webp" alt="region 3">
                 <h4>Valcon Enterprises</h4>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
 
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Iloilo - Dealer</h3>
                 <img src="asset/img/flags/philippines.webp" alt="philippines">
                 <h4>Unlisteel</h4>
@@ -50,7 +50,7 @@
                     <li>Address: Brgy. Napnud, Leganes, Iloilo</li>
                 </ul>
             </div>
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Cagayan de Oro - Dealer</h3>
                 <img src="asset/img/flags/region 10.webp" alt="region 10">
                 <h4>Urban Lifestyle Blinds and Shades</h4>
@@ -67,13 +67,13 @@
         </div>
 
 
-        <div class="dist-title">
+        <div class="dist-title add-reveal">
             <span></span>
             <h2>International Distributors</h2>
             <span></span>
         </div>
         <div class="dist-card-container">
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Australia</h3>
                 <img src="asset/img/flags/australia.webp" alt="australia">
                 <h4>CALIDAD Industries</h4>
@@ -86,7 +86,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Chile</h3>
                 <img src="asset/img/flags/chile.webp" alt="chile">
                 <h4>Norglas</h4>
@@ -100,7 +100,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Indonesia</h3>
                 <img src="asset/img/flags/indonesia.webp" alt="indonesia">
                 <h4>PT. Cellcius Indoperkasa</h4>
@@ -122,7 +122,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Israel</h3>
                 <img src="asset/img/flags/israel.webp" alt="israel">
                 <h4>Perguland Ltd.</h4>
@@ -135,7 +135,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Maldives</h3>
                 <img src="asset/img/flags/maldives.webp" alt="maldives">
                 <h4>S and N Pvt Ltd</h4>
@@ -146,7 +146,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>New Zealand</h3>
                 <img src="asset/img/flags/new zealand.webp" alt="new zealand">
                 <h4>Suntrenz Skylights</h4>
@@ -159,7 +159,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Thailand</h3>
                 <img src="asset/img/flags/thailand.webp" alt="thailand">
                 <h4>Leaf Power</h4>
@@ -173,7 +173,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Turkey</h3>
                 <img src="asset/img/flags/turkey.webp" alt="turkey">
                 <h4>Havac A.S.</h4>
@@ -185,7 +185,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>United Arab Emirates and Qatar</h3>
                 <img src="asset/img/flags/UAE&Qatar.webp" alt="UAE&Qatar">
                 <h4>Green Energy Solutions</h4>
@@ -198,7 +198,7 @@
                 </ul>
             </div>
             
-            <div class="dist-card">
+            <div class="dist-card add-reveal">
                 <h3>Vietnam</h3>
                 <img src="asset/img/flags/vietnam.webp" alt="vietnam">
                 <h4>Tan Bao Sai Gon Corporation</h4>
