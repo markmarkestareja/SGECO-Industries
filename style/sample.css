@@ -147,6 +147,7 @@ h6 {
 .logos img{
   max-height: 60px;
   width: auto;
+  object-fit: none;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -319,6 +320,9 @@ section {
   .faq-title,
   .h2-large {
     letter-spacing: -3px;
+  }
+  p{
+    font-size: 18px;
   }
 }
 @media (min-width: 1440px) {
@@ -861,7 +865,7 @@ form button {
 }
 .contact-cta-distributor {
   width: 100%;
-  height: 250px;
+  height: auto;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -876,12 +880,13 @@ form button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 32px;
   color: var(--light-color);
   margin: 0 6px;
   text-align: center;
   position: relative;
   z-index: 1;
+  padding: 54px var(--global-margin);
 }
 .cta-contributor button {
   color: var(--light-color);
@@ -891,13 +896,31 @@ form button {
   height: 100%;
   position: absolute;
   z-index: 0;
-  background-color: rgb(0 0 0 / 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 }
-@media (min-width: 1300px) {
-  .contact-cta-distributor {
-    height: 450px;
-  }
+.contact-dist-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
+
+.cta-contributor p{
+    color: var(--dark-color) !important;
+}
+
+.cta-contributor-title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media (min-width: 768px) {
+    .contact-dist-btn{
+        flex-direction: row;
+    }
+}
+
 .banner-white-overlay {
   background-image: linear-gradient(to right, rgb(255 255 255 / 0.8), #fff0);
   width: 50%;
@@ -2038,18 +2061,6 @@ form button {
     margin: 16px 16px 0 16px;
   }
 }
-.contact-cta-distributor {
-  width: 100%;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-.contact-cta-distributor img {
-  position: absolute;
-  z-index: -1;
-}
 .cta-contributor {
   display: flex;
   flex-direction: column;
@@ -2061,16 +2072,6 @@ form button {
   text-align: center;
   position: relative;
   z-index: 1;
-}
-.cta-contributor button {
-  color: var(--light-color);
-}
-.cta-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-  background-color: rgb(0 0 0 / 0.6);
 }
 @media (min-width: 1300px) {
   .contact-cta-distributor {
@@ -4003,4 +4004,117 @@ footer h3 {
     justify-content: flex-start !important;
     align-items: start !important;
   }
+}
+
+
+.contact-distributor-list{
+    padding: 120px var(--global-margin) 54px var(--global-margin);
+    height: auto;
+}
+
+.dist-hero{
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 54px;
+}
+
+.dist-hero h1{
+    text-align: left;
+    font-size: clamp(49px, 7vw, 100px) !important;
+    letter-spacing: -4px;
+}
+
+.dist-hero-para{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.local-distributor{
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.dist-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.dist-title span{
+    flex: 1;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dist-title h2{
+    font-size: clamp(49px, 7vw, 64px);
+    line-height: 1;
+    text-align: center;
+}
+
+.dist-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dist-card{
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dist-card h4{
+    font-weight: 900 !important;
+}
+
+.dist-card img{
+    max-width: 100px;
+    object-fit: contain;
+    height: auto;
+}
+
+.dist-card ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dist-card ul li{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .dist-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .dist-card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 54px;
+    }
+
+    .contact-distributor-list{
+        padding-top: 150px;
+    }
 }

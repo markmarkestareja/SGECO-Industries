@@ -1,10 +1,8 @@
 <section class="contact-hero">
     <div class="contact-text">
         <h1>Distributor's Contact</h1>
-        <p class="p-large">We Would Like To Hear From You</p>
-        <p>We are still accepting applications for distributorships in some international markets. We do not accept all
-            applications but if you are a green products industry leader in your region, Please allow up to 48 hours to
-            respond to your inquiry.  </p>
+        <p class="p-large">Become Our Distributor</p>
+        <p>SG Eco industries is an innovative company that produces a wide variety of high quality and eco-friendly products. For over 22 years, SG Eco Industries continues to provide new ideas and products to bring sunlight into homes and buildings, we are looking for new and energetic distributors to grow with our company. You are most welcome to make contact with us through our distributors enquiry form to seek out this opportunity.  </p>
     </div>
 
     <div class="contact-container-form-map">

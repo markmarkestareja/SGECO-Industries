@@ -1,0 +1,111 @@
+.contact-distributor-list{
+    padding: 120px var(--global-margin) 54px var(--global-margin);
+    height: auto;
+}
+
+.dist-hero{
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 54px;
+}
+
+.dist-hero h1{
+    text-align: left;
+    font-size: clamp(49px, 7vw, 100px) !important;
+    letter-spacing: -4px;
+}
+
+.dist-hero-para{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.local-distributor{
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.dist-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.dist-title span{
+    flex: 1;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dist-title h2{
+    font-size: clamp(49px, 7vw, 64px);
+    line-height: 1;
+    text-align: center;
+}
+
+.dist-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dist-card{
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dist-card h4{
+    font-weight: 900 !important;
+}
+
+.dist-card img{
+    max-width: 100px;
+    object-fit: contain;
+    height: auto;
+}
+
+.dist-card ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dist-card ul li{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .dist-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .dist-card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 54px;
+    }
+
+    .contact-distributor-list{
+        padding-top: 150px;
+    }
+}
