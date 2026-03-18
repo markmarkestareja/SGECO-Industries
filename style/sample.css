@@ -4107,6 +4107,19 @@ footer h3 {
     padding: 0;
 }
 
+.dist-card ul li a{
+    color: var(--dark-color);
+    font-size: 16px;
+    text-decoration: underline;
+    transition: all 300ms ease-in-out;
+}
+
+.dist-card ul li a:hover,
+.dist-card ul li a:active{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 @media (min-width: 768px) {
     .dist-card-container{
         display: grid;

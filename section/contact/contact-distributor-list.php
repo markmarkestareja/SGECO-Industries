@@ -25,7 +25,9 @@
                     <li>Sales Office/Warehouse Address: #80 Hazelton St.,Vista Verde Country Homes, Cainta, 1900, Rizal.</li>
                     <li>Phone: +63 (02) 8255 3383 / 8710 5284 / 8710 5285</li>
                     <li>Mobile: Smart +63 (0)998 542 6042 / Globe +63 (0)917 427 9727</li>
-                    <li>Email: inquiry@aga.ph / jing.tumapat@aga.ph / ronald.tumapat@aga.ph</li>
+                    <li>Email: <a href="mailto:inquiry@aga.ph">inquiry@aga.ph</a> / 
+                            <a href="mailto:jing.tumapat@aga.ph">jing.tumapat@aga.ph</a> / 
+                            <a href="mailto:ronald.tumapat@aga.ph">ronald.tumapat@aga.ph</a></li>
                 </ul>
             </div>
             <div class="dist-card add-reveal">
@@ -36,7 +38,7 @@
                     <li>Sky Tunnel and Green-Vent Products Only</li>
                     <li>Pampanga, Philippines</li>
                     <li>Mobile: +63 (0)917 848 6825 / +63 (0)922 871 5029</li>
-                    <li>Email: val_consunji@yahoo.com</li>
+                    <li>Email: <a href="mailto:val_consunji@yahoo.com">val_consunji@yahoo.com</a></li>
                 </ul>
             </div>
 
@@ -59,9 +61,9 @@
                     <li>Contact Person: Pau V. Inserto</li>
                     <li>Phone: +63 (088) 850 5050</li>
                     <li>Mobile: +63 (0)917 775 0592</li>
-                    <li>Website: www.urbanlifestyle.com.ph</li>
-                    <li>Facebook Page: www.facebook.com/urbanlifestyleblindsandshades</li>
-                    <li>Email: sales@urbanlifestyle.com.ph</li>
+                    <li>Website: <a href="https://www.urbanlifestyle.com.ph">www.urbanlifestyle.com.ph</a></li>
+                    <li>Facebook Page: <a href="https://www.facebook.com/urbanlifestyleblindsandshades">urbanlifestyleblindsandshades</a></li>
+                    <li>Email: <a href="mailto:sales@urbanlifestyle.com.ph">sales@urbanlifestyle.com.ph</a></li>
                 </ul>
             </div>
         </div>
@@ -81,8 +83,8 @@
                     <li>1/40 Inspiration Drive Wangara, W.A. 6065 Australia</li>
                     <li>Phone: +61 (08) 9302 6622</li>
                     <li>Fax: +61 (08) 9302 6007</li>
-                    <li>Email: info@calidad.net.au</li>
-                    <li>Web: www.calidad.net.au</li>
+                    <li>Email: <a href="mailto:info@calidad.net.au">info@calidad.net.au</a></li>
+                    <li>Web: <a href="https://www.calidad.net.au">www.calidad.net.au</a></li>
                 </ul>
             </div>
             
@@ -95,8 +97,8 @@
                     <li>Contact: Mr Fernando Navarrete</li>
                     <li>Tels.: (56-2)25896070 & 25896000</li>
                     <li>Fax.: (56-2) 25550528</li>
-                    <li>Email: fnavarrete@norglas.cl</li>
-                    <li>Web: www.norglas.cl</li>
+                    <li>Email: <a href="mailto:fnavarrete@norglas.cl">fnavarrete@norglas.cl</a></li>
+                    <li>Web: <a href="https://www.norglas.cl">www.norglas.cl</a></li>
                 </ul>
             </div>
             
@@ -130,8 +132,8 @@
                     <li>Show room: Hameisha 18 st', Nesher, Israel</li>
                     <li>Phone: 972-4-8-40-20-92</li>
                     <li>Fax: 972-54-999-75-04</li>
-                    <li>Email: info@perguland.co.il</li>
-                    <li>Web:www.pergusun.co.il</li>
+                    <li>Email: <a href="mailto:info@perguland.co.il">info@perguland.co.il</a></li>
+                    <li>Web: <a href="https://www.pergusun.co.il">www.pergusun.co.il</a></li>
                 </ul>
             </div>
             
@@ -142,7 +144,7 @@
                 <ul>
                     <li>M. Havathi, Fareedhee Magu <br>Male' 20263, Maldives</li>
                     <li>Phone: +960 760 8605</li>
-                    <li>Email:sales@sandn.com.my</li>
+                    <li>Email: <a href="mailto:sales@sandn.com.my">sales@sandn.com.my</a></li>
                 </ul>
             </div>
             
@@ -154,8 +156,8 @@
                     <li>6/11 Ashley Place, Papamoa 3118 <br>Tauranga, New Zealand.</li>
                     <li>Phone: 0508-777-222</li>
                     <li>Mobile: 021 418 988</li>
-                    <li>Email:sales@solarinnovations.co.nz</li>
-                    <li>Web: www.suntrenz.co.nz</li>
+                    <li>Email: <a href="mailto:sales@solarinnovations.co.nz">sales@solarinnovations.co.nz</a></li>
+                    <li>Web: <a href="https://www.suntrenz.co.nz">www.suntrenz.co.nz</a></li>
                 </ul>
             </div>
             
@@ -168,8 +170,8 @@
                     <li>Phone: 02-300-5671-3</li>
                     <li>Mobile: +66-81-836-9328</li>
                     <li>Contact Person: Kangkij Petchsakulrat</li>
-                    <li>Email: kangkij@leafpower.co.th</li>
-                    <li>Web: www.leafpower.co.th</li>
+                    <li>Email: <a href="mailto:kangkij@leafpower.co.th">kangkij@leafpower.co.th</a></li>
+                    <li>Web: <a href="https://www.leafpower.co.th">www.leafpower.co.th</a></li>
                 </ul>
             </div>
             
@@ -180,21 +182,22 @@
                 <ul>
                     <li>Orhangazi Mah. Isiso San. Sit. 3.yol No.38 <br>34517 Istanbul, Turkey</li>
                     <li>Phone: +90 (212) 612 2774</li>
-                    <li>Email: info@havak.com</li>
-                    <li>Web: www.havak.com</li>
+                    <li>Email: <a href="mailto:info@havak.com">info@havak.com</a></li>
+                    <li>Web: <a href="https://www.havak.com">www.havak.com</a></li>
                 </ul>
             </div>
             
             <div class="dist-card add-reveal">
-                <h3>United Arab Emirates and Qatar</h3>
+                <h3>Host Green Solar Energy System Trading L.L.C</h3>
                 <img src="asset/img/flags/UAE&Qatar.webp" alt="UAE&Qatar">
                 <h4>Green Energy Solutions</h4>
                 <ul>
-                    <li>(Sky Tunnel Products Only) <br> Shed 4, Obaid Ghanim Al <br>Mutawie Warehouses 18 Street Community 364 <br>Al Ghose 1 Dubai, United Arab Emirates</li>
-                    <li>Phone: +971 (04) 338 2455</li>
-                    <li>Fax: +971 (04) 338 3979</li>
-                    <li>Email: info@greenenergysolutions.ae</li>
-                    <li>Web: www.greenenergysolutions.ae</li>
+                    <li>(Sky Tunnel Products Only)</li>
+                    <li>Persia O01 - Dubai International City <br>Dubai, United Arab Emirates</li>
+                    <li>Phone:  +971-4 327 7459</li>
+                    <li>Mob:  +971-50 653 1524</li>
+                    <li>Email:  <a href="mailto:info@hostgreenen.org">info@hostgreenen.org</a></li>
+                    <li>Web: <a href="https://www.hostgreenen.org">www.hostgreenen.org</a></li>
                 </ul>
             </div>
             
@@ -206,8 +209,8 @@
                     <li>162 Road 3, Trung Son, Binh Hung Ward, Binh Chanh Dist, HCMC, Vietnam</li>
                     <li>Tel: (84-8) 5431 4242</li>
                     <li>Fax: (84-8) 3868 2359</li>
-                    <li>Email Mr Le Sy Nhat; nhatls@tanbaocorp.vn</li>
-                    <li>Web: www.tanbaocorp.vn</li>
+                    <li>Email Mr Le Sy Nhat; <a href="mailto:nhatls@tanbaocorp.vn">nhatls@tanbaocorp.vn</a></li>
+                    <li>Web: <a href="https://tanbaocorp.vn">www.tanbaocorp.vn</a></li>
                 </ul>
             </div>
         </div>
