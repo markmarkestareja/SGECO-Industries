@@ -2935,7 +2935,7 @@ form button {
 @media (min-width: 768px) {
   .attic-card {
     flex-direction: row;
-    gap: 16px;
+    gap: 32px;
   }
   .attic-text h2 {
     text-align: left !important;

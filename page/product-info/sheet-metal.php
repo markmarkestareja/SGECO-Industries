@@ -32,20 +32,18 @@
 
     <div class="sheet-metal-container">
         <ul>
-            <li>0.45mm Stainless Steel – 430 Grade – Bright Annealed</li>
-            <li>0.55mm Zincalume</li>
-            <li>0.75mm Zincalume</li>
-            <li>0.40mm Colorbond “Surfmist”</li>
-            <li>0.55mm Colorbond “Nightsky”</li>
+            <li>0.45mm Stainless Steel - 430 Grade - Bright Annealed</li>
+            <li>0.50mm Zincalume</li>
+            <li>0.40mm Bluescope Colorbond “Surfmist”</li>
+            <li>0.50mm Colorbond “Nightsky”</li>
             <li>0.50mm Alanod Miro Silver Aluminium</li>
-            <li>1.00mm Aluminium – Grade 5005 H34</li>
-            <li>0.70mm Aluminium – Grade 5005 H34</li>
-            <li>1.00mm Aluminium – Grade 1200 H0</li>
-            <li>0.70mm Aluminium – Grade 1200 H0</li>
+            <li>1.00mm Aluminium - Grade 5005 H32</li>
+            <li>0.70mm Aluminium - Grade 5005 H32</li>
+            <p style="padding-top: 16px;">We can source other materials for custom fabrication purposes if required.</p>
         </ul>
 
         <div class="sheet-metal-container-img">
-            <img src="asset/img/product-service/sheet-metal/sheet metal stock.webp" alt="sheet metal stock">
+            <img src="asset/img/product-service/sheet-metal/laser.webp" alt="laser machine" style="object-fit:contain;">
         </div>
     </div>
 </div>
@@ -57,7 +55,7 @@
 
 
 <div class="diffuser-material">
-    <h3>We can source other materials for custom fabrication purposes if required</h3>
+    
 
     <div class="skylight-component-img more-skylight-img sheet-metal-other">
         <div class="skylight-component-img-container text-overlay sheet-metal-card">
@@ -69,11 +67,11 @@
             <p>Pressing the sheetmetal to suit various products</p>
         </div>
         <div class="skylight-component-img-container text-overlay sheet-metal-card">
-            <img src="asset/img/skylight-component/full assembly.webp" alt="Full assembly of sheetmetal products">
-            <p>Full assembly of sheetmetal products</p>
+            <img src="asset/img/product-service/sheet-metal/sheet metal stock.webp" alt="sheet metal stock">
+            <p>Our process ability can be as simple as cutting coils into sheets and then slitting into strips.</p>
         </div>
         <div class="skylight-component-img-container text-overlay sheet-metal-card">
-            <img src="asset/img/skylight-component/Direct Zinc.webp" alt="Direct Zinc">
+            <img src="asset/img/product-service/sheet-metal/assembly process.webp" alt="assembly process">
             <p>Fabrication and assembly using many processes</p>
         </div>
     </div>
