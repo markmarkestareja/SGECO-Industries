@@ -1,7 +1,7 @@
 <section class="hero-section base-speed">
     <div class="top-hero">
         <div class="img-banner">
-            <img src="asset/img/hero-banner.webp" alt="hero banner" />
+            <img rel="preload" as="image" src="asset/img/hero-banner.webp" alt="hero banner" />
         </div>
         <div class="vid-hero slow">
             <video autoplay muted loop id="myVideo">
