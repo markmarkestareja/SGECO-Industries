@@ -111,7 +111,7 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <?php include $content; ?>
 
     <?php require 'section/footer.php' ?>
-
+ 
     <script src="<?= asset('script/scroll-speed.js') ?>" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js" defer></script>
     <script src="<?= asset('script/scroll-smooth.js') ?>" defer></script>
