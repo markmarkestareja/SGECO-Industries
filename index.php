@@ -20,11 +20,36 @@ function getMetaDescription($page, $is404) {
     }
 
     $descriptions = [
-        'home' => 'Welcome to SGEco Industries, your trusted partner in eco-friendly solutions and sustainable innovations.',
+        'home' => 'SGEco Industries delivers eco-friendly skylights, ventilators, and fabrication services—energy-efficient solutions for residential and industrial spaces.',
         'about' => 'Learn about SGEco Industries, our mission, vision, and commitment to sustainability and eco-friendly practices.',
         'products' => 'Explore SGEco Industries\' wide range of eco-friendly products designed for a sustainable future.',
         'services' => 'Discover the services offered by SGEco Industries to help you achieve your sustainability goals.',
         'contact' => 'Get in touch with SGEco Industries for inquiries, support, and more information about our offerings.',
+        'case-studies' => 'Explore SGEco Industries case studies showcasing real projects in skylights, ventilators, and fabrication—proven solutions that improve airflow, lighting, and efficiency.',
+        'contact-distributor' => 'Find and contact an SGEco Industries distributor near you. Get expert help on skylights, ventilators, and custom fabrication solutions today.',
+        'contact-distributor-list' => 'Browse the official SGEco Industries distributor list. Find authorized partners for skylights, ventilators, and fabrication services near you.',
+        'custom-manufacturing' => 'SGEco Industries offers custom manufacturing solutions including thermoforming, sheet metal, and fiberglass fabrication—built to your exact specifications.',
+        'download' => 'Download SGEco Industries brochures, product guides, installation instructions, and certifications for skylights, ventilators, and fabrication solutions.',
+        'eco-blog-list' => '',
+        'eco-blog' => 'Explore the SGEco Industries blog for insights on skylights, ventilators, and sustainable building solutions. Tips, guides, and industry updates.',
+        'faq' => 'Find answers to common questions about SGEco Industries skylights—installation, maintenance, types, and energy-efficient solutions for homes and industries.',
+        'gallery-img' => 'Browse the SGEco Industries image gallery showcasing skylights, ventilators, and custom fabrication projects—real installations and product highlights.',
+        'gallery-video' => 'Watch SGEco Industries videos showcasing skylights, ventilators, and custom fabrication projects—installation guides, product demos, and project highlights.',
+        'how-skylight-work' => 'Learn how SGEco skylights work to bring natural light, improve ventilation, and boost energy efficiency in residential and industrial spaces.',
+        'large-commercial-sky-tunnel' => 'SGEco Industries designs and manufactures large commercial sky tunnels to bring natural light, improve ventilation, and enhance energy efficiency for industrial and commercial spaces.',
+        'news-update-full' => '',
+        'news-update' => 'Stay updated with SGEco Industries news—latest product launches, industry insights, project updates, and eco-friendly building solutions.',
+        'optional-ventilation-skylight' => 'SGEco Industries optional ventilation skylights enhance natural light and airflow while improving energy efficiency—perfect for residential and commercial spaces.',
+        'product-service' => 'Explore SGEco Industries’ products and services, including skylights, ventilators, inlet vents, and custom fabrication—eco-friendly, energy-efficient solutions for any space.',
+        'rigid98-reflection-calculator' => 'Use SGEco Industries’ Rigid98 Reflection Calculator to accurately measure skylight and ventilation reflection for optimized daylight and airflow in any space.',
+        'skylight-component' => 'Explore SGEco Industries’ skylight components, including frames, glazing, and accessories—engineered for durability, energy efficiency, and superior daylight performance.',
+        'skylight' => 'SGEco Industries skylights bring natural light, improve ventilation, and boost energy efficiency. Perfect for residential and industrial spaces.',
+        'skytunnel-accessories' => 'Explore SGEco Industries’ Sky Tunnel Accessories—frames, diffusers, and components designed to enhance natural lighting, airflow, and energy efficiency.',
+        'terms-privacy' => 'Read SGEco Industries’ Terms of Service and Privacy Policy. Learn how we protect your data and outline rules for using our products and services.',
+        'testimonial' => 'Read SGEco Industries customer testimonials—real feedback on skylights, ventilators, and custom fabrication projects showcasing quality and reliability.',
+        'ventilator' => 'SGEco Industries ventilators improve airflow, reduce heat, and enhance energy efficiency. Ideal for residential and industrial spaces.',
+        'why-you-need-skytunnel' => 'Discover why SGEco Sky Tunnels are essential for natural lighting, improved ventilation, and energy savings in residential and commercial spaces.',
+        
     ];
 
     $fallback = 'SGEco Industries is dedicated to providing eco-friendly solutions and sustainable innovations for a better future.';

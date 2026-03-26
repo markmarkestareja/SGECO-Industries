@@ -19,7 +19,7 @@
         </div>
 
         <div class="terms-privacy-card">
-            <h3>Use Liscence</h3>
+            <h3>Use License</h3>
             <p>Permission is granted to temporarily download one copy of the materials (information or software) on SG
                 Eco Industries, Inc.'s website for personal, non-commercial transitory viewing only. This is the grant
                 of a license, not a transfer of title, and under this license you may not:
