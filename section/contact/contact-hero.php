@@ -9,17 +9,20 @@
     </div>
 
     <div class="contact-container-form-map add-reveal">
-        <form id="contactForm" autocomplete="on">
-            <input type="text" name="fullname" placeholder="Full Name" autocomplete="name" required>
-            <input type="email" name="email" placeholder="Email" autocomplete="email" required>
-            <input type="tel" name="contact_number" placeholder="Contact Number" autocomplete="tel" required>
-            <input type="text" name="city" placeholder="City" autocomplete="address-level2" required>
-            <input type="text" name="country" placeholder="Country" autocomplete="country" required>
-            <textarea name="message" placeholder="Message" autocomplete="off" required></textarea>
+        <form method="POST" id="contactForm" autocomplete="on">
+            <input type="text" name="SGECO_ILUVYO143" style="position:absolute; left:-9999px;" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="form_time" value="<?php echo time(); ?>">
+            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+            <input type="text" name="fullname" placeholder="Full Name" autocomplete="name" required maxlength="100">
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required maxlength="50">
+            <input type="tel" name="contact_number" placeholder="Contact Number" autocomplete="tel" required maxlength="15">
+            <input type="text" name="city" placeholder="City" autocomplete="address-level2" required maxlength="50">
+            <input type="text" name="country" placeholder="Country" autocomplete="country" required maxlength="50">
+            <textarea name="message" placeholder="Message" autocomplete="off" required maxlength="200"></textarea>
 
             <button type="submit" id="submitBtn" class="btn-1">Send Message</button>
 
-            <p class="form-response"></p>
+            <p class="form-response" style="margin-top:10px; font-weight:bold;"></p>
         </form>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.8011306765848!2d120.57305177588105!3d15.169262462899995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f2ab1f347729%3A0x4196377414761cf7!2sSG%20ECO%20Industries%20Inc.!5e0!3m2!1sen!2sph!4v1762927258889!5m2!1sen!2sph"
@@ -27,3 +30,42 @@
         </iframe>
     </div>
 </section>
+
+<script>
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const formResponse = document.querySelector('.form-response');
+
+contactForm.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent page reload
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+  formResponse.textContent = '';
+
+  const formData = new FormData(contactForm);
+
+  fetch('send_message.php', { // points to your PHPMailer PHP script
+    method: 'POST',
+    body: formData
+  })
+  .then(res => res.text())
+  .then(data => {
+    formResponse.textContent = data;
+    formResponse.style.color = data.includes('successfully') ? '#10D24F' : '#f14444';
+    contactForm.reset();
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+
+    setTimeout(() => {
+       formResponse.textContent = '';
+    }, 5000);
+  })
+  .catch(err => {
+    formResponse.textContent = 'Oops! Something went wrong.';
+    formResponse.style.color = 'red';
+    console.error(err);
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  });
+});
+</script>

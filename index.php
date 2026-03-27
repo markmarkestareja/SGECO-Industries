@@ -1,4 +1,10 @@
 <?php
+session_start();
+        
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
 $page = $_GET['page'] ?? 'home';
 
 $page = preg_replace('/[^a-zA-Z0-9\-]/', '', $page);
