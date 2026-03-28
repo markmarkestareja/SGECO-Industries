@@ -18,7 +18,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-    </div>
+    </div> 
 
     <div class="bot-hero fast">
         <h1>Future-Ready <span>Comfort</span>, Today</h1>
