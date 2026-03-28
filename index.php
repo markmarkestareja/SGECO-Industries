@@ -174,6 +174,7 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <script src="<?= asset('script/js-hero-banner-parallax.js') ?>" defer></script>
 
     <script src="<?= asset('script/ajax-contact.js') ?>" defer></script>
+    <script src="<?= asset('script/send_message.js') ?>" defer></script>
 </body>
 
 </html>

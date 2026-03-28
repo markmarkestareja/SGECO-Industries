@@ -756,38 +756,41 @@ if(caseStudyContainer) {
     caseStudyContainer.innerHTML = caseStudyHtml;
 }
 
+//send_message.js
 
-// ajax-contact.js
-const contactForm = document.getElementById('contactForm');
+const contactForm2 = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const formResponse = document.querySelector('.form-response');
 
-if(contactForm) {
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-        e.preventDefault();
+contactForm2.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent page reload
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+  formResponse.textContent = '';
 
-        const form = this;
-        const responseBox = form.querySelector('.form-response');
-        const formData = new FormData(form);
+  const formData = new FormData(contactForm2);
 
-        responseBox.textContent = "Sending...";
-        responseBox.style.color = "#555";
+  fetch('send_message.php', { // points to your PHPMailer PHP script
+    method: 'POST',
+    body: formData
+  })
+  .then(res => res.text())
+  .then(data => {
+    formResponse.textContent = data;
+    formResponse.style.color = data.includes('successfully') ? '#10D24F' : '#f14444';
+    contactForm2.reset();
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
 
-        fetch("/SGECO-Industries/section/contact/contact-submit.php", {
-            method: "POST",
-            body: formData
-        })
-        .then(res => res.json())
-        .then(data => {
-            responseBox.textContent = data.message;
-            responseBox.style.color = data.success ? "#d4ffdcff" : "#ffb4b4";
-
-            if (data.success) form.reset();
-        })
-        .catch(error => {
-            responseBox.textContent = "Something went wrong. Please try again.";
-            responseBox.style.color = "#ffb4b4";
-            console.error(error);
-        });
-    });
-
-}
-
+    setTimeout(() => {
+       formResponse.textContent = '';
+    }, 5000);
+  })
+  .catch(err => {
+    formResponse.textContent = 'Oops! Something went wrong.';
+    formResponse.style.color = 'red';
+    console.error(err);
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  });
+});

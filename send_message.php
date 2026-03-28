@@ -13,7 +13,13 @@ $dotenv->load();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    if(!empty($_POST['SGECO_ILUVYO143']) || time() - $_POST['form_time'] < 3){
+    $formType = $_POST['form_type'] ?? 'general';
+
+    if (
+        !empty($_POST['SGECO_ILUVYO143']) ||
+        !isset($_POST['form_time']) ||
+        time() - (int)$_POST['form_time'] < 3
+    ) {
         exit;
     }
 
@@ -29,16 +35,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // OPTIONAL: regenerate token after use (more secure)
-    unset($_SESSION['csrf_token']);
-
     $name    = htmlspecialchars($_POST['fullname']);
     $emailRaw = $_POST['email'];
-    $email = filter_var($emailRaw, FILTER_SANITIZE_EMAIL);
+    $email   = filter_var($emailRaw, FILTER_SANITIZE_EMAIL);
     $phone   = htmlspecialchars($_POST['contact_number']);
     $city    = htmlspecialchars($_POST['city']);
     $country = htmlspecialchars($_POST['country']);
     $message = htmlspecialchars($_POST['message']);
+    $businessType = $_POST['businessTypeName'] ?? '';
 
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
         echo "Invalid Email Address!";
@@ -54,8 +58,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->SMTPAuth   = true;
         $mail->Username = $_ENV['EMAIL_USER'];
         $mail->Password = $_ENV['EMAIL_PASS'];        
-        $mail->SMTPSecure = 'tls'; // or 'ssl'
-        $mail->Port       = 587;   // 465 for SSL                                                                    
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;   // 465 for SSL        
+        
+        $mail->Timeout = 10;
+        $mail->SMTPKeepAlive = true;
+        $mail->SMTPDebug = 0; // change to 2 for debugging
 
         // Sender & recipient
         $mail->setFrom($_ENV['EMAIL_USER'], 'Website Contact Form');
@@ -64,15 +72,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Email content
         $mail->isHTML(false);
-        $mail->Subject = "New Contact Form Message from $name";
-        $mail->Body    = "                  
+        
+        if($formType === 'distributor') {
+            $mail->Subject = "New Distributor Inquiry from $name";
+            $mail->Body    = "                  
 Name: $name
 Email: $email
 Phone: $phone
 City: $city
 Country: $country
-Message: $message
+Business Type: $businessType
+Message: 
+        $message
 ";
+        }
+        else {
+            $mail->Subject = "New Website Inquiry from $name";
+            $mail->Body    = "                  
+Name: $name
+Email: $email
+Phone: $phone
+City: $city
+Country: $country
+Message: 
+        $message
+";
+        }
 
         $mail->send();
         echo "Message sent successfully!";

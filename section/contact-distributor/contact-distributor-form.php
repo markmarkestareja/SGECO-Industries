@@ -6,14 +6,29 @@
     </div>
 
     <div class="contact-container-form-map">
-        <form id="contactForm" autocomplete="on">
-            <input type="text" name="fullname" placeholder="Full Name" autocomplete="name" required>
-            <input type="email" name="email" placeholder="Email" autocomplete="email" required>
-            <input type="tel" name="contact_number" placeholder="Contact Number" autocomplete="tel" required>
-            <input type="text" name="city" placeholder="City" autocomplete="address-level2" required>
-            <input type="text" name="country" placeholder="Country" autocomplete="country" required>
+        <form method="POST" id="distributorForm" autocomplete="on">
+            <input type="text" name="SGECO_ILUVYO143" style="position:absolute; left:-9999px;" tabindex="-1" autocomplete="off">
 
-            <select id="businessType" name="businessTypeName">
+            <input type="hidden" name="form_time" value="<?php echo time(); ?>">
+
+            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+
+            <input type="hidden" name="form_type" value="distributor">
+
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="contact_number" placeholder="Contact Number" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="country" placeholder="Country" required>
+
+            <select name="interest" required style="color: #777;">
+                <option value disabled selected>Products/Services</option>
+                <option value="Skylight">Skylight</option>
+                <option value="Ventilator">Ventilator</option>
+                <option value="CustomManufacturing">Custom Manufacturing</option>
+            </select>
+
+            <select name="businessTypeName" required style="color: #777;">
                 <option value disabled selected>Business Type</option>
                 <option value="Trade Reseller">Trade/Reseller</option>
                 <option value="Builder Developer">Builder/Developer</option>
@@ -23,7 +38,7 @@
                 <option value="Consumer">Consumer</option>
             </select>
 
-            <textarea name="message" placeholder="Message" autocomplete="off" required></textarea>
+            <textarea name="message" placeholder="Message" required></textarea>
 
             <button type="submit" class="btn-1">Send Message</button>
 
@@ -37,8 +52,34 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
-
-
 </section>
 
 
+<script>
+const distributorForm = document.getElementById('distributorForm');
+const responseBox = distributorForm.querySelector('.form-response');
+
+distributorForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(distributorForm);
+
+  fetch('send_message.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(res => res.text())
+  .then(data => {
+    responseBox.textContent = data;
+    responseBox.style.color = data.includes('successfully') ? '#10D24F' : '#f14444';
+    distributorForm.reset();
+
+    setTimeout(() => {
+      responseBox.textContent = '';
+    }, 5000);
+  })
+  .catch(() => {
+    responseBox.textContent = 'Something went wrong.';
+  });
+});
+</script>
