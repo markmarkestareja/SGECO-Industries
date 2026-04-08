@@ -10,7 +10,7 @@
         </div>
 
         <div class="news-update-detail">
-            <p>Clark, Pampanga, May 2014 — SG Eco Industries, a leading manufacturer of tubular skylights and ventilators, recently announced the launch of their newly redesigned website which can be viewed by visiting <a href="ww.eco.ph">www.eco.ph.</a></p>
+            <p>Clark, Pampanga, May 2014 — SG Eco Industries, a leading manufacturer of tubular skylights and ventilators, recently announced the launch of their newly redesigned website which can be viewed by visiting <a href="www.eco.ph">www.eco.ph.</a></p>
             <p>The redesigned website features a contemporary layout with similar content and menu structure to retain the website’s user-friendliness. The website gives a more prominent focus on SG Eco’s 3 main areas of expertise – The Sky Tunnel Tubular Daylighting System, The Green-vent Ventilation System and their Custom Manufacturing services.</p>        
             <p>SG Eco is known for producing eco-friendly/green energy products including skylights and ventilators, and has provided countless solutions to companies in various industries. SG Eco consists of experts in the green energy industry thanks to their more than 2 decades of experience in providing customized energy saving solutions for their clients.</p>
             <p>The objective of the website redesign was to showcase specifically the SG Eco’s areas of expertise. In addition, the website aims to provide visitors with real examples of how their products have provided solutions for various commercial applications; from warehouses & factories to office spaces.</p>

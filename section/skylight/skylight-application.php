@@ -6,7 +6,7 @@
 
     <div class="who-we-are fast">
         <div class="who-we-are-img">
-            <img src="asset/img/main/main-about/about-img-1.webp" alt="">
+            <img src="asset/img/skylight/residential-img.webp" alt="">
         </div>
         <div class="who-we-are-text">
             <p class="p-large add-reveal">Residential Applications</p>
@@ -19,7 +19,7 @@
 
     <div class="who-we-are what-we-do">
         <div class="who-we-are-img residential">
-            <img src="asset/img/skylight/residential-img.webp" alt="">
+            <img src="asset/img/main/main-about/about-img-1.webp" alt="">
         </div>
         <div class="who-we-are-text">
             <p class="p-large add-reveal">Commercial Applications</p>

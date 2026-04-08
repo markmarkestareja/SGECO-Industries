@@ -48,6 +48,7 @@
                         </li>
                         <li><a href="skylight-component">Skylight Components</a></li>
                         <li><a href="large-commercial-sky-tunnel">Large Commercial Sky Tunnel</a></li>
+                        <li><a href="sky-tunnel-system">Sky Tunnel System</a></li>
 
                         <!-- Ventilators -->
                         <li class="menu-heading"><a href="ventilator">VENTILATOR</a></li>

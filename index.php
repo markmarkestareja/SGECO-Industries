@@ -134,9 +134,14 @@ $disableLenis = str_contains($currentPath, 'product-service');
 
 <body <?= $disableLenis ? 'data-disable-lenis="true"' : '' ?>>
     <div class="full-img" id="full-img-box">
-        <img src="" onclick="openFullImg(this.src)" alt="" id="full-img">
+        <img src="" alt="" id="full-img">
         <span onclick="closeFullImg()">✖</span>
-    </div>
+
+        <div class="imgFull-btn-group">
+            <span class="imgFull-btn prev" onclick="showPrevImg()">❮</span>
+            <span class="imgFull-btn next" onclick="showNextImg()">❯</span>
+        </div>
+    </div> 
     <?php require 'section/component/header.php' ?>
 
     <?php include $content; ?>

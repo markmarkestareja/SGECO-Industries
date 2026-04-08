@@ -482,12 +482,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // img-gallery.js
+let currentImageIndex = 0;
+let currentImageCategory = "";
+
 const fullImgBox = document.getElementById("full-img-box");
 const fullImg = document.getElementById("full-img");
 const fullImgClass = document.querySelector(".full-img");
 
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+function updateNavButtons() {
+    const images = galleryData[currentImageCategory];
+
+    // Disable PREV if at first image
+    if (currentImageIndex === 0) {
+        prevBtn.classList.add("disabled");
+    } else {
+        prevBtn.classList.remove("disabled");
+    }
+
+    // Disable NEXT if at last image
+    if (currentImageIndex === images.length - 1) {
+        nextBtn.classList.add("disabled");
+    } else {
+        nextBtn.classList.remove("disabled");
+    }
+}
+
 // Full Image Open
-function openFullImg(pic) {
+function openFullImg(pic, index, category) {
+    currentImageIndex = index;
+    currentImageCategory = category;
+
     fullImg.src = pic;
     fullImgBox.classList.add("show");
     fullImgClass.style.height = "100vh";
@@ -495,6 +522,8 @@ function openFullImg(pic) {
     headerNav.style.display = "none";
 
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.touchAction = "none";
     if (window.lenis) lenis.stop();
 }
 
@@ -510,7 +539,36 @@ function closeFullImg() {
     }, 350);
 }
 
+function showPrevImg() {
+    const images = galleryData[currentImageCategory];
+    if(currentImageIndex > 0){
+        currentImageIndex--;
+        updateFullImg();
+    }
 
+    updateNavButtons();
+}
+
+function showNextImg() {
+    const images = galleryData[currentImageCategory];
+    
+    if(currentImageIndex < images.length - 1){
+        currentImageIndex++;
+
+        updateFullImg();
+    }
+
+    updateNavButtons();
+}
+
+function updateFullImg(){
+    const folder = galleryFolders[currentImageCategory];
+    const fileName = galleryData[currentImageCategory][currentImageIndex];
+
+    fullImg.src = galleryBasePath + folder + fileName;
+    
+    updateNavButtons();
+}
 
 // ------------------------------------
 // GALLERY SYSTEM
@@ -594,7 +652,7 @@ const galleryData = {
 
 
 // Create Image Card
-function createGalleryImgCard(src, containerSelector) {
+function createGalleryImgCard(src, containerSelector, index, category) {
     const container = document.querySelector(containerSelector);
     if(!container) return;
 
@@ -604,20 +662,22 @@ function createGalleryImgCard(src, containerSelector) {
     const img = document.createElement("img");
     img.src = src;
     img.alt = "gallery image";
-    img.onclick = () => openFullImg(src);
+    img.onclick = () => openFullImg(src, index, category);
 
     galleryImgCard.appendChild(img);
-    document.querySelector(containerSelector).appendChild(galleryImgCard);
+    container.appendChild(galleryImgCard);
 }
 
 // Load Gallery by Category
 function loadGallery(category, containerSelector) {
     const folder = galleryFolders[category];
 
-    galleryData[category].forEach(fileName => {
+    galleryData[category].forEach((fileName, index) => {
         createGalleryImgCard(
             galleryBasePath + folder + fileName,
-            containerSelector
+            containerSelector,
+            index,
+            category
         );
     });
 }
@@ -627,7 +687,7 @@ loadGallery("residential", "#residential-gallery");
 loadGallery("industrial", "#industrial-gallery");
 loadGallery("gvs", "#gvs-gallery");
 loadGallery("gvw", "#gvw-gallery");
-loadGallery("hatchway", "#hatchway-gallery");
+loadGallery("hatchway", "#hatchway-gallery");   
 
 
 // eco-blog.js
