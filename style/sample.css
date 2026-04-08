@@ -3449,6 +3449,7 @@ span.left {
 }
 .img-gallery {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 81px;
@@ -3480,7 +3481,7 @@ span.left {
 .full-img {
   width: 100%;
   height: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 1);
   position: sticky;
   top: 0;
   left: 0;
@@ -3509,7 +3510,7 @@ span.left {
 .full-img span {
   position: absolute;
   top: 5%;
-  left: 5%;
+  right: 5%;
   font-size: 33px;
   color: #fff;
   cursor: pointer;
