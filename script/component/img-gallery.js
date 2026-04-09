@@ -5,24 +5,26 @@ const fullImgBox = document.getElementById("full-img-box");
 const fullImg = document.getElementById("full-img");
 const fullImgClass = document.querySelector(".full-img");
 
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
+const prevBtn10 = document.querySelector(".prev");
+const nextBtn10 = document.querySelector(".next");
 
 function updateNavButtons() {
     const images = galleryData[currentImageCategory];
 
+    if(!prevBtn10 || !nextBtn10) return;
+    
     // Disable PREV if at first image
     if (currentImageIndex === 0) {
-        prevBtn.classList.add("disabled");
+        prevBtn10.classList.add("disabled");
     } else {
-        prevBtn.classList.remove("disabled");
+        prevBtn10.classList.remove("disabled");
     }
 
     // Disable NEXT if at last image
     if (currentImageIndex === images.length - 1) {
-        nextBtn.classList.add("disabled");
+        nextBtn10.classList.add("disabled");
     } else {
-        nextBtn.classList.remove("disabled");
+        nextBtn10.classList.remove("disabled");
     }
 }
 
@@ -37,9 +39,6 @@ function openFullImg(pic, index, category) {
 
     headerNav.style.display = "none";
 
-    document.body.style.overflow = "hidden";
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.touchAction = "none";
     if (window.lenis) lenis.stop();
 }
 

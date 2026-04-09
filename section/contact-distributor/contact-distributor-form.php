@@ -25,7 +25,7 @@
                 <option value disabled selected>Products/Services</option>
                 <option value="Skylight">Skylight</option>
                 <option value="Ventilator">Ventilator</option>
-                <option value="CustomManufacturing">Custom Manufacturing</option>
+                <option value="Custom Manufacturing">Custom Manufacturing</option>
             </select>
 
             <select name="businessTypeName" required style="color: #777;">

@@ -147,7 +147,7 @@
     <div class="gvs-title">
         <h2>Green-Vent Solar Ventilator Features</h2>
     </div>
-    <div class="gvs-card-container">
+    <div class="gvs-card-container gvs-para">
         <div class="gvs-feature-card">
             <h3>01</h3>
             <p>Fully adjustable solar panel – tilts and rotates</p>

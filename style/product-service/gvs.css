@@ -77,11 +77,15 @@
   background: #f2fff8;
 }
 
-
 .gvs-title{
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.gvs-para p{
+    text-align: center !important;
+    align-self: center!important;
 }
 
 @media (min-width: 600px) {
