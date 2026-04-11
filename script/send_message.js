@@ -36,5 +36,3 @@ if(contactForm2 && submitBtn && formResponse){
     });
   });
 }
-
-

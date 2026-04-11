@@ -8,7 +8,9 @@
 
     padding: 54px var(--global-margin);
 
-    background-color: var(--dark-color);
+    background: #0E3025;
+    background: linear-gradient(340deg, rgba(14, 48, 37, 1) 25%, rgba(19, 69, 55, 1) 100%);
+
     color: var(--light-color);
 }
 

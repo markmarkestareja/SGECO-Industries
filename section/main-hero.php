@@ -7,14 +7,6 @@
             <video autoplay muted loop id="myVideo">
                 <source src="asset/vid/hero-background.webm" type="video/webm" />
 
-                <track 
-                    kind="captions"
-                    src="asset/vid/hero-background.vtt"
-                    srclang="en"
-                    label="English"
-                    default
-                />
-
                 Your browser does not support the video tag.
             </video>
         </div>

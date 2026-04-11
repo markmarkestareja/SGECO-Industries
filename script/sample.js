@@ -853,6 +853,4 @@ if(contactForm2 && submitBtn && formResponse){
       submitBtn.textContent = 'Send Message';
     });
   });
-}
-
-
+} 

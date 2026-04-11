@@ -73,6 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Email content
         $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
+        $mail->Encoding = 'base64';
+        $mail->AltBody = strip_tags($message);
         
         if($formType === 'distributor') {
             $mail->Subject = "New Distributor Inquiry from $name";
@@ -122,7 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     <!-- Header -->
     <div style='background:#008843; color:#ffffff; padding:15px 20px;'>
-      <h2 style='margin:0;'>📩 New Distributor Inquiry</h2>
+      <h2 style='margin:0;'>📩 New Website Inquiry</h2>
     </div>
 
     <!-- Content -->
