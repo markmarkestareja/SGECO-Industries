@@ -1,167 +1,200 @@
 <?php
 session_start();
-require 'vendor/autoload.php'; // Composer autoloader
+require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
+header('Content-Type: application/json');
+
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+/* =========================
+   CONFIG
+========================= */
+$RATE_LIMIT_FILE = __DIR__ . '/rate_limit.json';
+$MAX_REQUESTS = 5;              // max submissions
+$TIME_WINDOW = 600;            // 10 minutes
+$MIN_TIME = 3;                 // anti-bot minimum seconds
+$MAX_TIME = 3600;              // 1 hour max validity
 
+$ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+/* =========================
+   RATE LIMIT (IP BASED)
+========================= */
+$rateData = file_exists($RATE_LIMIT_FILE)
+    ? json_decode(file_get_contents($RATE_LIMIT_FILE), true)
+    : [];
 
-    $formType = $_POST['form_type'] ?? 'general';
+$now = time();
 
-    if (
-        !empty($_POST['SGECO_ILUVYO143']) ||
-        !isset($_POST['form_time']) ||
-        time() - (int)$_POST['form_time'] < 3
-    ) {
-        exit;
-    }
+if (!isset($rateData[$ip])) {
+    $rateData[$ip] = [];
+}
 
-    // Check if token exists
-    if (!isset($_POST['csrf_token'], $_SESSION['csrf_token'])) {
-        echo "Invalid request (CSRF)";
-        exit;
-    }
+// remove old entries
+$rateData[$ip] = array_filter($rateData[$ip], function ($t) use ($now, $TIME_WINDOW) {
+    return ($now - $t) < $TIME_WINDOW;
+});
 
-    // Verify token
-    if (!hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
-        echo "Invalid request (CSRF mismatch)";
-        exit;
-    }
+// check limit
+if (count($rateData[$ip]) >= $MAX_REQUESTS) {
+    echo "Too many requests. Try again later.";
+    exit;
+}
 
-    $name    = htmlspecialchars($_POST['fullname']);
-    $emailRaw = $_POST['email'];
-    $email   = filter_var($emailRaw, FILTER_SANITIZE_EMAIL);
-    $phone   = htmlspecialchars($_POST['contact_number']);
-    $city    = htmlspecialchars($_POST['city']);
-    $country = htmlspecialchars($_POST['country']);
-    $message = htmlspecialchars($_POST['message']);
-    $interest = $_POST['interest'] ?? '';
-    $businessType = $_POST['businessTypeName'] ?? '';
-
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        echo "Invalid Email Address!";
-        exit;
-    }
-
-    $mail = new PHPMailer(true);
-
-    try {
-        // SMTP configuration
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com'; // e.g., smtp.gmail.com
-        $mail->SMTPAuth   = true;
-        $mail->Username = $_ENV['EMAIL_USER'];
-        $mail->Password = $_ENV['EMAIL_PASS'];        
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;   // 465 for SSL        
-        
-        $mail->Timeout = 10;
-        $mail->SMTPKeepAlive = true;
-        $mail->SMTPDebug = 0; // change to 2 for debugging
-
-        // Sender & recipient
-        $mail->setFrom($_ENV['EMAIL_USER'], 'Website Contact Form');
-        $mail->addReplyTo($email, $name);
-        $mail->addAddress('markmarkestareja.me@gmail.com', 'SG Eco Industries');
-
-        // Email content
-        $mail->isHTML(true);
-        $mail->CharSet = 'UTF-8';
-        $mail->Encoding = 'base64';
-        $mail->AltBody = strip_tags($message);
-        
-        if($formType === 'distributor') {
-            $mail->Subject = "New Distributor Inquiry from $name";
-            $mail->Body    = "                  
-<div style='font-family: Arial, sans-serif; background:#f4f6f8; padding:20px;'>
-  <div style='max-width:600px; margin:auto; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.1);'>
-    
-    <!-- Header -->
-    <div style='background:#008843; color:#ffffff; padding:15px 20px;'>
-      <h2 style='margin:0;'>📩 New Distributor Inquiry</h2>
-    </div>
-
-    <!-- Content -->
-    <div style='padding:20px; color:#333;'>
-      
-      <p><strong>Name:</strong> $name</p>
-      <p><strong>Email:</strong> <a href='mailto:$email'>$email</a></p>
-      <p><strong>Phone:</strong> $phone</p>
-      <p><strong>City:</strong> $city</p>
-      <p><strong>Country:</strong> $country</p>
-      <p><strong>Interest:</strong> $interest</p>
-      <p><strong>Business Type:</strong> $businessType</p>
-
-      <hr style='margin:20px 0;'>
-
-      <p><strong>Message:</strong></p>
-      <div style='background:#f9f9f9; padding:15px; border-left:4px solid #008843; border-radius:5px;'>
-        $message
-      </div>
-
-    </div>
-
-    <!-- Footer -->
-    <div style='background:#f1f1f1; padding:15px; text-align:center; font-size:12px; color:#777;'>
-      This inquiry was sent from your website contact form.
-    </div>
-
-  </div>
-</div>
-";
-        }
-        else {
-            $mail->Subject = "New Website Inquiry from $name";
-            $mail->Body    = "                  
-<div style='font-family: Arial, sans-serif; background:#f4f6f8; padding:20px;'>
-  <div style='max-width:600px; margin:auto; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.1);'>
-    
-    <!-- Header -->
-    <div style='background:#008843; color:#ffffff; padding:15px 20px;'>
-      <h2 style='margin:0;'>📩 New Website Inquiry</h2>
-    </div>
-
-    <!-- Content -->
-    <div style='padding:20px; color:#333;'>
-      
-      <p><strong>Name:</strong> $name</p>
-      <p><strong>Email:</strong> <a href='mailto:$email'>$email</a></p>
-      <p><strong>Phone:</strong> $phone</p>
-      <p><strong>City:</strong> $city</p>
-      <p><strong>Country:</strong> $country</p>
-
-      <hr style='margin:20px 0;'>
-
-      <p><strong>Message:</strong></p>
-      <div style='background:#f9f9f9; padding:15px; border-left:4px solid #008843; border-radius:5px;'>
-        $message
-      </div>
-
-    </div>
-
-    <!-- Footer -->
-    <div style='background:#f1f1f1; padding:15px; text-align:center; font-size:12px; color:#777;'>
-      This inquiry was sent from SG Eco Industries website contact form.
-    </div>
-
-  </div>
-</div>
-";
-        }
-
-        $mail->send();
-        echo "Message sent successfully!";
-    } catch (Exception $e) {
-        echo "Message could not be sent. Please try again later.";
-    }
-
-} else {
+/* =========================
+   VALID REQUEST CHECK
+========================= */
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo "Invalid request";
+    exit;
+}
+
+/* =========================
+   BOT CHECKS
+========================= */
+if (
+    !empty($_POST['SGECO_ILUVYO143']) || // honeypot
+    !isset($_POST['form_time'])
+) {
+    exit;
+}
+
+$formTime = (int)$_POST['form_time'];
+$timeDiff = $now - $formTime;
+
+if ($timeDiff < $MIN_TIME || $timeDiff > $MAX_TIME) {
+    exit;
+}
+
+/* =========================
+   CSRF CHECK
+========================= */
+if (
+    !isset($_POST['csrf_token'], $_SESSION['csrf_token']) ||
+    !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])
+) {
+    echo "CSRF validation failed";
+    exit;
+}
+
+/* =========================
+   INPUT SANITIZATION
+========================= */
+$name    = trim($_POST['fullname'] ?? '');
+$email   = trim($_POST['email'] ?? '');
+$phone   = trim($_POST['contact_number'] ?? '');
+$city    = trim($_POST['city'] ?? '');
+$country = trim($_POST['country'] ?? '');
+$message = trim($_POST['message'] ?? '');
+
+/* =========================
+   LENGTH VALIDATION
+========================= */
+if (
+    strlen($name) < 2 || strlen($name) > 100 ||
+    strlen($message) < 5 || strlen($message) > 2000
+) {
+    echo "Invalid input length";
+    exit;
+}
+
+/* =========================
+   EMAIL VALIDATION
+========================= */
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Invalid email";
+    exit;
+}
+
+/* =========================
+   SPAM FILTER (BASIC)
+========================= */
+$spamPatterns = [
+    '/https?:\/\//i',   // URLs
+    '/www\./i',
+    '/\bviagra\b/i',
+    '/\bcasino\b/i',
+    '/\bloan\b/i'
+];
+
+foreach ($spamPatterns as $pattern) {
+    if (preg_match($pattern, $message)) {
+        exit;
+    }
+}
+
+/* =========================
+   SANITIZE OUTPUT
+========================= */
+$name    = htmlspecialchars($name);
+$email   = htmlspecialchars($email);
+$phone   = htmlspecialchars($phone);
+$city    = htmlspecialchars($city);
+$country = htmlspecialchars($country);
+$message = htmlspecialchars($message);
+
+/* =========================
+   SMTP EMAIL
+========================= */
+$mail = new PHPMailer(true);
+
+try {
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = $_ENV['EMAIL_USER'];
+    $mail->Password   = $_ENV['EMAIL_PASS'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
+
+    $mail->Timeout = 10;
+
+    $mail->setFrom($_ENV['EMAIL_USER'], 'Website Contact Form');
+    $mail->addReplyTo($email, $name);
+    $mail->addAddress('markmarkestareja.me@gmail.com', 'SG Eco Industries');
+
+    $mail->isHTML(true);
+    $mail->CharSet = 'UTF-8';
+
+    $mail->Subject = "New Website Inquiry from $name";
+
+    $mail->Body = "
+    <div style='font-family:Arial;background:#f4f6f8;padding:20px'>
+      <div style='max-width:600px;margin:auto;background:#fff;padding:20px;border-radius:10px'>
+
+        <h2 style='color:#008843'>New Inquiry</h2>
+
+        <p><b>Name:</b> $name</p>
+        <p><b>Email:</b> $email</p>
+        <p><b>Phone:</b> $phone</p>
+        <p><b>City:</b> $city</p>
+        <p><b>Country:</b> $country</p>
+
+        <hr>
+
+        <p><b>Message:</b></p>
+        <div style='background:#f9f9f9;padding:10px;border-left:4px solid #008843'>
+          $message
+        </div>
+
+      </div>
+    </div>";
+
+    $mail->send();
+
+    /* =========================
+       UPDATE RATE LIMIT LOG
+    ========================= */
+    $rateData[$ip][] = $now;
+    file_put_contents($RATE_LIMIT_FILE, json_encode($rateData));
+
+    echo "Message sent successfully";
+
+} catch (Exception $e) {
+    echo "Failed to send message";
 }
