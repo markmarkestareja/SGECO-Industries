@@ -179,6 +179,10 @@ function createGalleryImgCard(src, containerSelector, index, category) {
     img.alt = "gallery image";
     img.onclick = () => openFullImg(src, index, category);
 
+    if(category !== "residential"){
+        img.loading = "lazy";
+    }
+
     galleryImgCard.appendChild(img);
     container.appendChild(galleryImgCard);
 }

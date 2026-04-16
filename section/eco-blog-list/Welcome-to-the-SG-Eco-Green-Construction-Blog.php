@@ -31,3 +31,7 @@
         </div>
     </div>
 </div>
+
+<div id="welcome-to-the-sg-eco-green-construction-blog" class="eco-blog-card-container" style="background-color: var(--dark-color); color: var(--light-color); padding: 54px var(--global-margin);">
+    <!-- Eco-blog JS -->
+</div>

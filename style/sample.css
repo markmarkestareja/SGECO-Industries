@@ -3683,6 +3683,19 @@ span.left {
   letter-spacing: 1px;
   margin-left: 4px;
 }
+.eco-blog h2 a{
+    font-size: 20px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    background-position: left bottom;
+    transition: all 0.3s ease;
+}
+
+.eco-blog h2 a:hover{
+    background-size: 100% 2px;
+    color: #c0c0c0;
+}
 @media (min-width: 700px) {
   .eco-blog-card {
     flex-direction: row;

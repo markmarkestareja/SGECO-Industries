@@ -15,3 +15,7 @@
         </div>
     </div>
 </div>
+
+<div id="sky-tunnel-energy-efficient-skylight-indoor-lighting" class="eco-blog-card-container" style="background-color: var(--dark-color); color: var(--light-color); padding: 54px var(--global-margin);">
+    <!-- Eco-blog JS -->
+</div>

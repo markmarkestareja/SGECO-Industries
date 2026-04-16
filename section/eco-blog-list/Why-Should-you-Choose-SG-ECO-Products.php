@@ -25,3 +25,7 @@
         </div>
     </div>
 </div>
+
+<div id="why-should-you-choose-sg-eco-products" class="eco-blog-card-container" style="background-color: var(--dark-color); color: var(--light-color); padding: 54px var(--global-margin);">
+    <!-- Eco-blog JS -->
+</div>
