@@ -1133,10 +1133,12 @@ form button {
   position: relative;
   isolation: isolate;
 }
+
 .process-wrapper {
   position: relative;
-  overflow: clip;
+  overflow: clip; /* or hidden */
 }
+
 .m-bg-img-process {
   position: sticky;
   top: 0;
@@ -1144,6 +1146,7 @@ form button {
   width: 100%;
   overflow: hidden;
 }
+
 .m-bg-img-process::before {
   content: "";
   position: absolute;
@@ -1152,9 +1155,12 @@ form button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   transform: scale(var(--bg-scale, 1));
   will-change: transform;
 }
+
+
 .process-header {
   position: sticky;
   top: 0;
@@ -1162,11 +1168,13 @@ form button {
   width: 100%;
   height: 225px;
   z-index: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 30px;
 }
+
 .m-process-card {
   position: relative;
   z-index: 1;
@@ -1175,25 +1183,46 @@ form button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   padding-top: 225px;
 }
+
 .process-inner-card {
   flex: 1;
+
   padding: 16px;
-  background-color: rgb(255 255 255 / 0.3);
+
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  border: 1px solid rgb(255 255 255 / 0.2);
-  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
+
 .process-card-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .process-card-content h3 {
   font-weight: 800;
   font-size: 18px;
+
 }
+
+.process-card-content-svg{
+  background-color: var(--primary-color);
+  width: max-content;
+  padding: 12px;
+  border-radius: 100%;
+}
+
+.process-card-content-svg svg{
+  color: var(--light-color);
+  display: flex;
+}
+
+
 .main-process-card p {
   color: var(--dark-color-70);
 }
@@ -1201,54 +1230,72 @@ form button {
   .m-process-card {
     flex-direction: row;
     height: 300vh;
+
     position: relative;
   }
+
   .process-container {
     height: 400vh;
   }
+
   .process-inner-card {
     position: sticky;
     top: 0;
     height: 100vh;
-    background-color: #fff0;
+
+    background-color: transparent;
     backdrop-filter: none;
     border: none;
     box-shadow: none;
     padding: 0;
     margin: 0;
+
     overflow: hidden;
   }
+
   .process-card-content {
     margin-top: 225px;
-    background-color: rgb(255 255 255 / 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    border: 1px solid rgb(255 255 255 / 0.2);
-    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     height: 100%;
     padding: 54px 30px;
   }
+
   .process-card-content h3 {
     min-height: 40px;
   }
-  .process-card-content svg {
+
+  /* .process-card-content svg {
     width: 40px;
     height: auto;
+  } */
+
+  .process-card-content-svg svg{
+    width: 30px;
+    height: auto;
   }
+
   .process-inner-card:nth-child(1) {
     align-self: flex-start;
   }
+
   .process-inner-card:nth-child(2) {
     align-self: center;
   }
+
   .process-inner-card:nth-child(3) {
     align-self: flex-end;
   }
 }
+
 @media (min-width: 950px) {
   .process-card-content h3 {
     min-height: 0;
   }
 }
+
 .add-reveal {
   opacity: 0;
 }
