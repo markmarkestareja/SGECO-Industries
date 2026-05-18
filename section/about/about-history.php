@@ -6,7 +6,7 @@
 
     <div class="history-content">
         <div class="history-title">
-            <h1 class="p-large add-reveal">Our 37-Year History of Commitment in Sustainable Living</h1>
+            <h1 class="p-large add-reveal">Our <span class="companyYears"></span>-Year History of Commitment in Sustainable Living</h1>
         </div>
         <div class="history-timeline js-history-timeline">
             <!-- js-history-timeline.js and history-timeline-data -->

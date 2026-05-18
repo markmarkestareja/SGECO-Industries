@@ -1,10 +1,10 @@
 <section class="main-about base-speed">
     <div class="about-wording slow">
-        <p class="p-med add-reveal">For over <span>37 years</span>, we are committed on delivering natural and eco-friendly solutions</p>
+        <p class="p-med add-reveal">For over <span class="companyYears"></span> years, we are committed on delivering natural and eco-friendly solutions.</p>
     </div>
 
     <div class="who-we-are fast">
-        <div class="who-we-are-img">
+        <div class="who-we-are-img">    
             <img src="asset/img/main/main-about/about-img-1.webp" alt="Office with Skylight" loading="lazy">
         </div>
         <div class="who-we-are-text">
