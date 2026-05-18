@@ -24,9 +24,17 @@
 
         <!-- <img src="asset/img/hero-certs.webp" alt="" /> -->
         <div class="logos">
-            <a href="">
-                <img src="asset/img/1.webp" alt="1">
-            </a>
+            <div id="logoISO">
+                <a href="">
+                    <img src="asset/img/1.webp" alt="1">
+                </a>
+
+                <div id="ISOVersion">
+                    <a href="asset/pdf/1167PH 26-27.pdf">English Version</a>
+                    <span style="background-color: var(--dark-color); width: 1px;"></span>
+                    <a href="asset/pdf/1167PH 26-27 Spanish.pdf">Spanish Version</a>
+                </div>
+            </div>
             <a href="https://doe.gov.ph/">
                 <img src="asset/img/doe.webp" alt="doe">
             </a>

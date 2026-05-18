@@ -154,6 +154,7 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <script src="<?= asset('script/change-background.js') ?>" defer></script>
     <script src="<?= asset('script/reveal-animation.js') ?>" defer></script>
     <script src="<?= asset('script/component/header.js') ?>" defer></script>
+    <script src="<?= asset('script/global.js') ?>" defer></script>
     <script src="<?= asset('script/component/ventilator-product.js') ?>" defer></script>
     <script src="<?= asset('script/component/card-2.js') ?>" defer></script>
     
