@@ -80,6 +80,18 @@
 
 }
 
+.process-card-content-svg{
+  background-color: var(--primary-color);
+  width: max-content;
+  padding: 12px;
+  border-radius: 100%;
+}
+
+.process-card-content-svg svg{
+  color: var(--light-color);
+  display: flex;
+}
+
 
 .main-process-card p {
   color: var(--dark-color-70);
@@ -125,8 +137,13 @@
     min-height: 40px;
   }
 
-  .process-card-content svg {
+  /* .process-card-content svg {
     width: 40px;
+    height: auto;
+  } */
+
+  .process-card-content-svg svg{
+    width: 30px;
     height: auto;
   }
 

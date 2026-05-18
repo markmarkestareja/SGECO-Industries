@@ -1061,3 +1061,19 @@ if(contactForm2 && submitBtn && formResponse){
     });
   });
 } 
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contactFrom");
+
+    if(!contactForm) return;
+    
+    contactForm.addEventListener("submit", function(){
+        gtag('event', 'form_submit', {
+            event_category: 'Contact',
+            event_label: 'Contact Form'
+        });
+    });
+})
+    

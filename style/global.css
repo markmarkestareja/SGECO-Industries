@@ -111,6 +111,7 @@ background: #0E3025;
 background: linear-gradient(90deg, rgba(14, 48, 37, 1) 41%, rgba(0, 80, 54, 1) 64%, rgba(0, 108, 72, 1) 74%, rgba(10, 63, 46, 1) 86%, rgba(14, 48, 37, 1) 100%);
 }
 
+
 @media (min-width: 744px) {
   :root {
     --global-margin: clamp(30px, 7vw, 200px);

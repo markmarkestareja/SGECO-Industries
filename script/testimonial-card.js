@@ -20,19 +20,19 @@ if (testimonialContainer) {
 
 // Testimonial Card Slider
 
-const container = document.querySelector(".testimonial-card-container");
+const testimonialContainerSlider = document.querySelector(".testimonial-card-container");
 const prevBtn3 = document.querySelector(".testimonial-btn.prev-3");
 const nextBtn3 = document.querySelector(".testimonial-btn.next-3");
 
-if (container && prevBtn3 && nextBtn3) {
+if (testimonialContainerSlider && prevBtn3 && nextBtn3) {
     const scrollAmount = 360;
 
     prevBtn3.addEventListener("click", () => {
-        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        testimonialContainerSlider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     });
 
     nextBtn3.addEventListener("click", () => {
-        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        testimonialContainerSlider.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
 }
 
