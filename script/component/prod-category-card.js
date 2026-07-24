@@ -3,11 +3,12 @@ class ProductCard extends HTMLElement {
     const title = this.getAttribute("title") || "This is an untitled card";
     const img = this.getAttribute("img") || "";
     const link = this.getAttribute("link") || "#";
+    const alt = this.getAttribute("alt") || title;
 
     this.innerHTML = `
         <div class="prod-category-card">
             <div class="prod-category-img">
-                <img src="${img}" alt="${title}" loading="lazy">
+                <img src="${img}" alt="${alt}" loading="lazy">
             </div>
 
             <div class="prod-category-text">
@@ -20,3 +21,4 @@ class ProductCard extends HTMLElement {
 }
 
 customElements.define("product-card", ProductCard);
+ 

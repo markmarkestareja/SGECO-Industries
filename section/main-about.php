@@ -5,7 +5,7 @@
 
     <div class="who-we-are fast">
         <div class="who-we-are-img">    
-            <img src="asset/img/main/main-about/about-img-1.webp" alt="Office with Skylight" loading="lazy">
+            <img src="asset/img/main/main-about/about-img-1.webp" alt="Office interior with SG Eco skylight providing natural lighting and energy efficiency" loading="lazy">
         </div>
         <div class="who-we-are-text">
             <h2 class="add-reveal">About Us</h2>
@@ -22,7 +22,7 @@
 
     <div class="who-we-are what-we-do">
         <div class="who-we-are-img">
-            <img src="asset/img/main/main-about/about-img-2.webp" alt="Factory with Skylight" loading="lazy">
+            <img src="asset/img/main/main-about/about-img-2.webp" alt="Factory with eco-friendly skylight installation reducing energy consumption" loading="lazy">
         </div>
         <div class="who-we-are-text">
             <p class="p-large add-reveal">What <span>We</span> Do</p>

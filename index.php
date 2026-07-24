@@ -9,6 +9,17 @@ $page = $_GET['page'] ?? 'home';
 
 $page = preg_replace('/[^a-zA-Z0-9\-]/', '', $page);
 
+
+
+function console_log($data) {
+    $json = json_encode($data);
+    echo "<script>console.log(JSON.parse('{$json}'));</script>";
+}
+console_log("Requested page: " . $page);
+
+
+
+
 $file = __DIR__ . "/page/$page.php";
 
 if (file_exists($file)) {
@@ -26,8 +37,8 @@ function getMetaDescription($page, $is404) {
     }
 
     $descriptions = [
-        'home' => 'SGEco Industries delivers eco-friendly skylights, ventilators, and fabrication services—energy-efficient solutions for residential and industrial spaces.',
-        'about' => 'Learn about SGEco Industries, our mission, vision, and commitment to sustainability and eco-friendly practices.',
+        'home' => 'SG Eco Industries: Premium eco-friendly skylights, ventilators & custom manufacturing. Energy-efficient solutions for 38+ years. Get sustainable building solutions today.',
+        'about' => 'Discover SG Eco Industries\' 38-year journey in sustainable building solutions. Learn about our eco-friendly skylights, ventilators, and commitment to environmental responsibility and quality manufacturing.',
         'products' => 'Explore SGEco Industries\' wide range of eco-friendly products designed for a sustainable future.',
         'services' => 'Discover the services offered by SGEco Industries to help you achieve your sustainability goals.',
         'contact' => 'Get in touch with SGEco Industries for inquiries, support, and more information about our offerings.',
@@ -70,6 +81,18 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 $disableLenis = str_contains($currentPath, 'product-service');
 
+function getTitleTag($page) {
+    $titleTag = [
+        'home' => 'Eco-Friendly Skylights & Ventilators in Philippines | SG Eco Industries',
+        'about' => 'About SG Eco Industries: 38 Years of Eco-Friendly Skylights & Ventilators',
+
+    ];
+
+    return htmlspecialchars($titleTag[$page] ?? 'SGEco Industries');
+}
+
+console_log(getTitleTag($page));
+
 ?>
 
 
@@ -84,7 +107,7 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <title>
     <?= $is404
         ? 'Page Not Found - SGEco Industries'
-        : htmlspecialchars(ucfirst($page)) . ' - SGEco Industries'
+        : getTitleTag($page) . ' | SGEco Industries'
     ?>
     </title>
 
@@ -99,7 +122,7 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <link rel="stylesheet" href="<?= asset('style/index.css') ?>">
 
 
-    <meta property="og:title" content="<?= htmlspecialchars(ucfirst($page)) ?> - SGEco Industries">
+    <meta property="og:title" content="<?= getTitleTag($page) ?> | SGEco Industries">
     <meta property="og:description" content="<?= $metaDescription ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.eco.ph<?= $page === 'home' ? '/' : '/' . $page ?>">
@@ -112,7 +135,7 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <meta property="og:image:alt" content="SG Eco Industries Logo">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= htmlspecialchars(ucfirst($page)) ?> - SGEco Industries">
+    <meta name="twitter:title" content="<?= getTitleTag($page) ?> | SGEco Industries">
     <meta name="twitter:description" content="<?= $metaDescription ?>">
     <meta name="twitter:image" content="./asset/img/logo/SG Eco Logo.webp">
 
@@ -130,6 +153,114 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+
+        {
+        "@type": "Organization",
+        "@id": "https://eco.ph/#organization",
+        "name": "SG Eco Industries",
+        "url": "https://eco.ph",
+        "logo": "https://eco.ph/asset/img/logo/SG Eco Logo.webp",
+        "sameAs": [
+            "https://www.facebook.com/sgecoind",
+            "https://www.linkedin.com/company/sg-eco-industries"
+        ]
+        },
+
+        {
+        "@type": "LocalBusiness",
+        "@id": "https://eco.ph/#business",
+        "name": "SG Eco Industries",
+        "url": "https://eco.ph",
+        "image": "https://eco.ph/asset/img/logo/SG Eco Logo.webp",
+        "description": "Sustainable building solutions provider specializing in eco-friendly skylights, roof ventilators, and custom manufacturing.",
+        "foundingDate": "1986",
+        "areaServed": "PH",
+        "parentOrganization": {
+            "@id": "https://eco.ph/#organization"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Angeles City",
+            "addressRegion": "Pampanga",
+            "addressCountry": "PH"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "url": "https://eco.ph/contact"
+        },
+        "sameAs": [
+            "https://www.facebook.com/sgecoind",
+            "https://www.linkedin.com/company/sg-eco-industries"
+        ]
+        },
+
+        {
+        "@type": "Product",
+        "@id": "https://eco.ph/#skylight-basic",
+        "name": "Eco-Friendly Skylights",
+        "description": "Natural daylighting solutions that reduce energy consumption and improve indoor comfort.",
+        "image": [
+            "https://eco.ph/asset/img/products/skylight.webp"
+        ],
+        "brand": {
+            "@id": "https://eco.ph/#organization"
+        },
+        "mainEntityOfPage": "https://eco.ph/skylight",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://eco.ph/skylight",
+            "priceCurrency": "PHP",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+        }
+        },
+
+        {
+        "@type": "Product",
+        "@id": "https://eco.ph/#roof-ventilators",
+        "name": "Eco Roof Ventilators",
+        "description": "Energy-efficient roof ventilators designed to improve airflow, reduce heat buildup, and enhance indoor air quality.",
+        "image": [
+            "https://eco.ph/asset/img/products/ventilator.webp"
+        ],
+        "brand": {
+            "@id": "https://eco.ph/#organization"
+        },
+        "mainEntityOfPage": "https://eco.ph/ventilators",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://eco.ph/ventilators",
+            "priceCurrency": "PHP",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+        }
+        },
+
+        {
+        "@type": "Service",
+        "@id": "https://eco.ph/#custom-manufacturing",
+        "name": "Custom Manufacturing Solutions",
+        "description": "Bespoke manufacturing services for skylights, roof ventilators, and other eco-friendly building components tailored to project requirements.",
+        "provider": {
+            "@id": "https://eco.ph/#organization"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Philippines"
+        },
+        "serviceType": "Custom Fabrication and Manufacturing",
+        "url": "https://eco.ph/custom-manufacturing"
+        }
+
+    ]
+    }
+    </script>
+
 </head>
 
 <body <?= $disableLenis ? 'data-disable-lenis="true"' : '' ?>>
@@ -143,6 +274,8 @@ $disableLenis = str_contains($currentPath, 'product-service');
         </div>
     </div> 
     <?php require 'section/component/header.php' ?>
+
+    
 
     <?php include $content; ?>
 
@@ -182,6 +315,27 @@ $disableLenis = str_contains($currentPath, 'product-service');
     <script src="<?= asset('script/ajax-contact.js') ?>" defer></script>
     <script src="<?= asset('script/send_message.js') ?>" defer></script>
     <script src="<?= asset('script/countCompanyYears.js') ?>" defer></script>
+
+    <script>
+        function openChat() {
+            const botChat = document.querySelector('.botChat');
+            const botButton = document.querySelector('.botChatContainer button');
+
+            botChat.classList.toggle('active');
+
+            if (botChat.classList.contains('active')) {
+                botButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/>
+                </svg>`;
+            } else {
+                botButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M8.5 10a1.5 2 0 1 0 0 4a1.5 2 0 1 0 0-4m7 0a1.5 2 0 1 0 0 4a1.5 2 0 1 0 0-4M8 16h8v2H8z"/>
+                    <path fill="currentColor" d="M21 11V8c0-1.1-.9-2-2-2h-6V4.61c.3-.27.5-.67.5-1.11c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5c0 .44.2.84.5 1.11V6H5c-1.1 0-2 .9-2 2v3c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1v3c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-3c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1M5 20V8h14v12z"/>
+                </svg>`;
+            }
+        }
+        
+    </script>
 </body>
 
 </html>

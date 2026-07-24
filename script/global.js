@@ -13,7 +13,3 @@ logoISO.addEventListener('mouseleave', function() {
     const ISOVersion = document.getElementById("ISOVersion");
     ISOVersion.style.opacity = "0";
 })
-
-
-
-    

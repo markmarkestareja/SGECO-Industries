@@ -3,7 +3,7 @@
         <video autoplay muted loop src="asset/vid/hero-background.webm" type="video/webm"></video>
     </div>
     <div class="about-text add-reveal">
-        <h1>About SG Eco Industries Inc.</h1>
+        <h1>About SG Eco Industries</h1>
         <p class="p-large">Sustainable Lighting for a Healthier Living</p>
         <p>All of our products are manufactured here in the Philippines following strict ISO certification guidelines.
             SG Eco Industries Inc has a factory and office located inside the Clark Freeport Zone, Pampanga. The Clark
