@@ -18,7 +18,7 @@
         </div>
     </div> 
 
-    <main class="component-content" id="component-content">
+    <div class="component-content" id="component-content">
         <!-- Default content (Diffusers) will load here -->
-    </main>
+    </div>
 </section>

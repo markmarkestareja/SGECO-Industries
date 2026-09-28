@@ -1,13 +1,13 @@
 <div class="attic-card">
     <div class="attic-img img-desktop">
-        <img src="asset/img/gvw/GVS - Panel Swivel.webp" alt="">
+        <img src="asset/img/gvw/GVS - Panel Swivel.webp" alt="Green-vent solar roof ventilator panel swivel">
     </div>
 
     <div class="attic-text gvw-text">
         <h1>Green-Vent Solar Ventilator</h1>
 
         <div class="attic-img img-mobile">
-            <img src="asset/img/gvw/GVS - Panel Swivel.webp" alt="">
+            <img src="asset/img/gvw/GVS - Panel Swivel.webp" alt="Green-vent solar roof ventilator panel swivel">
         </div>
 
         <p>The Green-Vent Solar Attic Extraction Fan is an attic ventilation system that can be installed into

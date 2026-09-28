@@ -34,5 +34,6 @@ export const otherData = [
     'SG Eco General Warranty',
     'Australian Standard Certification (AS4285)',
     'Rigid Tube Comparison MIRO-SILVER® vs. Multi-layer Polymeric Film',
-    'Indoor Climate & Productivity'
-];
+    'Indoor Climate & Productivity',
+    'AMCHAM Pioneer Member Award'
+]; 
