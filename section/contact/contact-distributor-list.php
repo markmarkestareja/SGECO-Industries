@@ -66,6 +66,18 @@
                     <li>Email: <a href="mailto:sales@urbanlifestyle.com.ph">sales@urbanlifestyle.com.ph</a></li>
                 </ul>
             </div>
+            <div class="dist-card add-reveal">
+                <h3>Philippines - Dealer</h3>
+                <img src="asset/img/flags/philippines.webp" alt="philippines">
+                <h4>Gleamair Enterprise</h4>
+                <ul>
+                    <li>Philippines</li>
+                    <li>Mobile: 0912-301-5388</li>
+                    <li>Website: <a href="https://gleamaire.com/">www.gleamaire.com</a></li>
+                    <li>Email: <a href="mailto:sales@gleamaire.com  ">sales@gleamaire.com</a></li>
+                    <li>Facebook: <a href="https://www.facebook.com/profile.php?id=61550651532632">Gleamair Enterprise</a></li>
+                </ul>
+            </div>
         </div>
 
 
