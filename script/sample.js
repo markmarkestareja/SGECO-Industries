@@ -360,7 +360,11 @@ function loadComponent(url, link) {
   });
   main.classList.add(`active-${name}`);
 
-  fetch(url)
+  fetch(url, {
+  headers: {
+    "X-Requested-With": "XMLHttpRequest"
+  }
+})
     .then((res) => {
       if (!res.ok) throw new Error("Failed to load content");
       return res.text();
@@ -1042,45 +1046,70 @@ if(caseStudyContainer) {
 }
 
 //send_message.js
-
 const contactForm2 = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const formResponse = document.querySelector('.form-response');
 
-if(contactForm2 && submitBtn && formResponse){
-  contactForm2.addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent page reload
+if (contactForm2 && submitBtn && formResponse) {
+  contactForm2.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (submitBtn.disabled) return;
+
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
     formResponse.textContent = '';
 
     const formData = new FormData(contactForm2);
 
-    fetch('send_message.php', { // points to your PHPMailer PHP script
-      method: 'POST',
-      body: formData
-    })
-    .then(res => res.text())
-    .then(data => {
-      formResponse.textContent = data;
-      formResponse.style.color = data.includes('successfully') ? '#10D24F' : '#f14444';
-      contactForm2.reset();
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Send Message';
+    try {
+      const response = await fetch('send_message.php', {
+        method: 'POST',
+        body: formData
+      });
 
-      setTimeout(() => {
-        formResponse.textContent = '';
-      }, 5000);
-    })
-    .catch(err => {
+      const message = (await response.text()).trim();
+
+      if (!response.ok) {
+        throw new Error('Submission failed');
+      }
+
+      const success = message === 'Message sent successfully';
+
+      formResponse.textContent =
+        message || 'Unable to send. Please refresh and try again.';
+
+      formResponse.style.color = success ? '#10D24F' : '#f14444';
+
+      if (success) {
+        // Track only the confirmed successful inquiry.
+        // No personal form details are sent to Google Analytics.
+        try {
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'generate_lead', {
+              form_name: 'contact_form'
+            });
+          }
+        } catch (trackingError) {
+          console.error('Analytics tracking failed:', trackingError);
+        }
+
+        contactForm2.reset();
+
+        setTimeout(() => {
+          formResponse.textContent = '';
+        }, 5000);
+      }
+    } catch (err) {
       formResponse.textContent = 'Oops! Something went wrong.';
-      formResponse.style.color = 'red';
+      formResponse.style.color = '#f14444';
       console.error(err);
+    } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Send Message';
-    });
+    }
   });
-} 
+}
 
 
 

@@ -1,6 +1,12 @@
 RewriteEngine On
 RewriteBase /SGECO-Industries/
 
+# Direct visits go to the complete product page.
+# AJAX requests can still fetch the product content.
+RewriteCond %{HTTP:X-Requested-With} !^XMLHttpRequest$ [NC]
+RewriteRule ^page/product-info/(attic|roof|accessories|gvw|gvs|whirlwind|whirlwind-plus|eave-vent|ducting-kit|hatchway|thermoforming|sheet-metal|custom-skylight)\.php$ /SGECO-Industries/product-service?prod=$1 [R=302,L]
+
+# Existing page routing
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^/]+)/?$ index.php?page=$1 [QSA,L]

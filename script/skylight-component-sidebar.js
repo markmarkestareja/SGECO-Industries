@@ -14,7 +14,11 @@ function loadComponent(url, link) {
   });
   main.classList.add(`active-${name}`);
 
-  fetch(url)
+  fetch(url, {
+    headers: {
+      "X-Requested-With": "XMLHttpRequest"
+    }
+  })
     .then((res) => {
       if (!res.ok) throw new Error("Failed to load content");
       return res.text();
@@ -27,7 +31,7 @@ function loadComponent(url, link) {
         behavior: "smooth"
       });
 
-      initRevealAnimations(); // ✅ re-init after AJAX load
+      initRevealAnimations();
     })
     .catch((err) => {
       main.innerHTML = "<p>Error loading content.</p>";
