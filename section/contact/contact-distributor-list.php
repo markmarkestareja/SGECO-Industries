@@ -52,7 +52,7 @@
                     <li>Address: Brgy. Napnud, Leganes, Iloilo</li>
                 </ul>
             </div>
-            <div class="dist-card add-reveal">
+            <!-- <div class="dist-card add-reveal">
                 <h3>Cagayan de Oro - Dealer</h3>
                 <img src="asset/img/flags/region 10.webp" alt="region 10">
                 <h4>Urban Lifestyle Blinds and Shades</h4>
@@ -65,7 +65,7 @@
                     <li>Facebook Page: <a href="https://www.facebook.com/urbanlifestyleblindsandshades">urbanlifestyleblindsandshades</a></li>
                     <li>Email: <a href="mailto:sales@urbanlifestyle.com.ph">sales@urbanlifestyle.com.ph</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="dist-card add-reveal">
                 <h3>Philippines - Dealer</h3>
                 <img src="asset/img/flags/philippines.webp" alt="philippines">
@@ -155,7 +155,7 @@
                 <h4>S and N Pvt Ltd</h4>
                 <ul>
                     <li>M. Havathi, Fareedhee Magu <br>Male' 20263, Maldives</li>
-                    <li>Phone: +960 760 8605</li>
+                    <li>Phone: +960 7771776</li>
                     <li>Email: <a href="mailto:sales@sandn.com.my">sales@sandn.com.my</a></li>
                 </ul>
             </div>
@@ -165,10 +165,8 @@
                 <img src="asset/img/flags/new zealand.webp" alt="new zealand">
                 <h4>Suntrenz Skylights</h4>
                 <ul>
-                    <li>6/11 Ashley Place, Papamoa 3118 <br>Tauranga, New Zealand.</li>
+                    <li>11/4 Aerodrome Road, Mount Maunganui, <br>Tauranga 3116, New Zealand</li>
                     <li>Phone: 0508-777-222</li>
-                    <li>Mobile: 021 418 988</li>
-                    <li>Email: <a href="mailto:sales@solarinnovations.co.nz">sales@solarinnovations.co.nz</a></li>
                     <li>Web: <a href="https://www.suntrenz.co.nz">www.suntrenz.co.nz</a></li>
                 </ul>
             </div>
@@ -178,8 +176,8 @@
                 <img src="asset/img/flags/thailand.webp" alt="thailand">
                 <h4>Leaf Power</h4>
                 <ul>
-                    <li>20 Soi Rama Nine 43 (Soi7 Seri4) Suanluang <br>Bangkok 10250 Thailand</li>
-                    <li>Phone: 02-300-5671-3</li>
+                    <li>54, 56, 58, 60 Soi Pattanakarn 64 Prawet, <br>Bangkok, 10250, Thailand</li>
+                    <li>Phone: +66-2130-6371</li>
                     <li>Mobile: +66-81-836-9328</li>
                     <li>Contact Person: Kangkij Petchsakulrat</li>
                     <li>Email: <a href="mailto:kangkij@leafpower.co.th">kangkij@leafpower.co.th</a></li>
@@ -200,12 +198,12 @@
             </div>
             
             <div class="dist-card add-reveal">
-                <h3>Host Green Solar Energy System Trading L.L.C</h3>
+                <h3>United Arab Emirates (UAE), Oman, Qatar, Bahrain, Kuwait, and Saudi Arabia</h3>
                 <img src="asset/img/flags/UAE&Qatar.webp" alt="UAE&Qatar">
                 <h4>Green Energy Solutions</h4>
                 <ul>
                     <li>(Sky Tunnel Products Only)</li>
-                    <li>Persia O01 - Dubai International City <br>Dubai, United Arab Emirates</li>
+                    <li>Dubai, UAE</li>
                     <li>Phone:  +971-4 327 7459</li>
                     <li>Mob:  +971-50 653 1524</li>
                     <li>Email:  <a href="mailto:info@hostgreenen.org">info@hostgreenen.org</a></li>
@@ -218,9 +216,8 @@
                 <img src="asset/img/flags/vietnam.webp" alt="vietnam">
                 <h4>Tan Bao Sai Gon Corporation</h4>
                 <ul>
-                    <li>162 Road 3, Trung Son, Binh Hung Ward, Binh Chanh Dist, HCMC, Vietnam</li>
-                    <li>Tel: (84-8) 5431 4242</li>
-                    <li>Fax: (84-8) 3868 2359</li>
+                    <li>No. 39, Street No. 11, Him Lam 6A Residential Area, Binh Hung Commune, Ho Chi Minh City</li>
+                    <li>Tel: (028) 3620 9393</li>
                     <li>Email Mr Le Sy Nhat; <a href="mailto:nhatls@tanbaocorp.vn">nhatls@tanbaocorp.vn</a></li>
                     <li>Web: <a href="https://tanbaocorp.vn">www.tanbaocorp.vn</a></li>
                 </ul>
